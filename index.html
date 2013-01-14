@@ -1,74 +1,221 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Minneby Avis</title>
-    <link rel='stylesheet' href='http://bradfrost.github.com/this-is-responsive/styles.css'>
-    <link href="css/newsbaby.css" rel="stylesheet" media="screen">
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Minnevik Avis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <style type="text/css">
+  body {
+    padding-top: 60px;
+  }
+  </style>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="./css/newsbaby.css" rel="stylesheet">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+      <!-- Fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+      <link rel="shortcut icon" href="../assets/ico/favicon.png">
+</head>
+
+    <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Logg inn</a></li>
+                <li><a href="#about">Abonnér</a></li>
+                <li><a href="#contact">Sett inn annonse</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+          <div class="stories">
+
+            <div class="row-fluid">
+              <div class="span12 story featured black">
+                <img src="http://www.f-b.no/polopoly_fs/truet-med-vapen-og-stakk-av-med-s-nn-2-7.235218!/image/derivative_980/1.7720106.1358024751.jpg" alt="">
+                <div class="caption">
+                  <h2>- Vi er sikre på at rett mann er pågrepet</h2>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row-fluid">
+              <div class="span4 story">
+                <a href="#">
+                  <img src="holder.js/480x200" alt="">
+                </a>
+                <a href="#">
+                  <h2>Nittedal IL har alt fått tilbud fra private investorer om kjøp</h2>
+                </a>
+              </div>
+              <div class="span4 story">
+                <img src="holder.js/480x200" alt="">
+                <h2>Ligger helt i toppen av knipsestatistikk</h2>
+                <p>I snitt ni bilførere hver dag fikk bot.</p>
+              </div>
+              <div class="span4 story">
+                <img src="holder.js/480x200" alt="">
+                <h2>21 av 54 boliger i Kruttverket Hageby solgt.</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="row-fluid">
+              <div class="span4">
+                <img src="holder.js/480x300" alt="">
+              </div>
+              <div class="span8">
+                <img src="holder.js/770x300" alt="">
+              </div>
+            </div>
+            <hr>
+            <div class="row-fluid show-grid">
+              <div class="span6">
+                <img src="holder.js/570x300" alt="">
+              </div>
+              <div class="span6">
+                <img src="holder.js/570x300" alt="">
+              </div>
+            </div>
+            <hr>
+            <div class="row-fluid">
+              <div class="span4">
+                <img src="holder.js/480x200" alt="">
+              </div>
+              <div class="span4">
+                <img src="holder.js/480x200" alt="">
+              </div>
+              <div class="span4">
+                <img src="holder.js/480x200" alt="">
+              </div>
+            </div>
+            <hr>
+          </div>
 
 
-<!--Pattern HTML-->
-  <section id="pattern" class="pattern">
-    <ul class="grid">
-      <div>
-        <div>
-          <a href="#">1</a>
+        <div class="row">
+          <div class="span4">
+            <h4>Heading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="span4">
+            <h4>Heading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="span4">
+            <h4>Heading</h4>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
         </div>
-      </div>
-      <div class="wide">
-        <div>
-          <a href="#">2</a>
-        </div>
-      </div>
-      <div>
-        <div>
-          <a href="#">3</a>
-        </div>
-      </div>
-      <div class="wide">
-        <div>
-          <a href="#">4</a>
-        </div>
-      </div>
-      <div class="wide">
-        <div>
-          <a href="#">5</a>
-        </div>
-      </div>
-      <div>
-        <div>
-          <a href="#">6</a>
-        </div>
-      </div>
-      <div>
-        <div>
-          <a href="#">7</a>
-        </div>
-      </div>
-      <div class="wide">
-        <div>
-          <a href="#">8</a>
-        </div>
-      </div>
-    </ul>
-  </section>
-  <!--End Pattern HTML-->
-  
-  <div class="container"> 
-    <section class="pattern-description">
-      <h1>Double Wide Grid Block v3</h1>
-      <p>A divst of objects with several items that are twice as big.</p>
-    </section>
-    <footer role="contentinfo">   
-      <div>
-        <nav id="menu">
-          <a href="http://bradfrost.github.com/this-is-responsive/patterns.html">&larr;More Responsive Patterns</a>
-        </nav>
-      </div>
-    </footer>
-  </div>
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-  </body>
-</html>
+        <hr>
+
+
+        <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="holder.js/1170x400" alt="">
+              <div class="carousel-caption">
+                <h4>First Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="holder.js/1170x400" alt="">
+              <div class="carousel-caption">
+                <h4>Second Thumbnail label</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+
+
+      </div> <!-- /container -->
+
+      <footer>
+        <div class="footer-inner container">
+          <div class="row">
+
+            <div class="span3">
+              <h4>Abonnement</h4>
+              <ul>
+                <li><a href="http://minside.f-b.no/pakker">Bestill abonnement</a></li>
+                <li><a href="http://www.f-b.no/f-b-xtra">Se abonnementsfordeler</a></li>
+                <li><a href="http://eavis.f-b.no/">Les avisen digitalt</a></li>
+                <li><a href="http://itunes.apple.com/no/app/fredriksstad-blad-epaper/id409453927?mt=8">Les avisen på iPad</a></li>
+                <li><a href="http://m.f-b.no/">Les avisen på mobil</a></li>
+                <li><a href="http://itunes.apple.com/no/app/fredriksstad-blad-epaper/id409453927?mt=8">Les avisen på iPhone</a></li>
+              </ul>
+            </div>
+
+            <div class="span3">
+              <h4>Kontakt oss</h4>
+              <ul>
+                <li><a href="http://minside.f-b.no/kontakt">Kontakt oss</a></li>
+                <li><a href="http://minside.f-b.no/kontakt/kontakt/skjema?type=1">Tips oss</a></li>
+                <li><a href="http://minside.f-b.no/">Kundeservice</a></li>
+                <li>TLF. 55 80 77 77</li>
+              </ul>
+            </div>
+
+            <div class="span3">
+              <h4>Annonsering</h4>
+              <ul>
+                <li><a href="http://minside.f-b.no/annonsering">Kundeservice</a></li>
+                <li><a href="http://minside.f-b.no/annonsering">Sett inn annonse</a></li>
+              </ul>
+            </div>
+
+            <div class="span3">
+              <h4>Om f-b.no </h4>
+              <ul>
+                <li>Fredriksstad Blad  Copyright &copy; 2013</li>
+                <li>Ansvarlig redaktør: <a href="mailto:erling.omvik@f-b.no">Erling Omvik</a></li>     
+                <li>Nyhetsredaktør: <a href="mailto:rene.svendsen@f-b.no">René Svendsen</a></li>
+                <li>Nett- og utviklingsredaktør: <a href="mailto:espen.normann@f-b.no">Espen Normann</a></li>
+                <li><a href="http://presse.no/Etisk-regelverk/Redaktoerplakaten">Redaktørplakaten</a></li>
+                <li><a href="http://www.pfu.no/simple.php">PFU</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script src="./js/bootstrap.js"></script>
+      <script src="./js/holder.js"></script>
+
+    </body>
+    </html>

@@ -1,5 +1,33 @@
+.stories a, .stories a:hover {
+  color: #000;
+}
 
+/* featured */
+.featured {
+  padding: 20px;
+}
 
+.featured img {
+  width: 100%;
+  display: block;
+}
+
+.featured h2 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.featured.black {
+  background: #000;
+  color: #fff;
+}
+
+.black a {
+  color: #fff;
+}
+/* end featured */
+
+/* General */
 .navbar .nav > li > a { 
   padding: 5px 15px 10px; 
 }
@@ -17,41 +45,36 @@ footer ul {
   margin: 0;
 }
 
-/*.grid {
-      overflow: hidden;
-      padding: 0.5em 0 0 0.5em;
-      max-width: 76em;
-      margin: 0 auto;
-    }
-    .grid > div {
-      padding: 0 0.5em 0.5em 0;
-    }
-    .grid > div > div {
-      background: #808080;
-      padding: 7em 2em;
-      text-a> divgn: center;
-    }
-    .grid > div.wide {
-      width: 100%;
-    }
-    .grid > div a {
-      color: #fff;
-    } 
-    
-    @media all and (min-width: 40em) {
-      .grid > div {
-        float: left;
-        width: 33.3333333%;
-      }
-      .grid > div.wide {
-        width: 66.666666%;
-      }
-    }
-    @media all and (min-width: 60em) {
-      .grid > div {
-        width: 25%;
-      }
-      .grid > div.wide {
-        width: 50%;
-      }
-    }*/
+body {
+  padding-bottom: 0;
+}
+
+/* End General */
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  body {
+    background: #efefef;
+  }
+  .story {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+  .story h2, .story p {
+    margin-left: 10px;
+  }
+  hr {
+    display: none;
+  }
+  .featured {
+    padding: 5px;
+  }
+  .featured h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 5px; 
+  }
+}
