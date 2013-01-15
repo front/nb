@@ -3,17 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Minnevik Avis</title>
+  <title>Varingen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <!-- Le styles -->
-  <style type="text/css">
-  body {
-    padding-top: 60px;
-  }
-  </style>
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
   <link href="./css/newsbaby.css" rel="stylesheet">
@@ -42,7 +37,7 @@
             </a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Logg inn</a></li>
+                <li class=""><a href="#"><i class="icon-user"></i> Logg inn</a></li>
                 <li><a href="#about">Abonnér</a></li>
                 <li><a href="#contact">Sett inn annonse</a></li>
               </ul>
@@ -51,277 +46,356 @@
         </div>
       </div>
 
-      <header>
+<!--
+      <header class="header-red">
         <div class="container visible-desktop">
-          <div class="span3">
-            <img src="http://varingen.no/Portals/11/Varingen/Logo/logo.gif" />
+          <div class="row">
+            <div class="span3">
+              <img src="http://varingen.no/Portals/11/Varingen/Logo/logo.gif" />
+            </div>
+            <div class="span1">
+              <img src="http://vaer.f-b.no/images/icons/frontpageheader/b_08.png" />
+            </div>
+            <div class="span4">
+              <h4>Hakadal: -14 grader</h4>
+            </div>
+            <div class="span4">
+              <form class="form-search">
+                <input type="text" class="input-medium search-query">
+                <button type="submit" class="btn">Søk</button>
+              </form>
+            </div>
           </div>
-          <div class="span1">
-            <img src="http://vaer.f-b.no/images/icons/frontpageheader/b_08.png" />
-          </div>
-          <div class="span3">
-            <h4>Hakadal: -14 grader</h4>
+        </div>
+      </header>
+-->
+      <header class="header-white">
+        <div class="container visible-desktop">
+          <div class="row">
+
+            <div class="span3">
+              <img class="logo" src="http://varingen.no/Portals/11/Varingen/Logo/logo.gif" />
+            </div>
+            
+            <div class="searchbox">
+              <form class="form-search">
+                <input type="text" class="input-medium search-query">
+                <button type="submit" class="btn">Søk</button>
+              </form>
+            </div>
+            <div class="weather">
+              <img src="http://vaer.f-b.no/images/icons/frontpageheader/b_08.png" />
+            </div>
           </div>
         </div>
       </header>
 
-      <div class="container">
+    <div class="container menu visible-desktop">
+      <nav>
+        <ul class="no-indent">
+          <li><a href="#">Nyheter</a></li>
+          <li><a href="#">Kultur</a></li>
+          <li><a href="#">Sport</a></li>
+          <li><a href="#">Reportasjer</a></li>
+          <li><a href="#">Meninger</a></li>
+          <li><a href="#">Gratulasjoner</a></li>
+          <li><a href="#">TV Guide</a></li>
+          <li><a href="#">Dette skjer</a></li>
+        <ul>
+      </nav>
+    </div>
 
-          <div class="stories">
+    <div class="container">
 
-            <div class="row-fluid">
-              <div class="span12 story featured black">
-                <a href="#">
-                  <img src="http://www.f-b.no/polopoly_fs/truet-med-vapen-og-stakk-av-med-s-nn-2-7.235218!/image/derivative_980/1.7720106.1358024751.jpg" alt="">
-                </a>
-                <div class="caption">
-                  <h2><a href="#">- Vi er sikre på at rett mann er pågrepet</a></h2>
-                </div>
-              </div>
+      <div class="main">
+        <!--
+        <div class="ad-horizontal">
+          <img class="visible-desktop" src="http://s1.adform.net/Banners/2007199/2007199.gif" />
+        </div>
+        -->
+        <div class="row-fluid">
+          <div class="span12 story featured black">
+            <a href="#">
+              <img src="http://www.f-b.no/polopoly_fs/truet-med-vapen-og-stakk-av-med-s-nn-2-7.235218!/image/derivative_980/1.7720106.1358024751.jpg" alt="">
+            </a>
+            <div class="caption">
+              <h2><a href="#">- Vi er sikre på at rett mann er pågrepet</a></h2>
             </div>
-
-            <hr>
-
-            <div class="row-fluid">
-              <div class="span4 story">
-                <a href="#">
-                  <img src="http://www.varingen.no/Portals/11/artikkelbilder/2013/01/201311182821209_3.jpg" alt="">
-                </a>
-                <a href="#">
-                  <h2>Nittedal IL har alt fått tilbud fra private investorer om kjøp</h2>
-                </a>
-              </div>
-              <div class="span4 story">
-                <a href="#">
-                  <img src="http://www.varingen.no/Portals/11/artikkelbilder/2013/01/2013112104548725_3.jpg" alt="">
-                </a>
-                <h2><a href="#">21 av 54 boliger i Kruttverket Hageby solgt.</a></h2>
-              </div>
-              <div class="span4 story most-read">
-
-                <section>
-                    <h3 class="massive">
-                      Mest lest
-                    </h3>
-                  </header>
-                  <ul class="no-indent">
-                    <li class="">
-                      <a href="#" class=" webhit_list">
-                        <time>05:06</time>
-                        Tog kjørte inn i hus i Stockholm
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#">
-                        <time>09:07</time>
-                        Kundene svikter Ica og Rimi
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#">
-                        <time>07:21</time>
-                        Vil fjerne sykkelfelt i sentrum
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#" class=" webhit_list">
-                        <time>20:07</time>
-                        Slutt på renholdere med 500.000 i årslønn
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#">
-                        <time>08:09</time>
-                        13-åring tyvlånte farens Mercedes
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#">
-                        <time>09:07</time>
-                        Kundene svikter Ica og Rimi
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#">
-                        <time>07:21</time>
-                        Vil fjerne sykkelfelt i sentrum
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#" class=" webhit_list">
-                        <time>20:07</time>
-                        Slutt på renholdere med 500.000 i årslønn
-                      </a>
-                    </li>
-                    <li class="">
-                      <a href="#">
-                        <time>08:09</time>
-                        13-åring tyvlånte farens Mercedes
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-
-              </div>
-            </div>
-            <hr>
-            <div class="row-fluid">
-              <div class="span4 story">
-                <img src="holder.js/480x400/text:Annonse" />
-              </div>
-              <div class="span8">
-                <div id="myCarousel" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="holder.js/770x400/text:Fra avisen" alt="">
-                      <div class="carousel-caption">
-                        <h4>First Thumbnail label</h4>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="holder.js/770x400" alt="">
-                      <div class="carousel-caption">
-                        <h4>Second Thumbnail label</h4>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row-fluid show-grid">
-              <div class="span6 story">
-                <a href="#">
-                  <img src="http://eas5static.emediate.eu/media/1/1111/22635/30daysPlus_349_620x530.jpg" alt="">
-                </a>
-              </div>
-              <div class="span6 story">
-                <img src="holder.js/570x300" alt="">
-              </div>
-            </div>
-            <hr>
-            <div class="row-fluid">
-              <div class="span3 story">
-                <h3 class="massive">Gratulerer</h3>
-                <div id="myCarousel" class="carousel slide">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="http://www.varingen.no/DesktopModules/SimpleGallery/ImageHandler.ashx?width=283&height=283&HomeDirectory=%2FPortals%2F11%2FGallery%2FAlbum%2F1273&fileName=Tor%20Ingar%20Granrud.jpg" alt="">
-                      <div class="carousel-caption">
-                        <h4>Richard 69 år!</h4>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="http://www.varingen.no/DesktopModules/SimpleGallery/ImageHandler.ashx?width=283&height=283&HomeDirectory=%2FPortals%2F11%2FGallery%2FAlbum%2F1273&fileName=Elise%2012%20%C3%A5r.jpg&portalid=11&i=19034&q=1" alt="">
-                      <div class="carousel-caption">
-                        <h4>Second Thumbnail label</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                </div>
-              </div>
-              <div class="span3 story">
-                <img src="holder.js/480x300" alt="">
-              </div>
-              <div class="span3 story">
-                <img src="holder.js/480x300" alt="">
-              </div>
-              <div class="span3 story">
-                <img src="holder.js/480x300" alt="">
-              </div>
-            </div>
-            <hr>
-          </div>
-
-
-        <div class="row">
-          <div class="span4 story">
-            <h4>Heading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span4 story">
-            <h4>Heading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span4 story">
-            <h4>Heading</h4>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
           </div>
         </div>
 
         <hr>
 
-      </div> <!-- /container -->
-
-      <footer>
-        <div class="footer-inner container">
-          <div class="row">
-
-            <div class="span3">
-              <h4>Abonnement</h4>
-              <ul>
-                <li><a href="#">Bestill abonnement</a></li>
-                <li><a href="#">Se abonnementsfordeler</a></li>
-                <li><a href="#">Les avisen digitalt</a></li>
-                <li><a href="#">Les avisen på iPad</a></li>
-                <li><a href="#">Les avisen på mobil</a></li>
-                <li><a href="#">Les avisen på iPhone</a></li>
-              </ul>
-            </div>
-
-            <div class="span3">
-              <h4>Kontakt oss</h4>
-              <ul>
-                <li><a href="#">Kontakt oss</a></li>
-                <li><a href="#">Tips oss</a></li>
-                <li><a href="#">Kundeservice</a></li>
-                <li>TLF. 77 77 77 77</li>
-              </ul>
-            </div>
-
-            <div class="span3">
-              <h4>Annonsering</h4>
-              <ul>
-                <li><a href="#">Kundeservice</a></li>
-                <li><a href="#">Sett inn annonse</a></li>
-              </ul>
-            </div>
-
-            <div class="span3">
-              <h4>Om Varingen </h4>
-              <ul>
-                <li>Varingene Copyright &copy; 2013</li>
-                <li>Ansvarlig redaktør: <a href="#">Erling Omvik</a></li>     
-                <li>Nyhetsredaktør: <a href="#">Kari Nordmann</a></li>
-                <li>Nett- og utviklingsredaktør: <a href="#">Ola Nordmann</a></li>
-                <li><a href="http://presse.no/Etisk-regelverk/Redaktoerplakaten">Redaktørplakaten</a></li>
-                <li><a href="http://www.pfu.no/simple.php">PFU</a></li>
-              </ul>
-            </div>
+        <div class="row-fluid">
+          <div class="span4 story">
+            <a href="#">
+              <img src="http://www.varingen.no/Portals/11/artikkelbilder/2013/01/201311182821209_3.jpg" alt="">
+            </a>
+            <a href="#">
+              <h2>Nittedal IL har alt fått tilbud fra private investorer om kjøp</h2>
+            </a>
           </div>
-        </footer>
+          <div class="span4 story">
+            <a href="#">
+              <img src="http://www.varingen.no/Portals/11/artikkelbilder/2013/01/2013112104548725_3.jpg" alt="">
+            </a>
+            <h2><a href="#">21 av 54 boliger i Kruttverket Hageby solgt.</a></h2>
+          </div>
+          <div class="span4 story most-read">
+
+            <section>
+              <h3 class="massive">
+                Mest lest
+              </h3>
+            </header>
+            <ul class="no-indent">
+              <li class="">
+                <a href="#" class=" webhit_list">
+                  <time>05:06</time>
+                  Tog kjørte inn i hus i Stockholm
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <time>09:07</time>
+                  Kundene svikter Ica og Rimi
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <time>07:21</time>
+                  Vil fjerne sykkelfelt i sentrum
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <time>09:07</time>
+                  Kundene svikter Ica og Rimi
+                </a>
+              </li>
+              <li class="">
+                <a href="#" class=" webhit_list">
+                  <time>20:07</time>
+                  Slutt på renholdere med 500.000 i årslønn
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <time>08:09</time>
+                  13-åring tyvlånte farens Mercedes
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <time>09:07</time>
+                  Kundene svikter Ica og Rimi
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <time>07:21</time>
+                  Vil fjerne sykkelfelt i sentrum
+                </a>
+              </li>
+              <li class="">
+                <a href="#" class=" webhit_list">
+                  <time>20:07</time>
+                  Slutt på renholdere med 500.000 i årslønn
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  <time>08:09</time>
+                  13-åring tyvlånte farens Mercedes
+                </a>
+              </li>
+            </ul>
+          </section>
+
+        </div>
       </div>
 
-      <!-- Ads -->
+      <hr>
 
+      <div class="row-fluid">
+        <div class="span4 story">
+          <img src="https://dl.dropbox.com/u/608153/assets/insta1.png" />
+        </div>
+        <div class="span8">
+          <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="https://dl.dropbox.com/u/608153/assets/ski.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Les fra avisutgaven</h4>
+                  <p>Hans Christer Holund viste konkurrentene ryggen under helgas kretsmesterskap i Oslo. Han var best både i klassisk og fristil.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="holder.js/770x400" alt="">
+                <div class="carousel-caption">
+                  <h4>Second Thumbnail label</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row-fluid show-grid">
+        <div class="span6 story">
+          <a href="#">
+            <img src="http://eas5static.emediate.eu/media/1/1111/22635/30daysPlus_349_620x530.jpg" alt="">
+          </a>
+        </div>
+        <div class="span6 story">
+          <img src="holder.js/570x486/text:Annonse" alt="">
+        </div>
+      </div>
+      <hr>
+      <div class="row-fluid">
+        <div class="span3 story">
+          <h3 class="massive">Gratulerer</h3>
+          <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://www.varingen.no/DesktopModules/SimpleGallery/ImageHandler.ashx?width=283&height=283&HomeDirectory=%2FPortals%2F11%2FGallery%2FAlbum%2F1273&fileName=Tor%20Ingar%20Granrud.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Richard 69 år!</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://www.varingen.no/DesktopModules/SimpleGallery/ImageHandler.ashx?width=283&height=283&HomeDirectory=%2FPortals%2F11%2FGallery%2FAlbum%2F1273&fileName=Elise%2012%20%C3%A5r.jpg&portalid=11&i=19034&q=1" alt="">
+                <div class="carousel-caption">
+                  <h4>Second Thumbnail label</h4>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+        </div>
+        <div class="span3 story">
+          <img src="holder.js/480x300" alt="">
+        </div>
+        <div class="span3 story">
+          <img src="holder.js/480x300" alt="">
+        </div>
+        <div class="span3 story">
+          <img src="holder.js/480x300" alt="">
+        </div>
+      </div>
+      <hr>
+    </div>
+
+
+    <div class="row">
+      <div class="span4 story">
+        <h4>Heading</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn" href="#">View details &raquo;</a></p>
+      </div>
+      <div class="span4 story">
+        <h4>Heading</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn" href="#">View details &raquo;</a></p>
+      </div>
+      <div class="span4 story">
+        <h4>Heading</h4>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn" href="#">View details &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container ads visible-desktop">
+      <div class="row">
+        <div class="span10">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="980" height="600" wmode="opaque" id="td_flash" name="td_flash">
+<param name="movie" value="http://vht.tradedoubler.com/file/199479/2013/w03/w0313_980x600_januarsalg_2a_no.swf">
+<param name="FlashVars" value="clickTAG=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;CLICKTAG=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;clicktag=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;clickTag=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;ClickTag=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006">
+<param name="AllowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+<param name="quality" value="best">
+<param name="menu" value="false">
+<embed src="http://vht.tradedoubler.com/file/199479/2013/w03/w0313_980x600_januarsalg_2a_no.swf" flashvars="clickTAG=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;CLICKTAG=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;clicktag=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;clickTag=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006&amp;ClickTag=http%3A%2F%2Fannonser.dagbladet.no%2Feas%2Fcu%3D1238%3A%3Acamp%3D31667%3A%3Ano%3D72302%3A%3Akw%3Dlink1-72302%3A%3Auuid%3D7a348872-5f1d-11e2-acc1-002590539953%3A%3AEASLink%3Dhttp%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D199479%26a%3D1287085%26g%3D20964648%26pools%3D467006" menu="false" quality="best" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" swliveconnect="true" width="980" height="600" wmode="opaque" id="td_flash" name="td_flash"></object>
+        </div>
+        <div class="span2">
+          <img src="holder.js/180x600" />
+        </div>
+      </div>
+      <hr>
+    </div>
+
+  </div> <!-- /container -->
+</div>
+
+<footer>
+  <div class="footer-inner container">
+    <div class="row">
+
+      <div class="span3">
+        <h4>Abonnement</h4>
+        <ul>
+          <li><a href="#">Bestill abonnement</a></li>
+          <li><a href="#">Se abonnementsfordeler</a></li>
+          <li><a href="#">Les avisen digitalt</a></li>
+          <li><a href="#">Les avisen på iPad</a></li>
+          <li><a href="#">Les avisen på mobil</a></li>
+          <li><a href="#">Les avisen på iPhone</a></li>
+        </ul>
+      </div>
+
+      <div class="span3">
+        <h4>Kontakt oss</h4>
+        <ul>
+          <li><a href="#">Kontakt oss</a></li>
+          <li><a href="#">Tips oss</a></li>
+          <li><a href="#">Kundeservice</a></li>
+          <li>TLF. 77 77 77 77</li>
+        </ul>
+      </div>
+
+      <div class="span3">
+        <h4>Annonsering</h4>
+        <ul>
+          <li><a href="#">Kundeservice</a></li>
+          <li><a href="#">Sett inn annonse</a></li>
+        </ul>
+      </div>
+
+      <div class="span3">
+        <h4>Om Varingen </h4>
+        <ul>
+          <li>Varingene Copyright &copy; 2013</li>
+          <li>Ansvarlig redaktør: <a href="#">Erling Omvik</a></li>     
+          <li>Nyhetsredaktør: <a href="#">Kari Nordmann</a></li>
+          <li>Nett- og utviklingsredaktør: <a href="#">Ola Nordmann</a></li>
+          <li><a href="http://presse.no/Etisk-regelverk/Redaktoerplakaten">Redaktørplakaten</a></li>
+          <li><a href="http://www.pfu.no/simple.php">PFU</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Ads -->
+
+
+      <!--
       <div class="visible-desktop ads-right">
         <img src="http://s1.adform.net/Banners/2007196/2007196.gif" />
       </div>
+    -->
+    <!-- End Ads -->
 
-      <!-- End Ads -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/holder.js"></script>
 
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-      <script src="./js/bootstrap.js"></script>
-      <script src="./js/holder.js"></script>
-
-    </body>
-    </html>
+  </body>
+  </html>

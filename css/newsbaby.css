@@ -1,8 +1,16 @@
+body {
+    padding-top: 31px;
+  }
 h1,h2,h3 {
   line-height: 36px;
 }
 
-.stories a, .stories a:hover {
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
+.main a, .main a:hover {
   color: #000;
 }
 
@@ -33,10 +41,10 @@ h1,h2,h3 {
 
 /* General */
 .navbar-fixed-top {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .navbar-inner {
-  min-height: 32px;
+  min-height: 28px;
 }
 .navbar .nav > li > a { 
   padding: 5px 15px 5px; 
@@ -46,8 +54,49 @@ h1,h2,h3 {
 margin: 4px 8px;
 }
 
+.ad-horizontal {
+  margin-bottom: 10px;
+}
+
 header {
-  padding-bottom: 20px;
+  padding: 10px 0;
+  background: #d50022;
+  color: #fff;
+}
+
+.header-white {
+  background: #fff;
+}
+
+.header-white .searchbox, .weather {
+float: right;
+}
+
+.menu {
+  margin-bottom: 10px;
+  background: #ddd;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.menu li {
+  float: left;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.menu a {
+  color: #555;
+}
+
+.weather {
+  float: left;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.searchbox {
+  margin-top: 20px;
 }
 
 footer {
@@ -56,6 +105,9 @@ footer {
   color: #aaa;
   font-size: 11px;
   padding-bottom: 30px;
+}
+
+.footer-inner {
 }
 
 footer ul, .no-indent {
@@ -110,7 +162,7 @@ time {
 @media (max-width: 480px) {
   body {
     background: #efefef;
-    padding: 0px 4px 4px 4px;
+    padding: 0px 5px 5px 4px;
   }
   img {
     width: 100%;
