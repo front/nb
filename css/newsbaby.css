@@ -1,3 +1,7 @@
+h1,h2,h3 {
+  line-height: 36px;
+}
+
 .stories a, .stories a:hover {
   color: #000;
 }
@@ -96,6 +100,9 @@ time {
   body {
     background: #efefef;
   }
+  img {
+    width: 100%;
+  }
   .story {
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -115,6 +122,9 @@ time {
     font-size: 32px;
     line-height: 36px;
     margin: 5px; 
+  }
+  .massive {
+    text-align: center;
   }
   footer {
     text-align: center;
