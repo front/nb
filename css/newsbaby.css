@@ -22,7 +22,7 @@
   color: #fff;
 }
 
-.black a {
+.featured a, .featured a:hover {
   color: #fff;
 }
 /* end featured */
@@ -43,7 +43,7 @@ footer {
   padding-bottom: 30px;
 }
 
-footer ul {
+footer ul, .no-indent {
   list-style-type: none;
   margin: 0;
 }
@@ -53,6 +53,42 @@ body {
 }
 
 /* End General */
+
+/* Ads */
+.ads-right {
+  position: absolute;
+  right: 0px;
+  top: 32px;
+  margin-left: 200px;
+}
+/* End Ads */
+
+/* Most read */
+.massive {
+  background: #000;
+  line-height: 24px;
+  font-size: 18px;
+  padding: 1px 5px;
+  color: #fff;
+  margin: 0 0 2px;
+}
+
+.most-read a, .most-read a:hover {
+  color: #014687;
+}
+
+.most-read li {
+  border-bottom: 1px solid #d3d2c5;
+  padding: 2px 0;
+}
+
+time {
+  color: #666;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+/*End Most read */
 
 /* Responsive */
 
@@ -66,7 +102,7 @@ body {
     background: #fff;
     box-shadow: 1px 1px 1px #ccc;
   }
-  .story h2, .story p {
+  .story h2, .story p, .story li {
     margin-left: 10px;
   }
   hr {
@@ -79,5 +115,10 @@ body {
     font-size: 32px;
     line-height: 36px;
     margin: 5px; 
+  }
+  footer {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
