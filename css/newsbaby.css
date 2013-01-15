@@ -54,6 +54,11 @@ iframe {
 margin: 4px 8px;
 }
 
+.ads-phone {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .ad-horizontal {
   margin-bottom: 10px;
 }
