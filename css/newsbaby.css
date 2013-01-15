@@ -32,11 +32,18 @@ h1,h2,h3 {
 /* end featured */
 
 /* General */
+.navbar-fixed-top {
+  margin-bottom: 10px;
+}
 .navbar-inner {
   min-height: 32px;
 }
 .navbar .nav > li > a { 
   padding: 5px 15px 5px; 
+}
+
+.navbar-inverse .btn-navbar {
+margin: 4px 8px;
 }
 
 footer {
@@ -99,6 +106,7 @@ time {
 @media (max-width: 480px) {
   body {
     background: #efefef;
+    padding: 0px 3px 3px 3px;
   }
   img {
     width: 100%;
