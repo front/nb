@@ -108,6 +108,13 @@ float: right;
   margin-top: 20px;
 }
 
+.mobile-logo {
+  width: 85px;
+  text-align: center;
+  margin-left: 164px;
+  margin-top: 8px;
+}
+
 footer {
   background: #222;
   border-top: 2px solid #444;
