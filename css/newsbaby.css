@@ -54,6 +54,10 @@ iframe {
 margin: 4px 8px;
 }
 
+.nav-collapse li {
+  text-align: center;
+}
+
 .ads-phone {
   margin-top: 5px;
   margin-bottom: 5px;
