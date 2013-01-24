@@ -135,6 +135,10 @@ body {
   padding-bottom: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 /* End General */
 
 /* Ads */
