@@ -177,6 +177,54 @@ time {
 
 /*End Most read */
 
+/*Full story*/
+body.full-story {
+padding: 0; 
+background: #fff;
+}
+
+.story-full {
+  font-family: helmet, Helvetica;
+}
+
+.side-padding {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.story-full h1 {
+color: #000;
+}
+.updated {
+color: #7FAE41;
+font-style: italic;
+margin: 10px 0;
+} 
+
+.story-full img {
+  width: 100%;
+}
+
+.summary {
+font-size: 17px;
+font-weight: bold;
+margin: 10px 0;
+}
+
+figcaption {
+  padding: 4px 8px 0;
+}
+
+.caption {
+  color: #808080;
+  font-size: 14px;
+}
+
+
+
+
+/*End Full story*/
+
 /* Responsive */
 
 @media (max-width: 480px) {
