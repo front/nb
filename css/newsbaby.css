@@ -187,28 +187,51 @@ background: #fff;
   font-family: helmet, Helvetica;
 }
 
-.side-padding {
+p {
+  color: #404040;
+}
+
+.side-padding, .intro, .story-full h1 {
   padding-left: 8px;
   padding-right: 8px;
 }
 
 .story-full h1 {
-color: #000;
+color: #1E1E1E;
+font-weight: 700;
+letter-spacing: -0.0425em;
+font-size: 24px;
+line-height: 28px;
+padding: 1px 0 4px;
 }
-.updated {
+
+.byline {
+  border-bottom: 1px solid #DCDCDC;
+  display: block;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+
+.date {
 color: #7FAE41;
 font-style: italic;
 margin: 10px 0;
+font-weight: 300;
+-webkit-font-smoothing: subpixel-antialiased;
+font-size: 17px;
 } 
 
 .story-full img {
   width: 100%;
 }
 
-.summary {
-font-size: 17px;
+.intro {
+color: #1E1E1E;
+font-size: 16px;
+line-height: 20px;
 font-weight: bold;
-margin: 10px 0;
+margin: 10px 0 16px;
 }
 
 figcaption {
