@@ -288,13 +288,30 @@ figcaption {
   }
 }
 
+/* Fixes */
+
+.container {
+  max-width: 980px;
+  border: none;
+  padding-top: 4px;
+}
 
 /*BBC fixes*/
+@media (max-width: 640px) {
+  .container, .c-open {
+    border: none;
+  }
+}
 
-@media (min-width: 1056px) {
-  body .site-brand-inner, #site-nav-panel, .c-solid > .inner, .c-open {
+.site-brand-inner, #site-nav-panel, .c-solid > .inner, .c-open {
   margin: 0 auto;
-  width: 1170px;
+  max-width: 980px;
+  }
+
+@media (min-width: 979px) {
+  body .site-brand-inner, #site-nav-panel, .c-solid > .inner, body .c-open {
+  margin: 0 auto;
+  width: 980px;
   }
 }
 
