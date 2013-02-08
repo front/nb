@@ -301,3 +301,7 @@ body .container.front {
   width: 1170px;
   }
 }
+
+#blq-blocks a {
+  background-image: url(../img/news-logo.png);
+}
