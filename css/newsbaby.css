@@ -257,7 +257,6 @@ figcaption {
 @media (max-width: 480px) {
   body {
     background: #efefef;
-    padding: 0px 5px 5px 4px;
   }
   img {
     width: 100%;
@@ -321,5 +320,5 @@ figcaption {
 
 #blq-blocks a {
   background-image: url(../img/news-logo.png);
-  margin-left: 0;
+  margin-left: 5px;
 }
