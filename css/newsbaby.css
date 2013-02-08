@@ -1,5 +1,5 @@
 body {
-    padding-top: 31px;
+
   }
 h1,h2,h3 {
   line-height: 36px;
@@ -291,6 +291,13 @@ figcaption {
 
 /*BBC fixes*/
 
-.container.front {
+body .container.front {
   padding: 10px 0;
+}
+
+@media (min-width: 1056px) {
+  body .site-brand-inner, #site-nav-panel, .c-solid > .inner, .c-open {
+  margin: 0 auto;
+  width: 1170px;
+  }
 }
