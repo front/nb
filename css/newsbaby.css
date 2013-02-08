@@ -291,10 +291,6 @@ figcaption {
 
 /*BBC fixes*/
 
-body .container.front {
-  padding: 10px 0;
-}
-
 @media (min-width: 1056px) {
   body .site-brand-inner, #site-nav-panel, .c-solid > .inner, .c-open {
   margin: 0 auto;
@@ -304,4 +300,5 @@ body .container.front {
 
 #blq-blocks a {
   background-image: url(../img/news-logo.png);
+  margin-left: 0;
 }
