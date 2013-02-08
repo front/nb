@@ -10,6 +10,10 @@ iframe {
   padding: 0;
 }
 
+a:link, a:hover {
+  text-decoration: none;
+}
+
 .main a, .main a:hover {
   color: #000;
 }
@@ -258,13 +262,13 @@ figcaption {
   img {
     width: 100%;
   }
-  .story {
+  .story-teaser {
     border: 1px solid #ccc;
     margin-bottom: 10px;
     background: #fff;
     box-shadow: 1px 1px 1px #ccc;
   }
-  .story h2, .story p, .story li {
+  .story-teaser h2, .story-teaser p, .story-teaser li {
     margin-left: 10px;
   }
   hr {
