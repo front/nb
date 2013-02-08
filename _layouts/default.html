@@ -21,15 +21,15 @@
         <meta name="msapplication-TileColor" content="#CC0101">
         <meta http-equiv="cleartype" content="on">
         <script type="text/javascript">
-(function() {
-        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-            var msViewportStyle = document.createElement("style");
-            msViewportStyle.appendChild(
+            (function() {
+                if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
                 document.createTextNode("@-ms-viewport{width:auto!important}")
                 );
-            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-        }
-        })();
+                 document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+                }   
+            })();
         </script>
         <meta name="HandheldFriendly" content="True">
         <meta name="format-detection" content="telephone=no"><!-- @TODO Ideally we don't want user-scalable=0 but it's causing an issue in iPhone v4. In landscape mode, mobilesque is zooming in --><!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3" />-->
