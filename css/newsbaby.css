@@ -287,3 +287,10 @@ figcaption {
     line-height: 18px;
   }
 }
+
+
+/*BBC fixes*/
+
+.container.front {
+  padding: 10px 0;
+}
