@@ -1,5 +1,5 @@
 body {
-
+  max-width: 1170px
   }
 h1,h2,h3 {
   line-height: 36px;
@@ -293,7 +293,7 @@ figcaption {
 
 /* Fixes */
 
-.container {
+#page .container {
   max-width: 980px;
   border: none;
   padding-top: 4px;
