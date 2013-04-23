@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            {% if page.title %} {{ page.title }} | {% endif %} Avis Digital
+        </title>
+        <meta name="description" content="Det gode liv i Liverpool.">
+        <meta name="x-country" content="no">
+        <meta name="x-audience" content="Norwegian">
+        <link rel="canonical" href="">
+        <meta name="apple-mobile-web-app-title" content="Avis News">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+        <link rel="apple-touch-icon" href="">
+        <meta name="application-name" content="Avis News">
+        <meta name="msapplication-TileImage" content="http://static.bbci.co.uk/news/1.4.7-11/windows-eight-icon-144x144.png">
+        <meta name="msapplication-TileColor" content="#CC0101">
+        <meta http-equiv="cleartype" content="on">
+        <script type="text/javascript">
+            (function() {
+                if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                document.createTextNode("@-ms-viewport{width:auto!important}")
+                );
+                 document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+                }   
+            })();
+        </script>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no"><!-- @TODO Ideally we don't want user-scalable=0 but it's causing an issue in iPhone v4. In landscape mode, mobilesque is zooming in --><!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+
+        <!-- Foundation styles -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.css">
+
+        <script src="js/vendor/custom.modernizr.js"></script>
+
+        <!-- Other Styles -->
+
+        <link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/frameworks/barlesque/2.44.2/mobile/3.5/style/main.css"  />  
+<link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/bbcdotcom/0.3.175/style/mobile/bbccom.css"  />    
+
+<script type="text/javascript" src="http://static.bbci.co.uk/bbcdotcom/0.3.175/script/mobile/smart.js"></script>
+<link type="text/css" rel="stylesheet" href="http://static.bbci.co.uk/news/1.5.8-165/stylesheets/core.css" />
+        <link href="./css/newsbaby.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+        <script id="news-loader" type="text/javascript">
+        if ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window) {       var curl = { baseUrl: 'http://static.bbci.co.uk/news/1.4.7-11/js', apiContext: window, apiName: 'require', overwriteApi: true, paths: {"jquery-1":"http:\/\/static.bbci.co.uk\/frameworks\/jquery\/0.2.1\/sharedmodules\/jquery-1.7.2","demi-1":"http:\/\/static.bbci.co.uk\/frameworks\/demi\/0.9.8\/sharedmodules\/demi-1","swfobject-2":"http:\/\/static.bbci.co.uk\/frameworks\/swfobject\/0.1.4\/sharedmodules\/swfobject-2","translation":"module\/translations\/news"} }; var insertPoint = document.getElementById('news-loader'), s = document.createElement('script'); s.src = 'http://static.bbci.co.uk/news/1.4.7-11/js' + '/vendor/curl/curl.min.js';  var bootstrapUI=function(){(function(){if(navigator.userAgent.match(/(Android (2.0|2.1))|(Nokia)|(OSRE\/)|(Opera (Mini|Mobi))|(w(eb)?OSBrowser)|(UCWEB)|(Windows Phone)|(XBLWP)|(ZuneWP)/))return!1;if(navigator.userAgent.match(/MSIE 10.0/))return!0;var b,a=document,d=a.head||a.getElementsByTagName("head")[0]||docElement,c=a.createElement("style"),a=a.implementation||{hasFeature:function(){return!1}};c.type="text/css";d.insertBefore(c,d.firstChild);b=c.sheet||c.styleSheet;return(a.hasFeature("CSS2","")?function(a){if(!b||!a)return!1;var c=!1;try{b.insertRule(a,0),c=!/unknown/i.test(b.cssRules[0].cssText),b.deleteRule(b.cssRules.length-1)}catch(d){}return c}:function(a){if(!b||!a)return!1;b.cssText=a;return 0!==b.cssText.length&&!/unknown/i.test(b.cssText)&&0===b.cssText.replace(/\r+|\n+/g,"").indexOf(a.split(" ")[0])})('@font-face{font-family:"font";src:"font.ttf";}')})()&&(document.getElementsByTagName("html")[0].className+=" ff");var d,e,j,f,g,h={},i=function(b){var a=document.createElement("link");a.setAttribute("rel","stylesheet");a.setAttribute("type","text/css");a.setAttribute("href",j+b+".css");a.setAttribute("media",g[b]);f.parentNode.insertBefore(a,f);delete g[b]},l=function(){var b=0,a;for(a in g)b++;b||window.removeEventListener("resize",k,!1);for(var f in g){var c;b=g[f];h[b]||(c=b.match(/\(min\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/),a=b.match(/\(max\-width:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/),c=c&&parseFloat(c[1])||null,a=a&&parseFloat(a[1])||null,h[b]=[c,a]);c=h[b];b=f;a=c[0];c=c[1];a&&(!c&&(d>=a||e>=a))&&i(b);c&&(!a&&(d<=c||e<=c))&&i(b);a&&(c&&(d>=a||e>=a)&&(d<=c||e<=c))&&i(b)}},k=function(){d=document.documentElement.clientWidth;e=document.documentElement.clientHeight;l()};return{stylesheetLoaderInit:function(b,a){g=b;j=a.path+("/"!=a.path.substr(-1)?"/":"");f=a.insertBefore;d=document.documentElement.clientWidth;e=document.documentElement.clientHeight;l();window.addEventListener("resize",k,!1)}}}(); bootstrapUI.stylesheetLoaderInit({ 'compact': '(max-width: 640px)', 'tablet' : '(min-width: 641px)', 'wide' : '(min-width: 1056px)' }, { path: 'http://static.bbci.co.uk/news/1.4.7-11/stylesheets', insertBefore: insertPoint }); s.onload = function () { define('config', function () { return {"asset":{"asset_id":"21363098","asset_uri":"\/news\/world-europe-21363098","first_created":{"date":"2013-02-06 23:27:08","timezone_type":3,"timezone":"Europe\/London"},"last_updated":{"date":"2013-02-07 09:27:46","timezone_type":3,"timezone":"Europe\/London"},"options":{"allowHeadline":true,"allowDateStamp":true,"allowRelatedStoriesBox":true,"allowRightHandSide":true,"includeComments":false,"allowPrintingSharingLinks":true,"allowAdvertising":true},"section":{"name":"Europe","uri":"\/news\/world\/europe"},"edition":"International","audience":null,"iStats_counter_name":"news.world.europe.story.21363098.page","type":"STY"},"staticHost":"http:\/\/static.bbci.co.uk","locatorVersion":"0.46.2","pathPrefix":"\/news","jsPath":"http:\/\/static.bbci.co.uk\/news\/1.4.7-11\/js","cssPath":"http:\/\/static.bbci.co.uk\/news\/1.4.7-11\/stylesheets","features":{"localNews":true,"video":true,"liveEventComponent":true,"mediaAssetPage":true,"linkedDataTopStories":false},"pollingHost":"http:\/\/polling.bbc.co.uk","service":"news","locatorHost":null,"locatorFlagPole":true,"local":{"allowLocationLookup":true}} });             require(['js!compiled/all'], function() {
+        require(['module/base', 'domReady!'], function (base) { base.init();  require('module/media/mediaRegistry', function(mediaRegistry){ mediaRegistry.data = {"65747746":{"height":171,"width":304,"href":"http:\/\/news.bbcimg.co.uk\/media\/images\/65747000\/jpg\/_65747746_017141690.jpg","caption":"Angela Merkel and Francois Hollande held a \"short but intense\" meeting on Wednesday","altText":"Angela Merkel and Francois Hollande at the Stade de France in Saint-Denis, near Paris. 6 Feb 2013","positionHint":"body-narrow-width"},"65747784":{"height":171,"width":304,"href":"http:\/\/news.bbcimg.co.uk\/media\/images\/65747000\/jpg\/_65747784_017024159.jpg","caption":"David Cameron and Angela Merkel want EU spending to mirror Europe's tough financial times","altText":"David Cameron and Angela Merkel at Davos. 24 Jan 2013","positionHint":"body-narrow-width"},"65747750":{"height":432,"width":768,"href":"http:\/\/news.bbcimg.co.uk\/media\/images\/65747000\/jpg\/_65747750_017141690.jpg","altText":"Angela Merkel and Francois Hollande at the Stade de France in Saint-Denis, near Paris. 6 Feb 2013"}}; }); require(['module/story', 'domReady!'], function(story) { story.init(); });  });                  });
+        }; insertPoint.parentNode.insertBefore(s, insertPoint); } 
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    </head><!--[if IE]><body class="ie"><![endif]-->
+    <!--[if !IE]>-->
+    <body class="style-blue">
+        <!--<![endif]-->
+
+        <div id="blq-global">
+            <div id="blq-pre-mast"></div>
+        </div>
+        <div id="blq-container">
+            <div id="blq-mast" class="blq-rst">
+                <div id="blq-mast-bar">
+                    <div id="blq-blocks">
+                        <a href="/">Avisen</a>
+                    </div>
+                    <ul id="blq-nav">
+                        <li>
+                            <a href="buy.html">Logg inn</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Nyheter</a>
+                        </li>
+                        <li>
+                            <a href="#">Været</a>
+                        </li>
+                        <li class="blq-core">
+                            <a href="#blq-more-panel" id="blq-more-link">Meny</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="blq-panel"></div>
+            </div>
+
+
+
+            <div id="blq-main">
+                <div class="site-brand" role="banner">
+                    <div class="site-brand-inner">
+                        <a href="/" id="brand">NewsFront</a> <span class="beta-label">BETA</span> <a id="nav-button" href="#site-nav" data-event="top"><span class="cta">Seksjoner</span></a>
+                    </div>
+                </div>
+                <div id="site-nav-panel">
+                    <div class="dropdown"></div>
+                </div>
+                <div id="page" class="story" data-story-id="world-europe-21363098">
+
+                    <div class="container c-open">
+
+                        {{ content }}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-foot">
+            <div class="site-foot-inner">
+                <div id="site-nav" class="site-navigation" role="navigation">
+                    <h2>
+                        Se flere nyheter
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="/news">Nyheter</a>
+                        </li>
+                    </ul>
+                    <h3>
+                        Riks
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">Nærmiljøet</a>
+                        </li>
+                        <li>
+                            <a href="#">Fylket</a>
+                        </li>
+                        <li>
+                            <a href="#">Hele landet</a>
+                        </li>
+                    </ul>
+                    <h3>
+                        Artikler
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">Næringsliv</a>
+                        </li>
+                        <li>
+                            <a href="#">Underholdning &amp; kunst</a>
+                        </li>
+                        <li>
+                            <a href="#">Helse</a>
+                        </li>
+                        <li>
+                            <a href="#">Dingser</a>
+                        </li>
+                    </ul>
+                    <h3>
+                        Fancy innhold
+                    </h3>
+                    <ul>
+                        <li class="hide-for-feature-phone">
+                            <a href="/news/10462520">Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Også fra nyhetsbildet</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="blq-foot" class="blq-rst">
+            <div id="blq-more-panel" class="blq-more-panel">
+                <h2>
+                    Mer fra oss
+                </h2>
+                <ul>
+                    <li class="blq-light">
+                        <a href="#">Nyheter</a>
+                    </li>
+                    <li class="blq-light">
+                        <a href="#">Sport</a>
+                    </li>
+                    <li class="blq-light">
+                        <a href="#">Været</a>
+                    </li>
+                    <li>
+                        <a href="#">Forside</a>
+                    </li>
+                    <li>
+                        <a href="#">Nyheter</a>
+                    </li>
+                    <li>
+                        <a href="#">TV guide</a>
+                    </li>
+                    <li>
+                        <a href="#">Spill</a>
+                    </li>
+                    <li>
+                        <a href="#">Eiendom</a>
+                    </li>
+                    <li>
+                        <a href="#">Jobbmarked</a>
+                    </li>
+                    <li>
+                        <a href="#">Bildeserier</a>
+                    </li>
+                    <li>
+                        <a href="#">Reise</a>
+                    </li>
+                    <li>
+                        <a href="#">Om oss</a>
+                    </li>
+                    <li>
+                        <a href="#">A-Å</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div id="blq-foot-links">
+                <ul>
+                    <li>
+                        <a href="#">Desktop-versjon</a>
+                    </li>
+                    <li>
+                        <a href="#">Brukerinnstillinger</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt oss</a>
+                    </li>
+                </ul>
+            </div>
+            <p id="blq-copyright">
+                Front/Aleron &#169; 2013
+            </p>
+        </div>
+        <script type="text/javascript" src="http://static.bbci.co.uk/frameworks/barlesque/2.25.0/mobile/3.5/script/mobilesque.js"></script>
+          <script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+        <script src="./js/holder.js"></script>
+    </body>
+</html>
