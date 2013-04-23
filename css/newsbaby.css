@@ -308,13 +308,13 @@ figcaption {
 
 .site-brand-inner, #site-nav-panel, .c-solid > .inner, .c-open {
   margin: 0 auto;
-  max-width: 980px;
+  /*max-width: 980px;*/
   }
 
 @media (min-width: 979px) {
   body .site-brand-inner, #site-nav-panel, .c-solid > .inner, body .c-open {
   margin: 0 auto;
-  width: 980px;
+  /*width: 980px;*/
   }
 }
 
