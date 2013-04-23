@@ -323,17 +323,16 @@ figcaption {
   margin-left: 5px;
 }
 
-body #brand {
-  background: url("holder.js/100x30") no-repeat scroll 0 0 transparent;
+/*body #brand {
+  background: url(../img/news-brand.png);
   color: transparent;
   direction: ltr;
   display: block;
-  font: 0px/0 a;
-  height: 0;
+
   overflow: hidden;
   padding-top: 23px;
   position: relative;
   text-indent: 150%;
   top: 16.5px;
   width: 86px;
-}
+}*/
