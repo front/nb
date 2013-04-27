@@ -3,10 +3,14 @@ body {
   /*background: #F6F6F6;*/
 }
 
+.center {
+  text-align: center;
+}
+
 
 /* Top bar */
 .top-bar {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 /*
 .top-bar-section li a:not(.button) {
@@ -14,6 +18,22 @@ body {
   line-height: 45px;
   padding: 0 15px;
 }*/
+
+.section-header {
+  background: #C80000;
+  margin-bottom: 15px;
+}
+
+.section-header h1 {
+ font-size: 18px;
+ margin: 10px 0;
+ text-transform: uppercase;
+ font-weight: 300;
+}
+
+.section-header h1 a{
+ color: white;
+}
 
 /* TL menu */
 
@@ -82,6 +102,53 @@ body {
   margin: 0 0 -5px 0;
 }
 
+/* News section */
+
+.has-background {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+}
+
+.overlay {
+  color: white;
+  float: left;
+}
+
+.overlay h1, .overlay p {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
+
+.article-grid h1 {
+  font-size: 22px;
+  line-height: 24px;
+  margin: 5px 0;
+}
+
+.article-grid img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.article-grid p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.article-grid p {
+  color: #999;
+}
+
+.portait {
+  margin-top: 20px;
+  border-top: 1px solid #555;
+}
+
+.portrait h2 {
+  color: white;
+}
 
 /* Elements */
 
@@ -188,5 +255,8 @@ img {
   }
   .meta div {
   margin-bottom: 0;
+  }
+  .overlay {
+  max-width: 33%;
 }
 }
