@@ -27,9 +27,12 @@ figcaption {
   margin-bottom: 10px;
 }
 
-figcaption small {
-  font-size: 0.88em;
-  margin: 2px 5px 5px;
+figcaption p {
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.42857;
+  margin: 10px 0;
+  padding: 0 15px 0 15px;
 }
 
 img {
@@ -42,10 +45,6 @@ img {
   margin: 0 -15px 0 -15px; 
 }
 
-figcaption p {
-  margin: 7px 0;
-  padding: 0 15px 0 15px;
-}
 
 .title {
   color: #3F3F3F;
