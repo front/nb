@@ -1,9 +1,22 @@
 /* General */
 body {
-  background: #F6F6F6;
+  /*background: #F6F6F6;*/
 }
 
-/* Article header */
+.panel ul {
+  padding-left: 20px;
+  font-size: 0.8em;
+}
+
+.panel li {
+  margin-bottom: 10px;
+}
+
+.panel {
+  background: #f6f6f6;
+}
+
+/* Article full */
 figcaption {
   color: #888888;
   display: block;
@@ -60,10 +73,24 @@ figcaption p {
   font-size: 14px;
   padding: 12px;
   margin-bottom: 15px;
+  overflow: auto;
+  background: #ffffe5;
 }
 
-.meta span {
-  padding-left: 30px;
+.meta div {
+  padding: 2px 30px 4px 30px;
+  background: url(../img/icon-time.png) 0 0 no-repeat;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.meta .share {
+  background: url(../img/icon-jump.png) 0 0 no-repeat;
+  padding-top: 5px;
+}
+
+.meta .last {
+  margin-bottom: 0;
 }
 
 /* Responsive */
@@ -78,4 +105,7 @@ figcaption p {
   figcaption p {
   padding: 0;
   }
+  .meta div {
+  margin-bottom: 0;
+}
 }
