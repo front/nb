@@ -128,6 +128,15 @@ body {
   margin: 5px 0;
 }
 
+.small-6.story-promo h1{
+  font-size: 16px;
+  line-height: 18px;
+} 
+
+.small-6.story-promo article {
+  min-height: 198px;
+}
+
 .article-grid img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
