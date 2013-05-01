@@ -128,6 +128,30 @@ body {
   margin: 5px 0;
 }
 
+.top h1 {
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.top {
+  margin-bottom: 20px;
+}
+
+.top .lead {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.article-grid {
+  padding: 10px 0;
+  border-top: 1px dotted #ddd;
+  border-bottom: 1px dotted #ddd;
+}
+
+.most-popular {
+  background: #ffffe5;
+}
+
 .small-6.story-promo h1{
   font-size: 16px;
   line-height: 18px;
@@ -137,7 +161,7 @@ body {
   min-height: 198px;
 }
 
-.article-grid img {
+.article-grid img, .top img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -146,7 +170,7 @@ body {
   line-height: 16px;
 }
 
-.article-grid p {
+.article-grid p, .top p {
   color: #999;
 }
 
@@ -157,6 +181,22 @@ body {
 
 .portrait h2 {
   color: white;
+}
+
+/* Series */
+.series-promo {
+  background: #eee;
+  padding-bottom: 15px;
+}
+
+.series-promo h1, .series-promo p {
+  padding: 0 15px;
+}
+
+.series-promo h1 {
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
 }
 
 /* Elements */
