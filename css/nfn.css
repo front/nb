@@ -7,6 +7,12 @@ body {
   text-align: center;
 }
 
+.image-replace {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 
 /* Top bar */
 .top-bar {
@@ -294,6 +300,59 @@ img {
 .meta .last {
   margin-bottom: 0;
 }
+
+/* Global footer */
+.global-footer {
+  background-color: #ed232a;
+  border-top: 6px solid #b5000c;
+  color: #fff;
+  font-family: Arial,sans-serif;
+  padding: 0;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.global-footer .standard-links {
+  float: none;
+  width: 100%;
+  padding-left: 0;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.global-footer .standard-links ul {
+  float: none;
+  margin: 20px auto 4px;
+  display: block;
+}
+
+.global-footer .standard-links li {
+  margin: 4px 5px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.global-footer a {
+  color: white;
+}
+
+.nf-logo-white {
+  background: url(../img/nf-logo-white.png);
+  width: 194px;
+  height: 32px;
+}
+
+.global-footer .final-bar {
+  clear: both;
+  overflow: hidden;
+  background: #c9000d;
+  margin-top: 24px;
+  padding: 8px 60px;
+}
+
+
 /* Site footer */
 
 .site-footer {
@@ -325,5 +384,5 @@ img {
   }
   .overlay {
   max-width: 33%;
-}
+  }
 }
