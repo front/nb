@@ -312,7 +312,7 @@ img {
   position: relative;
   text-align: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-top: 20px;
 }
 
@@ -347,7 +347,7 @@ img {
   overflow: hidden;
   background: #c9000d;
   margin-top: 24px;
-  padding: 26px 60px;
+  padding: 40px 60px;
 }
 
 .footer-logo-link {
