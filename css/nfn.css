@@ -316,21 +316,25 @@ img {
   padding-top: 20px;
 }
 
-.global-footer .standard-links {
+.standard-links {
   margin: 10px auto;
 }
 
-.global-footer .standard-links ul {
+.standard-links ul {
   float: none;
   margin: 0 auto 4px;
   display: block;
   font-size: 12px;
 }
 
-.global-footer .standard-links li {
+.standard-links li {
   margin: 4px 5px;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.standard-links li:nth-child(1) {
+  margin-left: 0;
 }
 
 .global-footer a {
@@ -338,7 +342,7 @@ img {
 }
 
 .nf-logo-white {
-  background: url(../img/nf-logo-white.png);
+  background: url(../img/nf-logo-light.png);
   width: 194px;
   height: 32px;
 }
