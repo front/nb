@@ -317,13 +317,14 @@ img {
 }
 
 .global-footer .standard-links {
-  margin: 0 auto 30px;
+  margin: 10px auto;
 }
 
 .global-footer .standard-links ul {
   float: none;
-  margin: 20px auto 4px;
+  margin: 0 auto 4px;
   display: block;
+  font-size: 12px;
 }
 
 .global-footer .standard-links li {
@@ -342,12 +343,22 @@ img {
   height: 32px;
 }
 
-.global-footer .final-bar {
+.links-bar {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.final-bar {
   clear: both;
   overflow: hidden;
   background: #c9000d;
   margin-top: 24px;
-  padding: 40px 60px;
+  padding: 20px 60px;
+}
+
+.final-bar ul {
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 .footer-logo-link {
@@ -387,4 +398,11 @@ img {
   .overlay {
   max-width: 33%;
   }
+  .global-footer {
+    text-align: left;
+    font-size: 16px;
+  }
+  .global-footer .standard-links {
+  margin: 0 auto;
+}
 }
