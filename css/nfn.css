@@ -421,6 +421,47 @@ figure.inline-media {
   display: inline-block;
 }
 
+/* Author bio */
+.author-bio {
+  background-color: #ccc;
+  background-image: url('http://www.thedailybeast.com/etc/clientlibs/nwglobal/img/article/stripe-pattern-dk.png');
+  background-repeat: repeat;
+  background-position: 0 0;
+  max-width: 390px;
+  padding: 15px;
+  margin: 60px 0;
+  position: relative;
+  text-align: left;
+  display: table;
+}
+
+.author-bio img {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  width: 62px;
+  height: 62px;
+}
+
+.author-bio h6 {
+  text-transform: uppercase;
+  font-family: "Arial Black",Arial,sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.author-bio p {
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 0;
+  text-align: left;
+  padding: 0;
+}
 
 /* Site footer */
 
