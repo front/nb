@@ -470,7 +470,7 @@ figure.inline-media {
   padding: 0;
 }
 
-.digg-story-el {
+.serp {
   border-bottom: 1px solid #EBEBEB;
   padding-bottom: 19px;
   padding-top: 24px;
@@ -479,7 +479,6 @@ figure.inline-media {
 
 .story-kicker {
   color: #606060;
-  font-family: "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 0.688em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -489,7 +488,6 @@ figure.inline-media {
 
 .story-title {
   color: #232323;
-  font-family: "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1.375em;
   font-weight: bold;
   line-height: 25px;
