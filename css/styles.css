@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* General */
 body {
   /*background: #F6F6F6;*/
@@ -466,6 +467,87 @@ figure.inline-media {
   line-height: 18px;
   margin-bottom: 0;
   text-align: left;
+  padding: 0;
+}
+
+.digg-story-el {
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 19px;
+  padding-top: 24px;
+  position: relative;
+}
+
+.story-kicker {
+  color: #606060;
+  font-family: "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 0.688em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 12px;
+  margin-bottom: 4px;
+}
+
+.story-title {
+  color: #232323;
+  font-family: "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.375em;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 0 0 4px;
+  width: 370px;
+}
+
+.story-title-link {
+  color: #232323;
+  text-decoration: none;
+}
+
+mark {
+  font-weight: bold;
+}
+
+.story-meta {
+  float: left;
+  margin: 0 0 4px -4px;
+}
+
+.story-meta-item:first-child:before {
+  content: none;
+  margin: 0;
+}
+
+.story-meta-item:before {
+  color: #666666;
+  content: "·";
+  margin: 2px 0 0 -3px;
+  position: absolute;
+}
+
+.story-meta-item {
+  margin-right: 1px;
+  position: relative;
+}
+
+.story-meta-item, .story-meta-item-link {
+  color: #606060;
+  display: inline-block;
+  font-size: 0.75em;
+}
+
+abbr.published:before {
+  color: #666666;
+  content: "·";
+  font-size: 12px;
+  margin: 0 0 0 -7px;
+  position: absolute;
+}
+
+.story-description {
+  clear: both;
+  color: #232323;
+  font-size: 1em;
+  line-height: 1.25em;
+  margin: 0;
   padding: 0;
 }
 
