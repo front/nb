@@ -13,36 +13,34 @@ body {
   overflow: hidden;
 }
 
-
 /* Top bar */
 .top-bar {
   margin-bottom: 0;
 }
+
 /*
 .top-bar-section li a:not(.button) {
   background: white;
   line-height: 45px;
   padding: 0 15px;
 }*/
-
 .section-header {
   background: #C80000;
   margin-bottom: 15px;
 }
 
 .section-header h1 {
- font-size: 18px;
- margin: 10px 0;
- text-transform: uppercase;
- font-weight: 300;
+  font-size: 18px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
-.section-header h1 a{
- color: white;
+.section-header h1 a {
+  color: white;
 }
 
 /* TL menu */
-
 .tl-page {
   background: #F4FAFC;
   margin-top: -10px;
@@ -69,7 +67,7 @@ body {
   text-align: center;
 }
 
-.top-menu li{
+.top-menu li {
   display: inline-block;
   margin-right: 10px;
   list-style: none;
@@ -109,7 +107,6 @@ body {
 }
 
 /* News section */
-
 .has-background {
   position: relative;
 }
@@ -157,10 +154,10 @@ body {
   background: #ffffe5;
 }
 
-.small-6.story-promo h1{
+.small-6.story-promo h1 {
   font-size: 16px;
   line-height: 18px;
-} 
+}
 
 .small-6.story-promo article {
   min-height: 198px;
@@ -205,7 +202,6 @@ body {
 }
 
 /* Elements */
-
 .panel ul {
   padding-left: 20px;
   font-size: 0.8em;
@@ -219,7 +215,19 @@ body {
   background: #f6f6f6;
 }
 
-/* Article full */
+/* Site footer */
+.site-footer {
+  background: #eee;
+  border-top: 1px dotted #999;
+  padding: 25px 0;
+  margin-top: 15px;
+  clear: both;
+}
+
+.the-end {
+  font-size: 12px;
+}
+
 /*blockquote {
   text-align: center;
   color: #ed232a;
@@ -235,7 +243,6 @@ body {
   padding: 55px 0 50px;
   margin: 0 auto;
 }*/
-
 figcaption {
   color: #888888;
   display: block;
@@ -303,9 +310,8 @@ figure.inline-media {
 }
 
 .image {
-  margin: 0 -15px 0 -15px; 
+  margin: 0 -15px 0 -15px;
 }
-
 
 .title {
   color: #3F3F3F;
@@ -424,7 +430,7 @@ figure.inline-media {
 /* Author bio */
 .author-bio {
   background-color: #ccc;
-  background-image: url('http://www.thedailybeast.com/etc/clientlibs/nwglobal/img/article/stripe-pattern-dk.png');
+  background-image: url("http://www.thedailybeast.com/etc/clientlibs/nwglobal/img/article/stripe-pattern-dk.png");
   background-repeat: repeat;
   background-position: 0 0;
   max-width: 390px;
@@ -463,56 +469,50 @@ figure.inline-media {
   padding: 0;
 }
 
-/* Site footer */
-
-.site-footer {
-  background: #eee;
-  border-top: 1px dotted #999;
-  padding: 25px 0; 
-  margin-top: 15px;
-  clear: both;
-}
-
-.the-end {
-  font-size: 12px;
-}
-
-/* Responsive */
 @media only screen and (min-width: 48em) {
   .image {
-    margin: 0; 
+    margin: 0;
   }
+
   .title-large {
     font-size: 52px;
     line-height: 56px;
   }
+
   figcaption p {
-  padding: 0;
+    padding: 0;
   }
+
   .meta div {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
+
   .overlay {
-  max-width: 33%;
+    max-width: 33%;
   }
+
   .global-footer {
     text-align: left;
     font-size: 16px;
   }
+
   .global-footer .standard-links {
-  margin: 0 auto;
+    margin: 0 auto;
   }
+
   figure.inline-media {
     max-width: 40%;
     min-width: 40%;
     margin-left: 25px;
     float: right;
   }
+
   figure.offset {
     max-width: 80%;
     min-width: 80%;
     margin-right: -52.5%;
   }
+
   .inline-media figcaption {
     padding: 20px 20px 30px;
   }

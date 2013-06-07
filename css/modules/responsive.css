@@ -1,0 +1,48 @@
+@media only screen and (min-width: 48em) {
+  .image {
+    margin: 0;
+  }
+
+  .title-large {
+    font-size: 52px;
+    line-height: 56px;
+  }
+
+  figcaption p {
+    padding: 0;
+  }
+
+  .meta div {
+    margin-bottom: 0;
+  }
+
+  .overlay {
+    max-width: 33%;
+  }
+
+  .global-footer {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .global-footer .standard-links {
+    margin: 0 auto;
+  }
+
+  figure.inline-media {
+    max-width: 40%;
+    min-width: 40%;
+    margin-left: 25px;
+    float: right;
+  }
+
+  figure.offset {
+    max-width: 80%;
+    min-width: 80%;
+    margin-right: -52.5%;
+  }
+
+  .inline-media figcaption {
+    padding: 20px 20px 30px;
+  }
+}
