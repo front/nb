@@ -6108,6 +6108,57 @@ figure.inline-media {
   padding: 0;
 }
 
+.object-header {
+  border-bottom: 1px solid #EBEBEB;
+  min-height: 27px;
+  padding-bottom: 21px;
+}
+
+.search-page-form {
+  margin: 0 0 3px;
+}
+
+.object-header .search-form-input {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABV0RVh0Q3JlYXRpb24gVGltZQAyLzI4LzEzsZYoFwAAAB50RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNS4xqx9I6wAAAQZJREFUOI2lk8FxwjAQRZ89KSAlQAUw8xsgFUAqCB3gUkgHoQPcAQVoD3SQTszBm0RaZM9A/owO3v1+0u5KDZkkbYAO2FKqB45mdglxhmEAoMkgR+AQjUGfZtbVQO0M5Oor18G9d2q9nBzSA0szW5vZGlh6LIdtIuiFsSe/EDPb5QYz+wZ2ks789a4DLsWJKBtb1B+U5+Iwxh65rr57VZ6LPauC/qUctJK0mDJ6bjUHyidSHW0l18dkGwxbSef8ZJIWYWLVDRs3T11IqJdzMrM9PP9E7mDFEwHwN/RGpX6PvVOO/0PS189HE/+Yk6RXxhudl3tKKe0fAs3BHgZNwZ4CRVhKqbkBRkZiP2uGGPsAAAAASUVORK5CYII=") no-repeat scroll 11px 16px #fdfdfd;
+  border-color: #DEDEDE #E3E3E3 #EBEBEB;
+  border-radius: 2px 2px 2px 2px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.02) inset;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0 0 5px;
+  outline: 0 none;
+  padding: 10px 0 8px 37px;
+}
+
+.search-story-list .object-header-meta {
+  clear: left;
+  display: block;
+  top: 0;
+}
+
+.object-header .object-hed-search-results-count {
+  color: #797979;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.search-story-list .object-header-rss:before {
+  color: #606060;
+  content: "·";
+  font-size: 12px;
+  margin: 2px 0 0 2px;
+}
+
+.object-header-link {
+  color: #C0C0C0;
+  font-size: 12px;
+  text-decoration: none;
+}
+
 .serp {
   border-bottom: 1px solid #EBEBEB;
   padding-bottom: 19px;
@@ -6125,17 +6176,9 @@ figure.inline-media {
 }
 
 .story-title {
-  color: #232323;
   font-size: 1.375em;
-  font-weight: bold;
   line-height: 25px;
-  margin: 0 0 4px;
-  width: 370px;
-}
-
-.story-title-link {
-  color: #232323;
-  text-decoration: none;
+  margin-bottom: 1px;
 }
 
 mark {
@@ -6144,7 +6187,7 @@ mark {
 
 .story-meta {
   float: left;
-  margin: 0 0 4px -4px;
+  margin-bottom: 5px;
 }
 
 .story-meta-item:first-child:before {
@@ -6180,11 +6223,9 @@ abbr.published:before {
 
 .story-description {
   clear: both;
-  color: #232323;
-  font-size: 1em;
-  line-height: 1.25em;
   margin: 0;
   padding: 0;
+  line-height: 20px;
 }
 
 @media only screen and (min-width: 48em) {
