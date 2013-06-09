@@ -5882,6 +5882,12 @@ body {
   padding: 55px 0 50px;
   margin: 0 auto;
 }*/
+p {
+  font-family: "Times New Roman", serif;
+  font-size: 1.25em;
+  line-height: 30px;
+}
+
 figcaption {
   color: #888888;
   display: block;
@@ -5894,10 +5900,12 @@ figcaption {
 
 figcaption p {
   font-weight: 300;
+  font-size: 1em;
   letter-spacing: 0;
   line-height: 1.42857;
   margin: 10px 0;
   padding: 0 15px 0 15px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -5971,6 +5979,7 @@ figure.inline-media {
   line-height: 1.3em;
   font-weight: 600;
   margin: 0 0 0.6em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .meta {
@@ -5979,7 +5988,6 @@ figure.inline-media {
   padding: 12px;
   margin-bottom: 15px;
   overflow: auto;
-  background: #ffffe5;
 }
 
 .meta div {
