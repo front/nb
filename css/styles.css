@@ -1748,7 +1748,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.375em;
+  font-size: 0.9375em;
 }
 
 h4 {
@@ -1930,7 +1930,7 @@ blockquote p {
   }
 
   h3 {
-    font-size: 1.6875em;
+    font-size: 1.25em;
   }
 
   h4 {
@@ -6114,6 +6114,34 @@ figure.inline-media {
   margin-bottom: 0;
   text-align: left;
   padding: 0;
+}
+
+.related-stories {
+  padding: 40px 0 30px;
+  margin: 40px 0 -20px;
+}
+.related-stories.dark {
+  background: #000;
+}
+
+.dark .related-title {
+  color: white;
+}
+
+.related-story {
+  min-height: 200px;
+}
+
+.section-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  margin: 4px 0 0;
+  color: #2ba6cb;
+}
+
+.related-title {
+  margin-top: 0;
+  line-height: 17px;
 }
 
 .object-header {

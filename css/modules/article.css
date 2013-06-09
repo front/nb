@@ -1,248 +1,81 @@
-/*blockquote {
-  text-align: center;
-  color: #ed232a;
-  border-left: none;
-  font-family: "Arial Narrow",Arial,sans-serif;
-  font-size: 35px;
-  letter-spacing: 2px;
-  line-height: 38px;
-}
+/*
+Syntax error: Undefined variable: "$primary-color".
+        on line 276 of /Users/pesh/Sites/front/labs/newsbaby/_sass/modules/article.scss
 
-.quotewrap {
-  max-width: 75%;
-  padding: 55px 0 50px;
-  margin: 0 auto;
-}*/
-p {
-  font-family: "Times New Roman", serif;
-  font-size: 1.25em;
-  line-height: 30px;
-}
-
-figcaption {
-  color: #888888;
-  display: block;
-  font-size: 14px;
-  line-height: 1.4em;
-  overflow: auto;
-  border-bottom: 1px solid #E9E9E9;
-  margin-bottom: 10px;
-}
-
-figcaption p {
-  font-weight: 300;
-  font-size: 1em;
-  letter-spacing: 0;
-  line-height: 1.42857;
-  margin: 10px 0;
-  padding: 0 15px 0 15px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-figure.inline-media {
-  display: block;
-  float: none;
-  margin: 0 auto 20px;
-  max-width: 100%;
-  min-width: 100%;
-}
-
-.inline-media figcaption {
-  padding: 20px;
-  background: #f5f5f5;
-  margin-bottom: 25px;
-  padding: 15px 25px 20px 15px;
-  padding: 20px 20px 30px;
-}
-
-.inline-media p {
-  font-family: "Times New Roman",Times,serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 20px;
-  margin: 0;
-  color: #666;
-  margin-top: 4px;
-}
-
-.inline-media .credit {
-  color: #999;
-  font-family: Arial,sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  line-height: 20px;
-  margin-bottom: 3px;
-  margin-top: 0;
-}
-
-.fixed-width {
-  width: auto;
-  display: inline-block;
-  clear: both;
-}
-
-.image {
-  margin: 0 -15px 0 -15px;
-}
-
-.title {
-  color: #3F3F3F;
-  display: block;
-  font-family: 'Helvetica Neue',Arial,freesans,sans-serif;
-  text-decoration: none !important;
-  word-wrap: break-word;
-}
-
-.title-large {
-  font-size: 32px;
-  line-height: 36px;
-}
-
-.lead p {
-  color: #3F3F3F;
-  font-size: 1.2em;
-  line-height: 1.3em;
-  font-weight: 600;
-  margin: 0 0 0.6em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.meta {
-  border: 1px solid #E9E9E9;
-  font-size: 14px;
-  padding: 12px;
-  margin-bottom: 15px;
-  overflow: auto;
-}
-
-.meta div {
-  padding: 2px 30px 4px 30px;
-  background: url(../img/icon-time.png) 0 0 no-repeat;
-  float: left;
-  margin-bottom: 5px;
-}
-
-.meta .share {
-  background: url(../img/icon-jump.png) 0 0 no-repeat;
-  padding-top: 5px;
-}
-
-.meta .last {
-  margin-bottom: 0;
-}
-
-/* Global footer */
-.global-footer {
-  background-color: #ed232a;
-  border-top: 6px solid #b5000c;
-  color: #fff;
-  font-family: Arial,sans-serif;
-  padding: 0;
-  font-size: 12px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 20px;
-}
-
-.standard-links {
-  margin: 10px auto;
-}
-
-.standard-links ul {
-  float: none;
-  margin: 0 auto 4px;
-  display: block;
-  font-size: 12px;
-}
-
-.standard-links li {
-  margin: 4px 5px;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-.standard-links li:nth-child(1) {
-  margin-left: 0;
-}
-
-.global-footer a {
-  color: white;
-}
-
-.nf-logo-white {
-  background: url(../img/nf-logo-light.png);
-  width: 194px;
-  height: 32px;
-}
-
-.links-bar {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.final-bar {
-  clear: both;
-  overflow: hidden;
-  background: #c9000d;
-  margin-top: 24px;
-  padding: 20px 60px;
-}
-
-.final-bar ul {
-  font-size: 12px;
-  margin-bottom: 0;
-}
-
-.footer-logo-link {
-  display: inline-block;
-}
-
-/* Author bio */
-.author-bio {
-  background-color: #ccc;
-  background-image: url("http://www.thedailybeast.com/etc/clientlibs/nwglobal/img/article/stripe-pattern-dk.png");
-  background-repeat: repeat;
-  background-position: 0 0;
-  max-width: 390px;
-  padding: 15px;
-  margin: 60px 0;
-  position: relative;
-  text-align: left;
-  display: table;
-}
-
-.author-bio img {
-  float: left;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  width: 62px;
-  height: 62px;
-}
-
-.author-bio h6 {
-  text-transform: uppercase;
-  font-family: "Arial Black",Arial,sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1;
-  margin: 0;
-  padding: 5px 0;
-}
-
-.author-bio p {
-  font-family: arial,sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  margin-bottom: 0;
-  text-align: left;
-  padding: 0;
-}
+Backtrace:
+/Users/pesh/Sites/front/labs/newsbaby/_sass/modules/article.scss:276
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:30:in `block in temporary_multipath_handler'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `each'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:17:in `block (2 levels) in run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `each'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:16:in `block in run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/rb-fsevent-0.9.1/lib/rb-fsevent/fsevent.rb:43:in `call'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/rb-fsevent-0.9.1/lib/rb-fsevent/fsevent.rb:43:in `run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/backends/rbfsevent.rb:20:in `run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/bin/compass:44:in `call'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/bin/compass:23:in `load'
+/Users/pesh/.rvm/gems/ruby-1.9.3-p286/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$primary-color\".\A         on line 276 of /Users/pesh/Sites/front/labs/newsbaby/_sass/modules/article.scss"; }

@@ -249,3 +249,34 @@ figure.inline-media {
   text-align: left;
   padding: 0;
 }
+
+// Related stories
+.related-stories {
+  padding: 40px 0 30px;
+  margin: 40px 0 -20px;
+  &.dark {
+    background: #000;
+  }
+}
+
+.dark {
+  .related-title {
+    color: white;
+  }
+}
+
+.related-story {
+  min-height: 200px;
+}
+
+.section-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  margin: 4px 0 0;
+  color: $primary-color;
+}
+
+.related-title {
+  margin-top: 0;
+  line-height: 17px;
+}
