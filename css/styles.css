@@ -4965,7 +4965,7 @@ kbd {
 
 /* Panels */
 .panel {
-  border-style: solid;
+  border-style: none;
   border-width: 1px;
   border-color: #d9d9d9;
   margin-bottom: 1.25em;
@@ -4989,7 +4989,7 @@ kbd {
   line-height: 1.4;
 }
 .panel.callout {
-  border-style: solid;
+  border-style: none;
   border-width: 1px;
   border-color: #2284a1;
   margin-bottom: 1.25em;
@@ -5148,7 +5148,7 @@ kbd {
   display: block;
   width: auto;
   overflow: hidden;
-  margin: -0.25em 0 1.125em;
+  margin: -0.25em 0;
   padding-top: 0.25em;
   margin-right: 0;
   margin-left: -0.5625em;

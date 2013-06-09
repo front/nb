@@ -851,7 +851,7 @@ $default-float: left;
 // Background and border styles
 
 // $panel-bg: darken(#fff, 5%);
-// $panel-border-style: solid;
+$panel-border-style: none;
 // $panel-border-size: 1px;
 
 // Control how much we darken things on hover
@@ -1058,7 +1058,7 @@ $default-float: left;
 
 // Margin and padding
 
-// $sub-nav-list-margin: emCalc(-4px) 0 emCalc(18px);
+$sub-nav-list-margin: emCalc(-4px) 0;
 // $sub-nav-list-padding-top: emCalc(4px);
 
 // Definition
