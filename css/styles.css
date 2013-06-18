@@ -5854,6 +5854,10 @@ body {
   background: #f6f6f6;
 }
 
+.load-more {
+  margin-top: 40px;
+}
+
 /* Site footer */
 .site-footer {
   background: #eee;
@@ -6145,7 +6149,6 @@ figure.inline-media {
 }
 
 .object-header {
-  border-bottom: 1px solid #EBEBEB;
   min-height: 27px;
   padding-bottom: 21px;
 }
