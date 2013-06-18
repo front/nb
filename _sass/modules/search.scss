@@ -28,18 +28,11 @@
   top: 0;
 }
 
-.object-header .object-hed-search-results-count {
+.result-number {
   color: #797979;
   font-size: 12px;
+  line-height: 20px;
   font-weight: bold;
-  margin-left: 4px;
-}
-
-.search-story-list .object-header-rss:before {
-  color: #606060;
-  content: "·";
-  font-size: 12px;
-  margin: 2px 0 0 2px;
 }
 
 .object-header-link {
