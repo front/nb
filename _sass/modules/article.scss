@@ -15,7 +15,6 @@
 }*/
 
 p {
-  font-family: "Times New Roman", serif;
   font-size: 1.25em;
   line-height: 30px;
 }
@@ -93,14 +92,6 @@ figure.inline-media {
 }
 
 
-.title {
-  color: #3F3F3F;
-  display: block;
-  font-family: 'Helvetica Neue',Arial,freesans,sans-serif;
-  text-decoration: none !important;
-  word-wrap: break-word;
-}
-
 .title-large {
   font-size: 32px;
   line-height: 36px;
@@ -113,6 +104,10 @@ figure.inline-media {
   font-weight: 600;
   margin: 0 0 0.6em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.body-content p {
+  font-family: "Times New Roman", serif;
 }
 
 .meta {
