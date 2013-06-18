@@ -2,8 +2,7 @@
 layout: zurb
 title: News article
 ---
-
-<div class="row">
+<div class="row article-wrapper">
     <div class="large-12 columns">
         <article itemtype="http://schema.org/Article" role="main" class="article">
             <header>
@@ -31,6 +30,8 @@ title: News article
                     <a href="#">Del med andre</a>
                 </div>
             </div>
+
+            {% include ad-mobile.html %}
 
             <div class="row">
                 <div class="large-8 columns">
@@ -181,5 +182,7 @@ title: News article
         </article>
     </div>
 </div>
+
+{% include ad-mobile.html %}
 
 {% include related.html %}

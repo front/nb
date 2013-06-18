@@ -1,0 +1,19 @@
+
+// After comment section
+.article-wrapper + .ads {
+  margin-top: 20px;
+}
+
+// After article byline
+.meta + .ads {
+  margin: 20px 0;
+}
+
+// Before site
+.top-wrapper {
+  .ad {
+  padding-left: 0;
+  padding-right: 0;
+  background: black;
+  } 
+}

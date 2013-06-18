@@ -5637,6 +5637,11 @@ a.th {
   max-width: 800px;
 }
 
+/* On/off */
+.ads {
+  display: none;
+}
+
 /* General */
 body {
   /*background: #F6F6F6;*/
@@ -6258,6 +6263,20 @@ abbr.published:before {
   margin: 0;
   padding: 0;
   line-height: 20px;
+}
+
+.article-wrapper + .ads {
+  margin-top: 20px;
+}
+
+.meta + .ads {
+  margin: 20px 0;
+}
+
+.top-wrapper .ad {
+  padding-left: 0;
+  padding-right: 0;
+  background: black;
 }
 
 @media only screen and (min-width: 48em) {
