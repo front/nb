@@ -5647,6 +5647,10 @@ body {
   /*background: #F6F6F6;*/
 }
 
+.muted {
+  color: #777;
+}
+
 .center {
   text-align: center;
 }
@@ -5655,6 +5659,10 @@ body {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.hr-thick {
+  border: 2px solid #000;
 }
 
 .title {
@@ -5870,8 +5878,13 @@ body {
 
 /* Series */
 .series-promo {
-  background: #eee;
   padding-bottom: 15px;
+}
+.series-promo a p {
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: justify;
 }
 
 .series-promo h1, .series-promo p {
@@ -5887,6 +5900,7 @@ body {
 .article-title-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 .article-title-list li {
   box-sizing: border-box;
