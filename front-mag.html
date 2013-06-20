@@ -20,8 +20,11 @@ title: Front page
     </div>
 </section>
 
-<section class="most-popular article-grid">
-    <h2 class="center"><span>Mest populært på NewsFront</span></h2>
+<section class="most-popular front-section article-grid">
+    <header class="center divider">
+        <h2 class="section-heading">Rampelys</h2>
+        <!-- <span>Det du vil ha</span> -->
+    </header>
 
     <div class="row">
         <div class="large-4 columns">
@@ -40,7 +43,7 @@ title: Front page
         <div class="large-4 columns">
                 <article class="">
                     <a href="story-n.html">
-                    <img alt="" src="http://gfx.dagbladet.no/labrador/268/268636/26863655/jpg/active/646x270.jpg">
+                    <img alt="" class="image-round" src="http://gfx.dagbladet.no/labrador/268/268636/26863655/jpg/active/646x270.jpg">
                     <header>
                         <h1 class="title">- Jeg må innrømme at Sammer var litt for tysk for meg</h1>
                         <p class="lead">Den tyske mesterhjernen får æren for at tysk fotball har reist seg.</p>
@@ -100,10 +103,29 @@ title: Front page
     </div>
 </section>
 
-{% include article-title-list.html %}
+<section class="front-section">
+    <div class="row">
+        <div class="large-4 columns">
+            <h2 class="section-heading">Siste</h2>
+            {% include article-title-list.html %}
+        </div>
+        <div class="large-4 columns">
+            <h2 class="section-heading">Ledere</h2>
+            {% include article-title-list.html %}
+        </div>
+        <div class="large-4 columns">
+            <h2 class="section-heading">Mest delt</h2>
+            {% include article-title-list.html %}
+        </div>
 
-<section class="series" id="series">
-    <h2 class="center"><span>Serier på NewsFront</span></h2>
+    </div>
+</section>
+
+<section class="series front-section" id="series">
+    <header class="center divider">
+        <h2 class="section-heading">Serier</h2>
+        <span>Våre beste reportasjeserier</span>
+    </header>
     <div class="row">
         <div class="large-4 columns">
             <a href="/pluss/spesial/foreldreskolen">

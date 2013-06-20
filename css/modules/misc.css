@@ -26,6 +26,32 @@ body {
   word-wrap: break-word;
 }
 
+.section-heading {
+  text-transform: uppercase;
+}
+
+.col-heading {
+  text-transform: uppercase;
+}
+
+.front-section {
+  margin: 30px 0;
+}
+
+.section-heading + span {
+  margin: -10px 0 20px 0;
+  color: #444;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 24px;
+  display: block;
+}
+
+.image-round {
+  border-radius: 160px;
+}
+
 /* Top bar */
 .top-bar {
   margin-bottom: 0;
