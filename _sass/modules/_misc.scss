@@ -34,6 +34,10 @@ body {
   text-decoration: none !important;
   word-wrap: break-word;
 }
+// dummy code for icon
+.icon-search {
+  padding-top: 12px;
+}
 
 .section-heading {
   text-transform: uppercase;
@@ -58,17 +62,17 @@ body {
   display: block;
 }
 
-.divider:after {
-  background: none repeat scroll 0 0 #000000;
-  bottom: 0;
-  content: " ";
-  height: 5px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  width: 25px;
-}
+// .divider:after {
+//   background: none repeat scroll 0 0 #000000;
+//   bottom: 0;
+//   content: " ";
+//   height: 5px;
+//   left: 0;
+//   margin: 0 auto;
+//   position: absolute;
+//   right: 0;
+//   width: 25px;
+// }
 
 .image-round {
   border-radius: 160px;
