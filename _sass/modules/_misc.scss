@@ -34,6 +34,21 @@ body {
   text-decoration: none !important;
   word-wrap: break-word;
 }
+
+.top h1 {
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.top {
+  margin-bottom: 20px;
+}
+
+.top .lead {
+  font-size: 18px;
+  line-height: 20px;
+}
+
 // dummy code for icon
 .icon-search {
   padding-top: 12px;
@@ -186,83 +201,7 @@ body {
   padding: 15px;
 }
 
-.article-grid h1 {
-  font-size: 22px;
-  line-height: 24px;
-  margin: 5px 0;
-}
 
-.top h1 {
-  font-size: 38px;
-  line-height: 40px;
-}
-
-.top {
-  margin-bottom: 20px;
-}
-
-.top .lead {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.article-grid {
-  padding: 10px 0;
-  margin: 30px 0;
-  border-top: 1px dotted #ddd;
-  border-bottom: 1px dotted #ddd;
-  article {
-    min-height: 250px;
-  }
-}
-
-.most-popular {
-  background: #ffffe5;
-}
-
-.small-6.story-promo h1{
-  font-size: 16px;
-  line-height: 18px;
-} 
-
-.small-6.story-promo article {
-  min-height: 198px;
-}
-
-.article-grid img, .top img {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.article-grid p {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.article-grid p, .top p {
-  color: #999;
-}
-
-/* Series */
-.series-promo {
-  // background: #eee;
-  padding-bottom: 15px;
-  a p{
-    color: #000;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: justify;
-  }
-}
-
-.series-promo h1, .series-promo p {
-  padding: 0 15px;
-}
-
-.series-promo h1 {
-  font-size: 28px;
-  line-height: 30px;
-  text-align: center;
-}
 
 .hero {
   background-position: center center;

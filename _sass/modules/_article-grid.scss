@@ -1,0 +1,107 @@
+// All grids
+
+.article-grid h1 {
+  font-size: 22px;
+  line-height: 24px;
+  margin: 5px 0;
+}
+
+.article-grid {
+  margin: 30px 0;
+  article {
+    min-height: 270px;
+  }
+  .btn-simple {
+    margin-bottom: 0;
+  }
+}
+
+.small-6.story-promo h1{
+  font-size: 16px;
+  line-height: 18px;
+} 
+
+.small-6.story-promo article {
+  min-height: 198px;
+}
+
+.article-grid p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.article-grid p, .top p {
+  color: #999;
+}
+
+// grid style 1
+.grid-style-1 {
+  border-top: 1px dotted #ddd;
+  border-bottom: 1px dotted #ddd;
+  padding: 10px 0;
+  .btn-simple {
+    display: none;
+  }
+}
+.grid-style-1 img, .top img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+// grid style 2
+.grid-style-2 {
+  .columns {
+    border-right: 1px solid #D6D6D6;
+    border-top: 1px solid #D6D6D6;
+    padding-top: 15px;
+  }
+  .columns:nth-child(3n+1) {
+    border-left: 1px solid #D6D6D6;  }
+  .row {
+    border-bottom: 1px solid #D6D6D6;
+  }
+  article {
+    min-height: 305px;
+    position: relative;
+  }
+  h1 {
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 700;
+  color: #222;
+  }
+  a {
+    color: #222;
+  }
+  .btn-simple {
+    left: 36%;
+  }
+}
+
+// details
+
+
+
+.most-popular {
+  background: #ffffe5;
+}
+
+// Series
+.series-promo {
+  // background: #eee;
+  padding-bottom: 15px;
+  a p{
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+  }
+}
+
+.series-promo h1, .series-promo p {
+  padding: 0 15px;
+}
+
+.series-promo h1 {
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+}
