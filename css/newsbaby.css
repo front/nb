@@ -1,6 +1,11 @@
 body {
   max-width: 1170px
   }
+
+.container .row {
+  margin-left: 20px;
+}
+
 h1,h2,h3 {
   line-height: 36px;
 }
