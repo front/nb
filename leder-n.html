@@ -63,18 +63,7 @@ title: Meninger article
 
                 <div class="large-4 columns">
                     <h2 class=" section-heading">Meninger</h2>
-                    <ul class="article-title-list">
-                        <li><a href="#">Motiv og fakta</a></li>
-                        <li><a href="#">Hvem tør å utfordre mektige LO?</a></li>
-                        <li><a href="#">Sistemann ut, svarteper og gissel</a></li>
-                        <li><a href="#">Minneord Inge Lønning</a></li>
-                        <li><a href="#">Vin i skummel kartong</a></li>
-                        <li><a href="#">Har norske biskoper noe å lære av pave Benedikt når det gjelder fattige?</a></li>
-                        <li><a href="#">Operasjon rettferdighet</a></li>
-                        <li><a href="#">Matmakten ble stoppet</a></li>
-                        <li><a href="#">Stoltenbergs KrF-flørt</a></li>
-                        <li><a href="#">Muligheter for hvem?</a></li>       
-                    </ul>
+                    {% include article-title-list.html %}
                 </div>
             </div>
 
@@ -88,17 +77,7 @@ title: Meninger article
                       <dd class="active"><a href="#">UDI</a></dd>
                     </dl>
                     <hr>
-                    <!-- <div class="meta">
-                        <div class="by">
-                            <strong>Nils Haraldseng, Kristoffer Moelv</strong>
-                        </div>
-                        <div class="published">
-                            <time title="Publisert 26.04.2013, kl. 07:37, Sist oppdatert 26.04.2013, kl. 09:43" pubdate="" datetime="2013-04-26"><span class="hidden">Publisert </span>26.04.2013, kl. 07:37</time>
-                        </div>
-                        <div class="share last">
-                            <a href="#">Del med andre</a>
-                        </div>
-                    </div> -->
+
                 </div>
             </footer>
 
@@ -131,4 +110,10 @@ title: Meninger article
 
 {% include ad-mobile.html %}
 
+<div class="row">
+    <div class="small-12 columns">
+        {% include article-title-list-2.html %}
+    </div>
+
+</div>
 {% include related.html %}

@@ -5840,14 +5840,13 @@ body {
   margin-bottom: -20px;
 }
 
-.article-title-list {
+.article-titles {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
-.article-title-list li {
+.article-titles li {
   box-sizing: border-box;
-  background: url(../img/icon-arrow-right.png) right 49% no-repeat;
   border-bottom: 1px solid #E5E5E5;
   font-family: "Arial Black",Arial,sans-serif;
   font-size: 14px;
@@ -5857,16 +5856,23 @@ body {
   padding: 0 18px 0 0;
   position: relative;
 }
-.article-title-list li a {
+.article-titles li a {
   display: block;
   padding: 13px 0 10px;
+  color: #333;
+}
+.article-titles li a:hover {
   color: #000;
 }
-.article-title-list li a:hover {
-  color: #000;
-}
-.article-title-list li:nth-child(1) {
+.article-titles li:nth-child(1) {
   border-top: 1px solid #E5E5E5;
+}
+
+.titles-bbc li {
+  background: url(../img/icon-arrow-right.png) right 49% no-repeat;
+}
+.titles-bbc a {
+  color: #000;
 }
 
 /* Elements */
