@@ -84,6 +84,14 @@ body {
   text-transform: uppercase;
 }
 
+.published {
+  font-family: "Helvetica Neue", arial;
+  font-weight: normal;
+  color: #888;
+  display: inline-block;
+  float: right;
+}
+
 // .divider:after {
 //   background: none repeat scroll 0 0 #000000;
 //   bottom: 0;
@@ -252,8 +260,8 @@ body {
     font-weight: bold;
     list-style-type: none;
     margin: 0 auto;
-    padding: 0 18px 0 0;
     position: relative;
+    overflow: auto;
     a {
       display: block;
       padding: 13px 0 10px;
@@ -271,6 +279,7 @@ body {
 .titles-bbc {
   li {
     background: url(../img/icon-arrow-right.png) right 49% no-repeat;
+    padding: 0 18px 0 0;
   }
   a {
     color: #000;

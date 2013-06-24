@@ -5718,6 +5718,14 @@ body {
   text-transform: uppercase;
 }
 
+.published {
+  font-family: "Helvetica Neue", arial;
+  font-weight: normal;
+  color: #888;
+  display: inline-block;
+  float: right;
+}
+
 .image-round {
   border-radius: 160px;
 }
@@ -5862,8 +5870,8 @@ body {
   font-weight: bold;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0 18px 0 0;
   position: relative;
+  overflow: auto;
 }
 .article-titles li a {
   display: block;
@@ -5879,6 +5887,7 @@ body {
 
 .titles-bbc li {
   background: url(../img/icon-arrow-right.png) right 49% no-repeat;
+  padding: 0 18px 0 0;
 }
 .titles-bbc a {
   color: #000;
