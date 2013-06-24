@@ -35,18 +35,21 @@ body {
   word-wrap: break-word;
 }
 
-.top h1 {
-  font-size: 38px;
-  line-height: 40px;
-}
-
-.top {
-  margin-bottom: 20px;
-}
-
-.top .lead {
-  font-size: 18px;
-  line-height: 20px;
+.main-story {
+  h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .lead {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    color: #999;
+  }
 }
 
 // dummy code for icon
@@ -226,6 +229,10 @@ body {
 
 .stick-to-footer {
   margin-bottom: -20px;
+}
+
+.stick-to-top {
+  margin-top: -15px;
 }
 
 // Article title list
