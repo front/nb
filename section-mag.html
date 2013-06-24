@@ -11,7 +11,7 @@ title: Front page
 </header>
 
 
-{% include hero-section.html %}
+{% include hero-section-top.html %}
 
 <section class="frontpage-section main-story">
 <!-- <h2 class="center"><span>Mest populært på NewsFront</span></h2> -->
@@ -45,82 +45,15 @@ title: Front page
     {% include article-grid.html %}
 </section>
 
-<!-- <section class="front-section">
-    <div class="row">
-        <div class="large-4 columns">
-            <h2 class="section-heading">Siste</h2>
-            {% include article-title-list.html %}
-        </div>
-        <div class="large-4 columns">
-            <h2 class="section-heading">Ledere</h2>
-            {% include article-title-list.html %}
-        </div>
-        <div class="large-4 columns">
-            <h2 class="section-heading">Mest delt</h2>
-            {% include article-title-list.html %}
-        </div>
+{% include series-section.html %}
 
-    </div>
-</section> -->
 
-<section class="series front-section" id="series">
-    <header class="center divider">
-        <h2 class="section-heading">Serier</h2>
-        <span>Våre beste reportasjeserier</span>
-    </header>
-    <div class="row">
-        <div class="large-4 columns">
-            <a href="#">
-            </a><article class="series-promo"><a href="#">
-                <img class="image-round" src="http://cdn.thedailybeast.com/content/newsweek/2013/06/05/modern-art-s-last-gasp-at-the-2013-venice-biennale/jcr:content/thumbnail.crop.206.206.jpg/1370425844916.cached.jpg" alt="">
-                </a>
-                <header><a href="/pluss/spesial/foreldreskolen">
-                    <h1 class="">Foreldreskolen</h1>
-                    <p class="">Hver uke i Magasinet tar Håvard Tjora opp problemstillinger rundt oppdragelse.</p>
-                    <hr class="hr-thick">
-                    </a>
-                </header>
-                <footer class="center">
-                    <a href="#" class="btn-simple">Les serien</a>
-                    <p class="muted"><strong>20</strong> artikler</p>
-                </footer>
-            </article>
-        </div>  
-        <div class="large-4 columns">
-            <a href="#"></a>
-            <article class="series-promo">
-                <a href="#">
-                <img class="image-round" src="http://cdn.thedailybeast.com/content/newsweek/2013/06/05/is-blackberry-s-q10-the-last-keypad-phone-for-research-in-motion/jcr:content/thumbnail.crop.315.315.jpg/1370425582038.cached.jpg" alt="">
-                </a><header><a href="#">
-                    <h1 class="">Pensjonsskolen</h1>
-                    <p class="">Vet du hva du får i pensjon? Vet du hvilke grep du bør ta - og hvilke feller du bør unngå - for å sikre økonomien som pensjonist? Dagbladets Pensjonsskole har alle svarene - og de gode rådene.</p>
-                    <hr class="hr-thick">
-                    </a>
-                </header>
-                <footer class="center">
-                    <a href="#" class="btn-simple">Les serien</a>
-                    <p class="muted"><strong>20</strong> artikler</p>
-                </footer>
-            </article>  
-        </div>
-
-        <div class="large-4 columns">
-            <a href="#">
-            </a>
-            <article class="series-promo">
-                <a href="#">
-                <img class="image-round" src="http://cdn.thedailybeast.com/content/newsweek/2013/05/29/blue-is-the-warmest-color-a-steamy-romance-at-cannes/jcr:content/thumbnail.crop.315.315.jpg/1369819977791.cached.jpg" alt="">
-                </a><header><a href="#">
-                    <h1 class="">Bokettersynet</h1>
-                    <p class="">Bli med hjem og se i bokhylla til kjente nordmenn. Bøkene avslører skjulte sider ved de som eier dem.</p>
-                    <hr class="hr-thick">
-                    </a>
-                </header>
-                <footer class="center">
-                    <a href="#" class="btn-simple">Les serien</a>
-                    <p class="muted"><strong>5</strong> artikler</p>
-                </footer>
-            </article> 
-        </div>
+<section class="row frontpage-section">
+    <div class="small-12 columns">
+        <header class="center divider">
+            <h2 class="section-heading">Siste inn</h2>
+            <span>Newsfront gir deg det siste</span>
+        </header>
+        {% include article-title-list-2.html %}
     </div>
 </section>
