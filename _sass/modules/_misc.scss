@@ -253,7 +253,7 @@ body {
       color: #000;
     }
   }
-  .first-item {
+  li:nth-child(1) {
     border-top: 1px solid #E5E5E5;
   }
 }

@@ -5865,7 +5865,7 @@ body {
 .article-title-list li a:hover {
   color: #000;
 }
-.article-title-list .first-item {
+.article-title-list li:nth-child(1) {
   border-top: 1px solid #E5E5E5;
 }
 
