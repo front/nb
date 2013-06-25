@@ -5639,7 +5639,7 @@ a.th {
 
 /* On/off */
 .ads {
-  display: none;
+  display: block;
 }
 
 /* General */
