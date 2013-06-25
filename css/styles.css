@@ -6335,9 +6335,9 @@ abbr.published:before {
   margin-top: 0;
   padding: 0;
   position: absolute;
-  right: -150px;
+  right: -180px;
   top: 0;
-  width: 150px;
+  width: 180px;
   background: transparent;
 }
 .ads-sidebar-wrapper .ads-sidebar .ad {
