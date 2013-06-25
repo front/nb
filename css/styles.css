@@ -6327,6 +6327,23 @@ abbr.published:before {
   margin-bottom: 15px;
 }
 
+.ads-sidebar-wrapper {
+  margin-bottom: 0;
+  position: relative;
+}
+.ads-sidebar-wrapper .ads-sidebar {
+  margin-top: 0;
+  padding: 0;
+  position: absolute;
+  right: -150px;
+  top: 0;
+  width: 150px;
+  background: transparent;
+}
+.ads-sidebar-wrapper .ads-sidebar .ad {
+  margin-bottom: 15px;
+}
+
 header + .ads {
   margin-bottom: 15px;
 }

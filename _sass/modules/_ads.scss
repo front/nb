@@ -3,10 +3,30 @@
   display: block;
 }
 
+
 // Desktop ads
 
 .hide-for-medium-down {
   margin-bottom: 15px;
+}
+
+// Desktop sidebar 
+
+.ads-sidebar-wrapper {
+  margin-bottom: 0;
+  position: relative;
+  .ads-sidebar {
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    right: -150px;
+    top: 0;
+    width: 150px;
+    background: transparent;
+    .ad {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 // After header
