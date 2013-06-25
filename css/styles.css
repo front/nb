@@ -6323,6 +6323,14 @@ abbr.published:before {
   display: block;
 }
 
+.hide-for-medium-down {
+  margin-bottom: 15px;
+}
+
+header + .ads {
+  margin-bottom: 15px;
+}
+
 .article-wrapper + .ads {
   margin-top: 20px;
 }
@@ -6346,10 +6354,9 @@ abbr.published:before {
 .top-wrapper {
   border-bottom: 1px solid #ddd;
 }
-.top-wrapper .ad {
+.top-wrapper .hide-for-large-up .ad {
   padding-left: 0;
   padding-right: 0;
-  background: black;
 }
 
 @media only screen and (min-width: 48em) {

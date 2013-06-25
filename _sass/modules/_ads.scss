@@ -3,6 +3,17 @@
   display: block;
 }
 
+// Desktop ads
+
+.hide-for-medium-down {
+  margin-bottom: 15px;
+}
+
+// After header
+header + .ads {
+  margin-bottom: 15px;
+}
+
 // After comment section
 .article-wrapper + .ads {
   margin-top: 20px;
@@ -30,9 +41,8 @@
 // Before site
 .top-wrapper {
   border-bottom: 1px solid #ddd;
-  .ad {
-  padding-left: 0;
-  padding-right: 0;
-  background: black;
+  .hide-for-large-up .ad {
+    padding-left: 0;
+    padding-right: 0;
   } 
 }
