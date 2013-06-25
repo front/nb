@@ -1,7 +1,20 @@
+// Ads on/off
+.ads, .top-wrapper {
+  display: block;
+}
 
 // After comment section
 .article-wrapper + .ads {
   margin-top: 20px;
+}
+
+// Two ads after each other
+.ads + .ads {
+  margin-top: 15px;
+}
+
+.top-wrapper .ads + .ads {
+  margin-top: 0;
 }
 
 // After article byline
@@ -9,8 +22,14 @@
   margin: 20px 0;
 }
 
+// Ad inline
+.ad-inline {
+  margin-bottom: 15px;
+}
+
 // Before site
 .top-wrapper {
+  border-bottom: 1px solid #ddd;
   .ad {
   padding-left: 0;
   padding-right: 0;

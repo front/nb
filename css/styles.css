@@ -5638,10 +5638,6 @@ a.th {
 }
 
 /* On/off */
-.ads {
-  display: block;
-}
-
 /* General */
 body {
   /*background: #F6F6F6;*/
@@ -6181,7 +6177,7 @@ figure.inline-media {
 
 .related-stories {
   padding: 40px 0 30px;
-  margin: 40px 0 -20px;
+  margin: 30px 0 -20px;
 }
 .related-stories.dark {
   background: #000;
@@ -6323,14 +6319,33 @@ abbr.published:before {
   color: #666;
 }
 
+.ads, .top-wrapper {
+  display: block;
+}
+
 .article-wrapper + .ads {
   margin-top: 20px;
+}
+
+.ads + .ads {
+  margin-top: 15px;
+}
+
+.top-wrapper .ads + .ads {
+  margin-top: 0;
 }
 
 .meta + .ads {
   margin: 20px 0;
 }
 
+.ad-inline {
+  margin-bottom: 15px;
+}
+
+.top-wrapper {
+  border-bottom: 1px solid #ddd;
+}
 .top-wrapper .ad {
   padding-left: 0;
   padding-right: 0;
