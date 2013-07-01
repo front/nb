@@ -6493,7 +6493,7 @@ header + .ads {
 .top-wrapper {
   border-bottom: 1px solid #ddd;
 }
-.top-wrapper .hide-for-large-up .ad {
+.top-wrapper .show-for-small .ad {
   padding-left: 0;
   padding-right: 0;
 }
