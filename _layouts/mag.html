@@ -8,14 +8,26 @@
   <title>NewsFront magasin</title>
 
   <link rel="stylesheet" href="css/styles.css" />
-  
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+ <script src="js/foundation.min.js"></script>
 
   <script src="js/vendor/custom.modernizr.js"></script>
   <script src="js/vendor/holder.js"></script>
 
+  <script src="js/vendor/classie.js"></script>
+  <script src="js/vendor/uisearch.js"></script>
+  <script>
+    $(document).ready(function(){
+       $(document).foundation();
+
+      $("#video-wrapper").fitVids();
+    });
+</script>
 </head>
 <body>
-  <div class="top-wrapper"> 
+  <div class="top-wrapper">
     {% include ad-mobile.html %}
   </div>
   <nav class="top-bar">
@@ -41,7 +53,7 @@
         </li>
       </ul>
     </section>
-  </nav> 
+  </nav>
 
   {{ content }}
 
@@ -87,52 +99,23 @@
   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
   '.js><\/script>')
   </script>
-  
-  <script src="js/foundation.min.js"></script>
+
+
   <!--
-  
   <script src="js/foundation/foundation.js"></script>
-  
   <script src="js/foundation/foundation.alerts.js"></script>
-  
   <script src="js/foundation/foundation.clearing.js"></script>
-  
   <script src="js/foundation/foundation.cookie.js"></script>
-  
   <script src="js/foundation/foundation.dropdown.js"></script>
-  
   <script src="js/foundation/foundation.forms.js"></script>
-  
   <script src="js/foundation/foundation.joyride.js"></script>
-  
   <script src="js/foundation/foundation.magellan.js"></script>
-  
   <script src="js/foundation/foundation.orbit.js"></script>
-  
   <script src="js/foundation/foundation.placeholder.js"></script>
-  
   <script src="js/foundation/foundation.reveal.js"></script>
-  
   <script src="js/foundation/foundation.section.js"></script>
-  
   <script src="js/foundation/foundation.tooltips.js"></script>
-  
   <script src="js/foundation/foundation.topbar.js"></script>
-  
   -->
-  <script src="js/vendor/classie.js"></script>
-  <script src="js/vendor/uisearch.js"></script>
-  <script>
-    new UISearch( document.getElementById( 'sb-search' ) );
-  </script>
-  <script>
-    $(document).foundation();
-  </script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $("#video-wrapper").fitVids();
-  });
-</script>
 </body>
 </html>
