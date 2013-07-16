@@ -12,3 +12,11 @@ Toolkit
 Susy
 
 Breakpoint
+
+
+## TODOS
+
+### HTML/CSS refactoring
+
+* Put IE specific fixes on IE file, for:
+** joyride-tip-guide

@@ -3,15 +3,12 @@
   display: block;
 }
 
-
 // Desktop ads
-
 .hide-for-medium-down {
   margin-bottom: 15px;
 }
 
-// Desktop sidebar 
-
+// Desktop sidebar
 .ads-sidebar-wrapper {
   margin-bottom: 0;
   position: relative;
@@ -58,11 +55,12 @@ header + .ads {
   margin-bottom: 15px;
 }
 
-// Before site
+// Top bar.
 .top-wrapper {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $color-top-border;
+
   .show-for-small .ad {
     padding-left: 0;
     padding-right: 0;
-  } 
+  }
 }

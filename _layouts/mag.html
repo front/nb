@@ -1,69 +1,45 @@
 <!DOCTYPE html>
-<!--[if IE 8]>               <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
+<html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>NewsFront magasin</title>
-
-  <link rel="stylesheet" href="css/style.css" />
-
-  <script src="js/vendor/jquery.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
- <script src="js/foundation.min.js"></script>
-
-  <script src="js/vendor/custom.modernizr.js"></script>
-  <script src="js/vendor/holder.js"></script>
-
-  <script src="js/vendor/classie.js"></script>
-  <script src="js/vendor/uisearch.js"></script>
-  <script>
-    $(document).ready(function(){
-       $(document).foundation();
-
-      $("#video-wrapper").fitVids();
-    });
-</script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="top-wrapper">
     {% include ad-mobile.html %}
   </div>
-  <nav class="top-bar">
+
+  <div class="header" id="header">
+    <nav class="top-bar">
       <ul class="title-area">
         <li class="name">
           <h1><a href="front-mag.html">NewsFront</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span>Meny</span></a></li>
       </ul>
-    <section class="top-bar-section">
-      <ul class="right">
-        <li class="divider"></li>
-        <li><a href="section-ledere.html">Meninger</a></li>
-        <li class="divider"></li>
-        <li><a href="section-mag.html">Kultur</a></li>
-        <li class="divider"></li>
-        <li class="">
-          <a href="static.html" class="">Abonnér</a>
-        </li>
-        <li class="divider"></li>
-        <li class="">
-          <a href="search.html" class="">Søk</a>
-        </li>
-      </ul>
-    </section>
-  </nav>
+
+      <section class="top-bar-section">
+        <h2 hidden>Meny</h2>
+        <ul class="right">
+          <li><a href="section-ledere.html">Meninger</a></li>
+          <li><a href="section-mag.html">Kultur</a></li>
+          <li><a href="static.html">Abonnér</a></li>
+          <li><a href="search.html">Søk</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
 
   {{ content }}
 
   <footer class="global-footer">
     <div class="links-bar row">
       <div class="large-3 columns">
-        <a href="/" class="footer-logo-link">
-          <h3 class="image-replace nf-logo-white">Newsfront</h3>
-        </a>
+        <h3 class="image-replace nf-logo-white"><a href="/" class="footer-logo-link">Newsfront</a></h3>
       </div>
+
       <div class="standard-links large-9 columns">
         <ul class="inline-block">
           <li><a href="#">Om oss</a></li>
@@ -74,6 +50,7 @@
           <li><a href="#">Personvern</a></li>
           <li><a href="#">Retningslinjer</a></li>
         </ul>
+
         <small>© 2013 Navn på Avis. Anvarlig redaktør: Nils Nilsen. <a href="http://www.frontkom.no">Drupal CMS ved Frontkom</a></small>
       </div>
     </div>
@@ -94,28 +71,6 @@
     </div>
   </footer>
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-
-
-  <!--
-  <script src="js/foundation/foundation.js"></script>
-  <script src="js/foundation/foundation.alerts.js"></script>
-  <script src="js/foundation/foundation.clearing.js"></script>
-  <script src="js/foundation/foundation.cookie.js"></script>
-  <script src="js/foundation/foundation.dropdown.js"></script>
-  <script src="js/foundation/foundation.forms.js"></script>
-  <script src="js/foundation/foundation.joyride.js"></script>
-  <script src="js/foundation/foundation.magellan.js"></script>
-  <script src="js/foundation/foundation.orbit.js"></script>
-  <script src="js/foundation/foundation.placeholder.js"></script>
-  <script src="js/foundation/foundation.reveal.js"></script>
-  <script src="js/foundation/foundation.section.js"></script>
-  <script src="js/foundation/foundation.tooltips.js"></script>
-  <script src="js/foundation/foundation.topbar.js"></script>
-  -->
+  {% include scripts-global.html %}
 </body>
 </html>
