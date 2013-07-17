@@ -1,10 +1,31 @@
-%l-row {
+%l-container {
+  clear: both;
   position: relative;
   width: 100%;
-
   text-align: center;
+}
+
+%l-row {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $grid-max-width;
+  @extend %clearfix;
+
+  text-align: left;
+}
+
+// Structure
+.l-container {
+  @extend %l-container;
 }
 
 .l-row {
   @extend %l-row;
+}
+
+
+// Lists
+.inline-block-list {
+  @include inline-block-list;
 }

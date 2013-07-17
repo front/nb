@@ -10,6 +10,18 @@ img, video {
   height: auto;
 }
 
+.l-row:after:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.l-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -5000,13 +5012,50 @@ table tfoot tr td {
   max-width: 800px;
 }
 
-.l-row {
+.small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+.l-container {
+  clear: both;
   position: relative;
   width: 100%;
   text-align: center;
 }
 
-.global-footer {
+.l-row {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  text-align: left;
+}
+
+.inline-block-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+}
+.inline-block-list:before, .inline-block-list:after {
+  content: " ";
+  display: table;
+}
+.inline-block-list:after {
+  clear: both;
+}
+.inline-block-list li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #ed232a;
@@ -5015,21 +5064,51 @@ table tfoot tr td {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
-.global-footer a {
+.footer a {
   color: white;
 }
 
-.standard-links {
-  margin: 10px auto;
+.footer--nav {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-.standard-links ul {
+
+.footer--logo {
+  width: 22.70091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+  margin-top: 2px;
+}
+.footer--logo a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/nf-logo-light.png?1373972578');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 194px;
+  height: 32px;
   display: block;
-  float: none;
-  font-size: 12px;
+}
+
+.footer--links {
+  width: 74.23364%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+.footer--links p {
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.standard-links {
   margin: 0 auto 4px;
 }
 .standard-links li {
-  display: inline-block;
   margin: 4px 5px;
   text-transform: uppercase;
 }
@@ -5037,10 +5116,15 @@ table tfoot tr td {
   margin-left: 0;
 }
 
-.nf-logo-white {
-  background: url('../img/nf-logo-light.png?1373972578');
-  width: 194px;
-  height: 32px;
+.footer--bar {
+  background-color: #c9000d;
+  margin-top: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer--bar-list {
+  margin-bottom: 0;
 }
 
 .ads, .top-wrapper {
@@ -5526,28 +5610,6 @@ figure.inline-media {
 
 .meta .last {
   margin-bottom: 0;
-}
-
-.links-bar {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.final-bar {
-  clear: both;
-  overflow: hidden;
-  background: #c9000d;
-  margin-top: 24px;
-  padding: 20px 60px;
-}
-
-.final-bar ul {
-  font-size: 12px;
-  margin-bottom: 0;
-}
-
-.footer-logo-link {
-  display: inline-block;
 }
 
 /* Author bio */

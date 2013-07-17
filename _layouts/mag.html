@@ -36,42 +36,7 @@
 
   {{ content }}
 
-  <footer class="l-row global-footer">
-    <div class="links-bar row">
-      <div class="large-3 columns">
-        <h3 class="image-replace nf-logo-white"><a href="/" class="footer-logo-link">Newsfront</a></h3>
-      </div>
-
-      <div class="standard-links large-9 columns">
-        <ul class="inline-block">
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Presse</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Jobb</a></li>
-          <li><a href="#">Annonsere</a></li>
-          <li><a href="#">Personvern</a></li>
-          <li><a href="#">Retningslinjer</a></li>
-        </ul>
-
-        <small>© 2013 Navn på Avis. Anvarlig redaktør: Nils Nilsen. <a href="http://www.frontkom.no">Drupal CMS ved Frontkom</a></small>
-      </div>
-    </div>
-
-    <div class="final-bar clearfix hide-mobile">
-      <div class="row">
-        <div class="contact-info large-12 columns center">
-            <ul class="inline-list">
-              <li><strong>Postadresse:</strong></li>
-              <li>Boks 1000 Sentrum, 0100 Oslo</li>
-              <li><strong>Besøksadresse:</strong></li>
-              <li>Akersgata 1, 0100 Oslo</li>
-              <li><strong>Sentralbord/Redaksjonen:</strong></li>
-              <li><a href="tel:+4705000">69300000</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include footer-global.html %}
 
   {% include scripts-global.html %}
 </body>

@@ -1,5 +1,5 @@
 // Global Footer
-.global-footer {
+.footer {
   margin-top: 20px;
   padding-top: 20px;
 
@@ -15,17 +15,35 @@
   }
 }
 
-.standard-links {
-  margin: 10px auto;
+.footer--nav {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
-  ul {
+.footer--logo {
+  @include grid-span(3, 1);
+  margin-top: 2px;
+
+  a {
+    @include replace-text-with-dimensions($footer-logo);
     display: block;
-    float: none;
-    font-size: $footer-font-size;
-    margin: 0 auto 4px;
   }
+}
+
+.footer--links {
+  @include grid-span(9, 4);
+
+  p {
+    font-size: $footer-font-size - 1;
+    margin-bottom: 0;
+  }
+}
+
+.standard-links {
+  // If re-usable, move .standard-links to 'links' modules
+  margin: 0 auto 4px;
+
   li {
-    display: inline-block;
     margin: 4px 5px;
     text-transform: uppercase;
   }
@@ -34,8 +52,13 @@
   }
 }
 
-.nf-logo-white {
-  background: image-url('nf-logo-light.png');
-  width: 194px;
-  height: 32px;
+.footer--bar {
+  background-color: $footer-bar-bg-color;
+  margin-top: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer--bar-list {
+  margin-bottom: 0;
 }
