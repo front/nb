@@ -1,0 +1,10 @@
+%l-row {
+  position: relative;
+  width: 100%;
+
+  text-align: center;
+}
+
+.l-row {
+  @extend %l-row;
+}

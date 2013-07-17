@@ -5000,6 +5000,106 @@ table tfoot tr td {
   max-width: 800px;
 }
 
+.l-row {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.global-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #ed232a;
+  border-top: 6px solid #b5000c;
+  color: white;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.global-footer a {
+  color: white;
+}
+
+.standard-links {
+  margin: 10px auto;
+}
+.standard-links ul {
+  display: block;
+  float: none;
+  font-size: 12px;
+  margin: 0 auto 4px;
+}
+.standard-links li {
+  display: inline-block;
+  margin: 4px 5px;
+  text-transform: uppercase;
+}
+.standard-links li:nth-child(1) {
+  margin-left: 0;
+}
+
+.nf-logo-white {
+  background: url('../img/nf-logo-light.png?1373972578');
+  width: 194px;
+  height: 32px;
+}
+
+.ads, .top-wrapper {
+  display: block;
+}
+
+.hide-for-medium-down {
+  margin-bottom: 15px;
+}
+
+.ads-sidebar-wrapper {
+  margin-bottom: 0;
+  position: relative;
+}
+.ads-sidebar-wrapper .ads-sidebar {
+  margin-top: 0;
+  padding: 0;
+  position: absolute;
+  right: -180px;
+  top: 0;
+  width: 180px;
+  background: transparent;
+}
+.ads-sidebar-wrapper .ads-sidebar .ad {
+  margin-bottom: 15px;
+}
+
+header + .ads {
+  margin-bottom: 15px;
+}
+
+.article-wrapper + .ads {
+  margin-top: 20px;
+}
+
+.ads + .ads {
+  margin-top: 15px;
+}
+
+.top-wrapper .ads + .ads {
+  margin-top: 0;
+}
+
+.meta + .ads {
+  margin: 20px 0;
+}
+
+.ad-inline {
+  margin-bottom: 15px;
+}
+
+.top-wrapper {
+  border-bottom: 1px solid #dddddd;
+}
+.top-wrapper .show-for-small .ad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* On/off */
 /* General */
 body {
@@ -5428,52 +5528,6 @@ figure.inline-media {
   margin-bottom: 0;
 }
 
-/* Global footer */
-.global-footer {
-  background-color: #ed232a;
-  border-top: 6px solid #b5000c;
-  color: #fff;
-  font-family: Arial,sans-serif;
-  padding: 0;
-  font-size: 12px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 20px;
-}
-
-.standard-links {
-  margin: 10px auto;
-}
-
-.standard-links ul {
-  float: none;
-  margin: 0 auto 4px;
-  display: block;
-  font-size: 12px;
-}
-
-.standard-links li {
-  margin: 4px 5px;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-.standard-links li:nth-child(1) {
-  margin-left: 0;
-}
-
-.global-footer a {
-  color: white;
-}
-
-.nf-logo-white {
-  background: url(../img/nf-logo-light.png);
-  width: 194px;
-  height: 32px;
-}
-
 .links-bar {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -5802,63 +5856,6 @@ abbr.published:before {
 .sb-search.sb-search-open .sb-search-submit,
 .no-js .sb-search .sb-search-submit {
   z-index: 90;
-}
-
-.ads, .top-wrapper {
-  display: block;
-}
-
-.hide-for-medium-down {
-  margin-bottom: 15px;
-}
-
-.ads-sidebar-wrapper {
-  margin-bottom: 0;
-  position: relative;
-}
-.ads-sidebar-wrapper .ads-sidebar {
-  margin-top: 0;
-  padding: 0;
-  position: absolute;
-  right: -180px;
-  top: 0;
-  width: 180px;
-  background: transparent;
-}
-.ads-sidebar-wrapper .ads-sidebar .ad {
-  margin-bottom: 15px;
-}
-
-header + .ads {
-  margin-bottom: 15px;
-}
-
-.article-wrapper + .ads {
-  margin-top: 20px;
-}
-
-.ads + .ads {
-  margin-top: 15px;
-}
-
-.top-wrapper .ads + .ads {
-  margin-top: 0;
-}
-
-.meta + .ads {
-  margin: 20px 0;
-}
-
-.ad-inline {
-  margin-bottom: 15px;
-}
-
-.top-wrapper {
-  border-bottom: 1px solid #ddd;
-}
-.top-wrapper .show-for-small .ad {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 @media only screen and (min-width: 48em) {

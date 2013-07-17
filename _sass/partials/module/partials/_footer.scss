@@ -1,0 +1,41 @@
+// Global Footer
+.global-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+
+  background-color: $footer-bg-color;
+  border-top: 6px solid $footer-border-color;
+
+  color: $footer-text-color;
+  font-family: $footer-font-family;
+  font-size: $footer-font-size;
+
+  a {
+    color: $footer-text-color;
+  }
+}
+
+.standard-links {
+  margin: 10px auto;
+
+  ul {
+    display: block;
+    float: none;
+    font-size: $footer-font-size;
+    margin: 0 auto 4px;
+  }
+  li {
+    display: inline-block;
+    margin: 4px 5px;
+    text-transform: uppercase;
+  }
+  li:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+.nf-logo-white {
+  background: image-url('nf-logo-light.png');
+  width: 194px;
+  height: 32px;
+}

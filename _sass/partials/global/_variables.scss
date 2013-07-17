@@ -1,5 +1,17 @@
-////////////////////////
 // Variables Partials
-//
 // All of your variables should go in this file.
-////////////////////////
+
+// Font families
+$font-family-sans: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;;
+
+
+// Colors
+$color-top-border: #DDD;
+
+
+// Global Footer variables
+$footer-bg-color:     #ED232A !default;
+$footer-border-color: #B5000C !default;
+$footer-font-family:  $font-family-sans !default;
+$footer-font-size:    12px !default;
+$footer-text-color:   white !default;
