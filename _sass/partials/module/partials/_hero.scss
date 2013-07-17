@@ -1,0 +1,31 @@
+// Hero units
+.hero {
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  @include bg-cover;
+}
+
+.hero--box {
+  @include grid-span(6, 4);
+}
+
+.hero--box.overlay {
+  color: white;
+
+  a,
+  .title,
+  .hero--label {
+    color: white;
+  }
+}
+
+.hero--label {
+  font-weight: 200;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.hero--article {}

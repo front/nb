@@ -1,5 +1,10 @@
-////////////////////////
 // Mixins Partials
 //
 // All of your mixins should go in this file.
-////////////////////////
+
+// Cover background
+@mixin bg-cover($bg-position: center center) {
+  background-position: $bg-position;
+  background-repeat: no-repeat;
+  @include background-size(cover);
+}

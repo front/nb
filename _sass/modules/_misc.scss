@@ -3,18 +3,6 @@
 
 
 /* General */
-body {
-  /*background: #F6F6F6;*/
-}
-
-.muted {
-  color: #777;
-}
-
-.center {
-  text-align: center;
-}
-
 .image-replace {
   text-indent: 100%;
   white-space: nowrap;
@@ -219,27 +207,6 @@ li .published {
   border-bottom: 1px solid #dedede;
 }
 
-.hero {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  // border-top: 1px solid #555;
-  h2, a {
-  color: white;
-  }
-}
-
-.hero-label {
- text-transform: uppercase;
- font-weight: 200;
- margin-top: 20px;
-}
-
 .overlay-invert {
   a {
     color: #000;
@@ -249,9 +216,7 @@ li .published {
   }
 }
 
-.stick-to-footer {
-  margin-bottom: -20px;
-}
+.stick-to-footer {}
 
 .stick-to-top {
   margin-top: -15px;
