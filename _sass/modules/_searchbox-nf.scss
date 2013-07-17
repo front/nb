@@ -1,0 +1,55 @@
+.nf-sbform {
+  position: relative;
+  height: 60px;
+
+  input[type="text"] {
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    display: block;
+    margin: 0;
+    width: 60px;
+    padding: 0;
+    height: 100%;
+    border: 1px solid #f00;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #666;
+    background: #f9f9f9;
+    border: none;
+    outline: none;
+  }
+  &.nf-sbopen input[type="text"] {
+    padding: 10px 80px 10px 20px;
+    width: 100%;
+  }
+
+  input[type="submit"], span.nf-search-button  {
+    position: absolute;
+    right: 0;
+    z-index: 20;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+
+    color: #fff;
+    cursor: pointer;
+    background: url('../../img/mag.png') no-repeat center center #2ba6cb;
+    border: 0;
+  }
+  span.nf-search-button {
+    z-index: 40;
+    display: none;
+  }
+}

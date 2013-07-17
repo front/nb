@@ -5781,11 +5781,16 @@ figure.inline-media {
   top: 0;
 }
 
-.result-number {
+.result-number, .result-query {
   color: #797979;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   font-weight: bold;
+}
+
+.result-query {
+  font-weight: normal;
+  color: #aaa;
 }
 
 .object-header-link {
@@ -5865,6 +5870,19 @@ abbr.published:before {
   padding: 0;
   line-height: 20px;
   color: #666;
+}
+
+.story-description img {
+  display: none;
+}
+
+.story-date {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 /* Search icon by IcoMoon, made with http://icomoon.io/app/ */
@@ -8198,4 +8216,54 @@ abbr.published:before {
   .nf-mainbar .nf-mainbar-sub ul li {
     width: 18%;
   }
+}
+
+.nf-sbform {
+  position: relative;
+  height: 60px;
+}
+.nf-sbform input[type="text"] {
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  display: block;
+  margin: 0;
+  width: 60px;
+  padding: 0;
+  height: 100%;
+  border: 1px solid #f00;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #666;
+  background: #f9f9f9;
+  border: none;
+  outline: none;
+}
+.nf-sbform.nf-sbopen input[type="text"] {
+  padding: 10px 80px 10px 20px;
+  width: 100%;
+}
+.nf-sbform input[type="submit"], .nf-sbform span.nf-search-button {
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  cursor: pointer;
+  background: url("../../img/mag.png") no-repeat center center #2ba6cb;
+  border: 0;
+}
+.nf-sbform span.nf-search-button {
+  z-index: 40;
+  display: none;
 }
