@@ -28,11 +28,15 @@
   top: 0;
 }
 
-.result-number {
+.result-number, .result-query {
   color: #797979;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   font-weight: bold;
+}
+.result-query {
+  font-weight: normal;
+  color: #aaa;
 }
 
 .object-header-link {
@@ -112,4 +116,17 @@ abbr.published:before {
   padding: 0;
   line-height: 20px;
   color: #666;
+}
+
+.story-description img {
+  display: none;
+}
+
+.story-date {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-size: 12px;
+  font-weight: normal;
 }

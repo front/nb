@@ -6,16 +6,22 @@
   <script src="js/vendor/holder.js"></script>
   <script src="js/vendor/classie.js"></script>
   <script src="js/vendor/uisearch.js"></script>
+
   <script src="js/nf-dropdownmenu.js"></script>
+  <script src="js/nf-searchbox.js"></script>
+  <script src="js/nf-solr-search.js"></script>
 
   <script>
     $(document).ready(function(){
       $(document).foundation();
       $('#video-wrapper').fitVids();
+      // $('#nf-search-form').nfSearchBox();
 
       $('#nf-menu-top').menuToggle();
       $('#nf-menu-main').menuToggle();
       $('#nf-menu-main-blue').menuToggle();
+
+      solrSetup();
     });
   </script>
 

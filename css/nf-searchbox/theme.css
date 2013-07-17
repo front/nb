@@ -1,0 +1,16 @@
+
+.nf-sbform input[type="text"] {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #666;
+  background: #f9f9f9;
+  border: none;
+  outline: none;
+}
+
+.nf-sbform input[type="submit"], .nf-sbform span.nf-search-button  {
+  color: #fff;
+  cursor: pointer;
+  background: url('../../img/mag.png') no-repeat center center #2ba6cb;
+  border: 0;
+}

@@ -22,14 +22,24 @@ title: Search
 <br> -->
 
 <header class="object-header row">
+
   <div class="small-12 columns">
-    <form autocomplete="off" id="search-page-form" class="search-page-form">
-      <input type="text" class="search-form-input" name="q" value="obama" autocomplete="off" spellcheck="false">
+    <form id="nf-search-form" class="nf-sbform nf-sbopen" action="search.html" method="get" data-ajax="false">
+      <input id="nf-search-q" type="text" name="q" placeholder="Enter search here...">
+      <input type="submit" value="">
+      <span class="nf-search-button"></span>
     </form>
   </div>
 
+  <!-- div class="small-12 columns">
+    <form autocomplete="off" id="search-page-form" class="search-page-form">
+      <input type="text" class="search-form-input" name="q" value="obama" autocomplete="off" spellcheck="false">
+    </form>
+  </div -->
+
   <div class="small-3 columns">
-      <span class="result-number">500 treff</span>
+      <span class="result-number">0 treff</span>
+      <span class="result-query"></span>
   </div>
 
   <div class="small-9 columns">
@@ -43,13 +53,11 @@ title: Search
 
 </header>
 
-<div class="row">
-  
+<div class="row" id="article-list">
+  {% include serp.html %}
 </div>
 
-{% include serp.html %}
-{% include serp.html %}
-{% include serp.html %}
-<div class="load-more center">
-  <a href="#" class="btn-simple soft">Se flere treff</a>
+
+<div class="load-more center" style="display: none;">
+  <a href="javascript:void(0);" onclick="solrShowMore();" class="btn-simple soft">Se flere treff</a>
 </div>
