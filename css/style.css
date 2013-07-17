@@ -5250,6 +5250,12 @@ header + .ads {
   -o-background-size: cover;
   background-size: cover;
 }
+@media (max-width: 830px) {
+  .hero {
+    padding-bottom: 20px;
+    height: auto !important;
+  }
+}
 
 .hero--box {
   width: 57.05606%;

@@ -6,6 +6,11 @@
   z-index: 0;
 
   @include bg-cover;
+
+  @include breakpoint(max-width $breakpoint-medium) {
+    padding-bottom: 20px;
+    height: auto !important;
+  }
 }
 
 .hero--box {
