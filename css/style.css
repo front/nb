@@ -5252,11 +5252,26 @@ header + .ads {
 }
 
 .hero--box {
-  width: 48.46727%;
+  width: 57.05606%;
   float: left;
   margin-right: -100%;
-  margin-left: 25.76636%;
+  margin-left: 8.58879%;
   clear: none;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+}
+@media (min-width: 830px) {
+  .hero--box {
+    width: 48.46727%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.76636%;
+    clear: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+  }
 }
 
 .hero--box.overlay {

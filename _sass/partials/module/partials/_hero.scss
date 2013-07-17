@@ -9,7 +9,13 @@
 }
 
 .hero--box {
-  @include grid-span(6, 4);
+  @include grid-span(7, 2);
+  @include block-center;
+
+  @include breakpoint($breakpoint-medium) {
+    @include grid-span(6, 4);
+    @include block-center;
+  }
 }
 
 .hero--box.overlay {
