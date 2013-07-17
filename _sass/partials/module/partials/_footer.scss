@@ -18,25 +18,44 @@
 .footer--nav {
   margin-top: 30px;
   margin-bottom: 10px;
+
+  @include breakpoint(max-width $breakpoint-medium) {
+    text-align: center;
+  }
 }
 
 .footer--logo {
-  @include grid-span(3, 1);
-  margin-top: 2px;
-
-  a {
-    @include replace-text-with-dimensions($footer-logo);
-    display: block;
+  @include breakpoint(max-width $breakpoint-medium) {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include breakpoint($breakpoint-medium) {
+    @include grid-span(3, 1.5);
+    margin-top: 2px;
+  }
+  @include breakpoint($breakpoint-wide) {
+    @include grid-span(3, 1);
   }
 }
 
-.footer--links {
-  @include grid-span(9, 4);
+.footer--logo a {
+  @include replace-text-with-dimensions($footer-logo);
+  display: block;
+}
 
-  p {
-    font-size: $footer-font-size - 1;
-    margin-bottom: 0;
+.footer--links {
+  @include breakpoint($breakpoint-medium) {
+    @include grid-span(8, 4.5);
   }
+  @include breakpoint($breakpoint-wide) {
+    @include grid-span(9, 4);
+  }
+}
+
+.footer--links p {
+  font-size: $footer-font-size - 1;
+  margin-bottom: 0;
 }
 
 .standard-links {
@@ -57,8 +76,21 @@
   margin-top: 2em;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  .l-row {
+    @include breakpoint(max-width $breakpoint-wide) {
+      text-align: center;
+    }
+  }
 }
 
 .footer--bar-list {
-  margin-bottom: 0;
+  display: inline-block;
+  margin: 0 auto;
+
+  @include breakpoint($breakpoint-wide) {
+    li:nth-child(1) {
+      margin-left: 0;
+    }
+  }
 }
