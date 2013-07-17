@@ -20,3 +20,6 @@ Breakpoint
 
 * Put IE specific fixes on IE file, for:
 ** joyride-tip-guide
+
+### Documentation
+* Document variables for footer module
