@@ -14,24 +14,8 @@
   </div>
 
   <header class="header" id="header">
-    <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="front-mag.html">NewsFront</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Meny</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <h2 hidden>Meny</h2>
-        <ul class="right">
-          <li><a href="section-ledere.html">Meninger</a></li>
-          <li><a href="section-mag.html">Kultur</a></li>
-          <li><a href="static.html">Abonnér</a></li>
-          <li><a href="search.html">Søk</a></li>
-        </ul>
-      </section>
-    </nav>
+    {% include menu-top.html %}
+    {% include menu-main-blue.html %}
   </header>
 
   {{ content }}
