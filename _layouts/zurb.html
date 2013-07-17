@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<!--[if IE 8]>               <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
+<html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>NewsFront</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/style.css" />
+  <title>NewsFront magasin</title>
 
-
-  <script src="js/vendor/custom.modernizr.js"></script>
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="top-wrapper">
     {% include ad-mobile.html %}
   </div>
+
   <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="/">NewsFront</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Meny</span></a></li>
-      </ul>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">NewsFront</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon">
+        <a href="#"><span>Meny</span></a>
+      </li>
+    </ul>
+
     <section class="top-bar-section">
       <ul class="right">
         <li class="divider"></li>
@@ -33,166 +32,21 @@
         <li class="divider"></li>
         <li><a href="#">Kultur</a></li>
         <li class="divider"></li>
-        <li class="">
-          <a href="#" class="">Abonnér</a>
-        </li>
+        <li><a href="#">Abonnér</a></li>
       </ul>
     </section>
   </nav>
 
-  <header class="section-header">
-    <div class="row">
-      <div class="large-12 columns">
-        <h1><a href="#">Nyheter</a></h1>
-      </div>
+  <header class="section-header l-container">
+    <div class="l-row">
+      <h1><a href="#">Nyheter</a></h1>
     </div>
   </header>
 
-    {{ content }}
+  {{ content }}
 
+  {% include footer-global.html %}
 
-<!--   <footer class="site-footer">
-
-    <div class="row">
-
-      <div class="contact-info large-3 columns center">
-          <img src="img/nf-logo.png" class="fixed-width">
-          <dl class="">
-            <dt>Postadresse:</dt>
-            <dd>Boks 1000 Sentrum, 0100 Oslo</dd>
-            <dt>Besøksadresse:</dt>
-            <dd>Akersgata 1, 0100 Oslo</dd>
-            <dt>Sentralbord/Redaksjonen:</dt>
-            <dd><a href="tel:+4705000">69300000</a></dd>
-          </dl>
-      </div>
-
-      <div class="large-3 columns hide-for-small">
-              <dl>
-              <dt>Forsida ble sist oppdatert:</dt>
-              <dd><time>Tirsdag 30.05.2013, 17:04</time></dd>
-          </dl>
-      </div>
-
-      <div class="large-3 columns hide-for-small">
-        <nav>
-            <ul>
-              <li><a href="http://www.dagbladet.no/stillinger/">Jobb i NewsFront</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Personvernavtale</a></li>
-            </ul>
-          </nav>
-      </div>
-
-      <div class="large-3 columns hide-for-small">
-        <div href="#" class="inverse button dropdown radius tip">
-            <a href="#">Tips oss <span class="tel">6700</span></a>
-            <span></span>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="large-12 columns">
-        <p class="the-end">
-          <strong>Ansvarlig redaktør: </strong> <a href="mailto:fake@newsfront.no">Ola Nordmann</a>
-          <span class="frontkom-logo">© 2013</span> <a href="#" >Drupal CMS: <span >Frontkom</span></a>
-        </p>
-      </div>
-    </div>
-  </footer> -->
-
-  <footer class="global-footer">
-    <div class="links-bar row">
-      <div class="large-3 columns">
-        <a href="/" class="footer-logo-link">
-          <h3 class="image-replace nf-logo-white">Newsfront</h3>
-        </a>
-      </div>
-      <div class="standard-links large-9 columns">
-        <ul class="inline-block">
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Presse</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Jobb</a></li>
-          <li><a href="#">Annonsere</a></li>
-          <li><a href="#">Personvern</a></li>
-          <li><a href="#">Retningslinjer</a></li>
-        </ul>
-        <small>© 2013 Navn på Avis. Anvarlig redaktør: Nils Nilsen. <a href="http://www.frontkom.no">Drupal CMS ved Frontkom</a></small>
-      </div>
-    </div>
-
-    <!-- <div class="row newsletter-signup">
-        <div class="large-4 columns right">
-          <div class="row collapse">
-            <div class="small-10 columns">
-              <input type="text" placeholder="Abonnér på nyhetsbrev">
-            </div>
-            <div class="small-2 columns">
-              <a href="#" class="button prefix">Send</a>
-            </div>
-          </div>
-        </div>
-    </div>
- -->
-    <div class="final-bar clearfix hide-mobile">
-      <div class="row">
-        <div class="contact-info large-12 columns center">
-            <ul class="inline-list">
-              <li><strong>Postadresse:</strong></li>
-              <li>Boks 1000 Sentrum, 0100 Oslo</li>
-              <li><strong>Besøksadresse:</strong></li>
-              <li>Akersgata 1, 0100 Oslo</li>
-              <li><strong>Sentralbord/Redaksjonen:</strong></li>
-              <li><a href="tel:+4705000">69300000</a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-
-  <script src="js/foundation.min.js"></script>
-  <!--
-
-  <script src="js/foundation/foundation.js"></script>
-
-  <script src="js/foundation/foundation.alerts.js"></script>
-
-  <script src="js/foundation/foundation.clearing.js"></script>
-
-  <script src="js/foundation/foundation.cookie.js"></script>
-
-  <script src="js/foundation/foundation.dropdown.js"></script>
-
-  <script src="js/foundation/foundation.forms.js"></script>
-
-  <script src="js/foundation/foundation.joyride.js"></script>
-
-  <script src="js/foundation/foundation.magellan.js"></script>
-
-  <script src="js/foundation/foundation.orbit.js"></script>
-
-  <script src="js/foundation/foundation.placeholder.js"></script>
-
-  <script src="js/foundation/foundation.reveal.js"></script>
-
-  <script src="js/foundation/foundation.section.js"></script>
-
-  <script src="js/foundation/foundation.tooltips.js"></script>
-
-  <script src="js/foundation/foundation.topbar.js"></script>
-
-  -->
-
-  <script>
-    $(document).foundation();
-  </script>
+  {% include scripts-global.html %}
 </body>
 </html>

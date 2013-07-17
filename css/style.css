@@ -5056,7 +5056,6 @@ table tfoot tr td {
 }
 
 .footer {
-  margin-top: 20px;
   padding-top: 20px;
   background-color: #ed232a;
   border-top: 6px solid #b5000c;
@@ -5334,16 +5333,16 @@ li .published {
 .section-header {
   background: #C80000;
   margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 .section-header h1 {
   font-size: 18px;
-  margin: 10px 0;
-  text-transform: uppercase;
   font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
 }
-
-.section-header h1 a {
+.section-header a {
   color: white;
 }
 

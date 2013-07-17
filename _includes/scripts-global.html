@@ -19,6 +19,18 @@
     });
   </script>
 
+  <script>
+    // Fix IE 10 on Windows Phone 8 Viewport
+    (function() {
+      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement("style");
+        msViewportStyle.appendChild(
+          document.createTextNode("@-ms-viewport{width:auto!important}")
+        );
+        document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+      }
+    })();
+  </script>
 <!--
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.alerts.js"></script>

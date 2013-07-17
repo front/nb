@@ -127,17 +127,18 @@ li .published {
 .section-header {
   background: #C80000;
   margin-bottom: 15px;
-}
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-.section-header h1 {
- font-size: 18px;
- margin: 10px 0;
- text-transform: uppercase;
- font-weight: 300;
-}
-
-.section-header h1 a{
- color: white;
+  h1 {
+   font-size: 18px;
+   font-weight: 300;
+   margin: 0;
+   text-transform: uppercase;
+  }
+  a {
+   color: white;
+  }
 }
 
 /* TL menu */
@@ -236,7 +237,7 @@ li .published {
 .hero-label {
  text-transform: uppercase;
  font-weight: 200;
- margin-top: 20px; 
+ margin-top: 20px;
 }
 
 .overlay-invert {
@@ -320,7 +321,7 @@ li .published {
 .site-footer {
   background: #eee;
   border-top: 1px dotted #999;
-  padding: 25px 0; 
+  padding: 25px 0;
   margin-top: 15px;
   clear: both;
 }
