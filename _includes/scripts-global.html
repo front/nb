@@ -28,21 +28,23 @@
       nfSolr.setup();
 
       // Load aware for ads
-      $('div.top-wrapper').nfLoadAware([{
+      $('div.nf-mobile-ad').nfLoadAware([{
           query: 'screen and (max-width: 480px)',
-          target: 'ads/ad-mobile.html'
+          target: '/ads/ad-mobile.html'
       }]);
       $('div.nf-desktop-ad').nfLoadAware([{
         query: 'screen and (min-width: 980px)',
-        target: 'ads/ad-desktop-1.html'
+        target: '/ads/ad-desktop-1.html'
       },{
         query: 'screen and (min-width: 480px) and (max-width: 768px)',
-        target: 'ads/ad-desktop-2.html'
+        target: '/ads/ad-desktop-2.html'
       }]);
       $('div.nf-desktop-ad-sidebar').nfLoadAware([{
         query: 'screen and (min-width: 1280px)',
-        target: 'ads/ad-desktop-sidebar.html'
+        target: '/ads/ad-desktop-sidebar.html'
       }]);
+
+      // Load aware for images
 
     });
   </script>
