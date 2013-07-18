@@ -5318,16 +5318,25 @@ header + .ads {
   color: #030303;
 }
 
+.article--list-small .article--teaser-small {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.article--teaser-small {
+  margin-bottom: 1.25em;
+}
+.article--teaser-small img {
+  margin-bottom: 1.25em;
+}
 .article--teaser-small h1 {
   font-size: 20px;
   line-height: 22px;
   margin: -3px 0 5px 0;
 }
 .article--teaser-small p {
+  color: #999;
   font-size: 14px;
   line-height: 16px;
-  color: #999;
-  margin-bottom: 0;
 }
 
 .footer {

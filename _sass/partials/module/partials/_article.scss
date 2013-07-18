@@ -33,18 +33,27 @@
   }
 }
 
+.article--list-small {
+  .article--teaser-small {
+    border-bottom: 1px solid $article-list-border-color;
+  }
+}
+
 .article--teaser-small {
   @extend %clearfix;
+  margin-bottom: 1.25em;
 
+  img {
+    margin-bottom: 1.25em;
+  }
   h1 {
     font-size: 20px;
     line-height: 22px;
     margin: -3px 0 5px 0;
   }
   p {
+    color: #999;
     font-size: 14px;
     line-height: 16px;
-    color: #999;
-    margin-bottom: 0;
   }
 }
