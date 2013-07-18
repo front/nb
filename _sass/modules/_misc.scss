@@ -73,20 +73,8 @@ li .published {
   float: right;
 }
 
-// .divider:after {
-//   background: none repeat scroll 0 0 #000000;
-//   bottom: 0;
-//   content: " ";
-//   height: 5px;
-//   left: 0;
-//   margin: 0 auto;
-//   position: absolute;
-//   right: 0;
-//   width: 25px;
-// }
-
 .image-round {
-  border-radius: 160px;
+  @include border-radius(50%);
 }
 
 
