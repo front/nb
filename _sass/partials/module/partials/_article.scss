@@ -32,3 +32,19 @@
     color: darken($article-list-link-color, 19%);
   }
 }
+
+.article--teaser-small {
+  @extend %clearfix;
+
+  h1 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: -3px 0 5px 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #999;
+    margin-bottom: 0;
+  }
+}

@@ -24,6 +24,25 @@
   @extend %l-row;
 }
 
+// Build grid
+@include breakpoint($breakpoint-narrow) {
+  @for $i from 1 through $grids {
+    .grid-#{$i} {
+      @include float-span($i);
+
+      @if $i > 1 {
+        &:nth-child(#{$grids/$i}n) {
+          @include float-span($i, 'omega');
+        }
+      }
+    }
+  }
+}
+
+.omega {
+  margin-right: 0;
+}
+
 
 // Lists
 .inline-block-list {

@@ -46,36 +46,39 @@ title: Front page
   {% include article-grid.html %}
 </section>
 
-<section class="front-section article-grid-small">
-  <header class="center">
-    <h2 class="section-heading">Grid small</h2>
-    <!-- <span>Det du vil ha</span> -->
+<section class="article--list-small l-container front-section">
+  <header class="section--header center">
+    <h2 class="title">Grid small</h2>
   </header>
-  <div class="row">
-    <div class="large-6 columns">
+
+  <div class="l-row">
+    <div class="grid-6">
       {% include article-grid-small.html %}
     </div>
-    <div class="large-6 columns">
+
+    <div class="grid-6">
       {% include article-grid-small.html %}
     </div>
   </div>
 </section>
 
-<section class="front-section">
-  <div class="row">
-    <div class="large-4 columns">
-      <h2 class="section-heading">Siste</h2>
+<section class="l-container front-section">
+  <h2 hidden>Articles</h2>
+  <div class="l-row">
+    <section class="grid-4">
+      <h2 class="title">Siste</h2>
       {% include article-title-list.html %}
-    </div>
-    <div class="large-4 columns">
-      <h2 class="section-heading">Ledere</h2>
-      {% include article-title-list.html %}
-    </div>
-    <div class="large-4 columns">
-      <h2 class="section-heading">Mest delt</h2>
-      {% include article-title-list.html %}
-    </div>
+    </section>
 
+    <section class="grid-4">
+      <h2 class="title">Ledere</h2>
+      {% include article-title-list.html %}
+    </section>
+
+    <section class="grid-4">
+      <h2 class="title">Mest delt</h2>
+      {% include article-title-list.html %}
+    </section>
   </div>
 </section>
 
@@ -84,12 +87,12 @@ title: Front page
 {% include ad-desktop-1.html %}
 
 <section class="l-container front-section">
-  <div class="l-row">
-    <header class="section--header center">
-      <h2 class="title">Simple list</h2>
-      <span>Newsfront gir deg det siste</span>
-    </header>
+  <header class="section--header center">
+    <h2 class="title">Simple list</h2>
+    <span>Newsfront gir deg det siste</span>
+  </header>
 
+  <div class="l-row">
     {% include article-title-list-2.html %}
   </div>
 </section>
