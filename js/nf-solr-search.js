@@ -70,7 +70,8 @@ nfSolr.doRequest = function () {
           indent: 'true',
           start: this.start,
           rows: this.limit,
-          q: this.q
+          q: this.q,
+          sort: 'date desc'
       },
       dataType: 'jsonp',
       jsonp: 'json.wrf',
