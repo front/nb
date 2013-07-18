@@ -6,28 +6,47 @@ function getParameterByName(name) {
   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
-var solrData = {
-  url: 'http://192.168.1.85:8983/solr/rss/select',
+/* Solr client */
+var nfSolr = {
+  /* Solr server endpoint */
+  url: 'http://index.websolr.com/solr/57e828ba9ce/select/',
+
+  /* Start result and number of results per page */
   start: 0,
   limit:3,
+
+  /* Query string */
   q: ''
 };
-/* solrData.url = 'http://evolvingweb.ca/solr/reuters/select/'; */
 
-function parseSolrResults(data) {
+/* Parse the json results */
+nfSolr.parseResults = function (data) {
   if (!data || !data.response) {
     alert('Error: No results');
     return;
   }
   var res = data.response;
   $('span.result-number').html(res.numFound + ' treff');
-  $('span.result-query').html(' - \'' + solrData.q +'\'');
+  $('span.result-query').html(' - \'' + this.q +'\'');
 
+  var list = $('#article-list');
   var template = $('#article-list article').first();
-  for (var i = 0; i < res.docs.length; i++) {
-    var item = res.docs[i];
 
-    /* Create article item */
+  for (var i = 0; i < res.docs.length; i++) {
+    this.createItem(list, template, res.docs[i]);
+  }
+  this.start += this.limit;
+  if (this.start >= res.numFound) {
+    $('div.load-more').hide();
+  }
+  else {
+    $('div.load-more').show();
+  }
+}
+
+/* Creates a result element from a query item */
+nfSolr.createItem = function (list, template, item) {
+
     var article = template.clone();
     article.addClass('removable');
     article.find('h2 a').html(item.title);
@@ -38,56 +57,51 @@ function parseSolrResults(data) {
     if (item.imgsrc) {
       article.find('img').attr('src', item.imgsrc);
     }
-    $('#article-list').append(article);
+    list.append(article);
     article.show();
-  }
-  solrData.start += solrData.limit;
-  if (solrData.start >= res.numFound) {
-    $('div.load-more').hide();
-  }
-  else {
-    $('div.load-more').show();
-  }
 }
 
-function solrRequest() {
-  jQuery.ajax({
-      type: 'GET',
-      url: solrData.url,
+/* Execute the request to the solr server */
+nfSolr.doRequest = function () {
+  $.ajax({
+      url: this.url,
       data: {
           wt: 'json',
           indent: 'true',
-          start: solrData.start,
-          rows: solrData.limit,
-          q: solrData.q
+          start: this.start,
+          rows: this.limit,
+          q: this.q
       },
       dataType: 'jsonp',
       jsonp: 'json.wrf',
-      jsonpCallback: 'parseSolrResults',
-      cache: false
+      jsonpCallback: 'nfSolr.parseResults',
+      cache: false,
   });
 }
 
-function solrSearch() {
-  solrData.start = 0;
-  solrData.q = $('#nf-search-q').val();
+/* Set up query parameters and execute the request */
+nfSolr.search = function () {
+  this.start = 0;
+  this.q = $('#nf-search-q').val();
   $('#article-list .removable').remove();
-  solrRequest();
+  this.doRequest();
 }
 
-function solrShowMore() {
-  solrRequest();
+/* Show more results */
+nfSolr.showMore = function () {
+  this.doRequest();
 }
 
-function solrSetup() {
+/* Set the solr server client */
+nfSolr.setup = function () {
   if(window.location.pathname === '/search.html'){
-    solrData.start = 0;
-    solrData.limit = 3;
-    solrData.q = getParameterByName('q');
-    if(solrData.q.length === 0) {
-      solrData.q = '*';
+    this.start = 0;
+    this.limit = 3;
+    this.q = getParameterByName('q');
+    if(this.q.length === 0) {
+      this.q = '*';
     }
-    solrRequest();
+    this.doRequest();
     $('#nf-search-q').focus();
   }
 }
