@@ -95,8 +95,6 @@ nfSolr.showMore = function () {
 /* Set the solr server client */
 nfSolr.setup = function () {
   if(window.location.pathname === '/s/'){
-    this.start = 0;
-    this.limit = 3;
     this.q = getParameterByName('q');
     if(this.q.length === 0) {
       this.q = '*';
