@@ -5,7 +5,7 @@ title: Front page
 
 <header class="section-header">
   <div class="l-row">
-    <h1><a href="front-mag.html">Forside</a></h1>
+  <h1><a href="front-mag.html">Forside</a></h1>
   </div>
 </header>
 
@@ -14,84 +14,84 @@ title: Front page
 {% include ad-desktop-sidebar.html %}
 
 <section class="main-story frontpage-section">
-<!-- <h2 class="center"><span>Mest populært på NewsFront</span></h2> -->
-    <div class="row ">
-        <div class="large-12 columns">
-            <article class="">
-                <a href="story-n.html">
-                <img alt="" src="http://gfx.dagbladet.no/labrador/268/268661/26866122/jpg/active/646x270.jpg">
-                <header>
-                    <h1 class="title"> Jeg har egentlig ikke vært meg selv på tre-fire år</h1>
-                    <p class="lead">Temperamentet er en styrke, mener Tom Nordlie. Vi har spurt spillerne hva de tenker.</p>
-                </header>
-                </a>
+  <div class="row ">
+    <div class="large-12 columns">
+      <article class="">
+        <a href="story-n.html">
+        <img alt="" src="http://gfx.dagbladet.no/labrador/268/268661/26866122/jpg/active/646x270.jpg">
+        <header>
+          <h1 class="title"> Jeg har egentlig ikke vært meg selv på tre-fire år</h1>
+          <p class="lead">Temperamentet er en styrke, mener Tom Nordlie. Vi har spurt spillerne hva de tenker.</p>
+        </header>
+        </a>
 
-            </article>
-        </div>
+      </article>
     </div>
+  </div>
 </section>
 
 <section class="most-popular front-section article-grid grid-style-1">
-    <header class="center">
-        <h2 class="section-heading">Grid 1</h2>
-        <!-- <span>Det du vil ha</span> -->
-    </header>
-    {% include article-grid.html %}
+  <header class="center">
+    <h2 class="section-heading">Grid 1</h2>
+    <!-- <span>Det du vil ha</span> -->
+  </header>
+  {% include article-grid.html %}
 </section>
 
 <section class="front-section article-grid grid-style-2">
-    <header class="center">
-        <h2 class="section-heading">Grid 2</h2>
-        <!-- <span>Det du vil ha</span> -->
-    </header>
-    {% include article-grid.html %}
+  <header class="center">
+    <h2 class="section-heading">Grid 2</h2>
+    <!-- <span>Det du vil ha</span> -->
+  </header>
+  {% include article-grid.html %}
 </section>
 
 <section class="front-section article-grid-small">
-    <header class="center">
-        <h2 class="section-heading">Grid small</h2>
-        <!-- <span>Det du vil ha</span> -->
-    </header>
-    <div class="row">
-        <div class="large-6 columns">
-            {% include article-grid-small.html %}
-        </div>
-        <div class="large-6 columns">
-            {% include article-grid-small.html %}
-        </div>
+  <header class="center">
+    <h2 class="section-heading">Grid small</h2>
+    <!-- <span>Det du vil ha</span> -->
+  </header>
+  <div class="row">
+    <div class="large-6 columns">
+      {% include article-grid-small.html %}
     </div>
+    <div class="large-6 columns">
+      {% include article-grid-small.html %}
+    </div>
+  </div>
 </section>
 
 <section class="front-section">
-    <div class="row">
-        <div class="large-4 columns">
-            <h2 class="section-heading">Siste</h2>
-            {% include article-title-list.html %}
-        </div>
-        <div class="large-4 columns">
-            <h2 class="section-heading">Ledere</h2>
-            {% include article-title-list.html %}
-        </div>
-        <div class="large-4 columns">
-            <h2 class="section-heading">Mest delt</h2>
-            {% include article-title-list.html %}
-        </div>
-
+  <div class="row">
+    <div class="large-4 columns">
+      <h2 class="section-heading">Siste</h2>
+      {% include article-title-list.html %}
     </div>
+    <div class="large-4 columns">
+      <h2 class="section-heading">Ledere</h2>
+      {% include article-title-list.html %}
+    </div>
+    <div class="large-4 columns">
+      <h2 class="section-heading">Mest delt</h2>
+      {% include article-title-list.html %}
+    </div>
+
+  </div>
 </section>
 
 {% include series-section.html %}
 
 {% include ad-desktop-1.html %}
 
-<section class="row frontpage-section">
-    <div class="small-12 columns">
-        <header class="center divider">
-            <h2 class="section-heading">Simple list</h2>
-            <span>Newsfront gir deg det siste</span>
-        </header>
-        {% include article-title-list-2.html %}
-    </div>
+<section class="l-container">
+  <div class="l-row">
+    <header class="section--header center">
+      <h2 class="title">Simple list</h2>
+      <span>Newsfront gir deg det siste</span>
+    </header>
+
+    {% include article-title-list-2.html %}
+  </div>
 </section>
 
 {% include hero-section-footer.html %}
