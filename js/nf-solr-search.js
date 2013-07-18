@@ -13,7 +13,7 @@ var nfSolr = {
 
   /* Start result and number of results per page */
   start: 0,
-  limit:3,
+  limit: 7,
 
   /* Query string */
   q: ''
@@ -94,7 +94,7 @@ nfSolr.showMore = function () {
 
 /* Set the solr server client */
 nfSolr.setup = function () {
-  if(window.location.pathname === '/search.html'){
+  if(window.location.pathname === '/s/'){
     this.start = 0;
     this.limit = 3;
     this.q = getParameterByName('q');
