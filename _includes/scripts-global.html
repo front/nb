@@ -7,7 +7,11 @@
   <script src="js/vendor/classie.js"></script>
   <script src="js/vendor/uisearch.js"></script>
 
+  <script src="js/vendor/enquire.min.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+
   <script src="js/nf-dropdownmenu.js"></script>
+  <script src="js/nf-loader.js"></script>
   <script src="js/nf-searchbox.js"></script>
   <script src="js/nf-solr-search.js"></script>
 
@@ -21,7 +25,26 @@
       $('#nf-menu-main').menuToggle();
       $('#nf-menu-main-blue').menuToggle();
 
+      // Solr search setup
       nfSolr.setup();
+
+      // Load aware for ads
+      $('div.top-wrapper').nfLoadAware([{
+          query: 'screen and (max-width: 480px)',
+          target: 'ads/ad-mobile.html'
+      }]);
+      $('div.nf-desktop-ad').nfLoadAware([{
+        query: 'screen and (min-width: 980px)',
+        target: 'ads/ad-desktop-1.html'
+      },{
+        query: 'screen and (min-width: 480px) and (max-width: 768px)',
+        target: 'ads/ad-desktop-2.html'
+      }]);
+      $('div.nf-desktop-ad-sidebar').nfLoadAware([{
+        query: 'screen and (min-width: 1280px)',
+        target: 'ads/ad-desktop-sidebar.html'
+      }]);
+
     });
   </script>
 

@@ -67,11 +67,10 @@ nfSolr.doRequest = function () {
       url: this.url,
       data: {
           wt: 'json',
-          indent: 'true',
           start: this.start,
           rows: this.limit,
-          q: this.q,
-          sort: 'date desc'
+          sort: 'date desc',
+          q: this.q
       },
       dataType: 'jsonp',
       jsonp: 'json.wrf',
