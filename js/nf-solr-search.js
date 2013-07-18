@@ -13,7 +13,7 @@ var nfSolr = {
 
   /* Start result and number of results per page */
   start: 0,
-  limit:3,
+  limit: 7,
 
   /* Query string */
   q: ''
@@ -67,11 +67,10 @@ nfSolr.doRequest = function () {
       url: this.url,
       data: {
           wt: 'json',
-          indent: 'true',
           start: this.start,
           rows: this.limit,
-          q: this.q,
-          sort: 'date desc'
+          sort: 'date desc',
+          q: this.q
       },
       dataType: 'jsonp',
       jsonp: 'json.wrf',
@@ -95,9 +94,7 @@ nfSolr.showMore = function () {
 
 /* Set the solr server client */
 nfSolr.setup = function () {
-  if(window.location.pathname === '/search.html'){
-    this.start = 0;
-    this.limit = 3;
+  if(window.location.pathname === '/s/'){
     this.q = getParameterByName('q');
     if(this.q.length === 0) {
       this.q = '*';

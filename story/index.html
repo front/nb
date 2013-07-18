@@ -10,6 +10,8 @@ title: News article
     </div>
 </header>
 
+<div class="row nf-desktop-ad"></div>
+
 <div class="row article-wrapper">
     <div class="large-12 columns">
         <article itemtype="http://schema.org/Article" role="main" class="article">
@@ -22,7 +24,7 @@ title: News article
                     </figcaption>
                 </figure>
 
-                {% include ad-desktop-sidebar.html %}
+                <div class="row nf-desktop-ad-sidebar"></div>
 
                 <div class="lead" itemprop="description">
                     <p>TIPHs mandat er for svakt, noe som underbygges av mangelen på resultater og derved liten bedring av situasjonen for palestinerne, sier Jan Kristensen, tidligere Head of Mission for de internasjonale observatørene i Hebron.</p>
@@ -41,7 +43,7 @@ title: News article
                 </div>
             </div>
             <div class="ad-inline">
-                {% include ad-mobile.html %}
+                <div class="nf-mobile-ad"></div>
             </div>
             <div class="row">
                 <div class="large-8 columns">
@@ -58,7 +60,7 @@ title: News article
                                 <span class="credit"> Chris Helgren / Reuters</span>
                                 <p>Julian Assange’s kontroversielle WikiLeaks-prosjekt har fått mange til å bekymre seg.</p>
                             </figcaption>
-                        </figure> 
+                        </figure>
 
                         <h2>- Spiker i kista til Oslo-avtalen</h2>
 
@@ -83,7 +85,7 @@ title: News article
                                 <span class="credit"> Fredrik Paus / Reuters</span>
                                 <p>Her brukes offset på bildet. Julian Assange’s kontroversielle WikiLeaks-prosjekt har fått mange til å bekymre seg.</p>
                             </figcaption>
-                        </figure> 
+                        </figure>
 
                         <p>- Mange av observatørene har solid politibakgrunn. Deres instinkt er jo å gripe inn når de ser bråk og konflikt mellom mennesker. Så må de i stedet skrive notater, ta bilder og dokumentere. Det er krevende og frustrerende. Men det er premisset for oppdraget.</p>
 
@@ -176,13 +178,13 @@ title: News article
                     <h3 class="aside-heading">Siste</h3>
                     {% include article-title-list-2.html %}
                 </div>
-            </div>        
+            </div>
         </article>
     </div>
 </div>
 
-{% include ad-mobile.html %}
+<div class="nf-mobile-ad"></div>
 
-{% include ad-mobile.html %}
+<div class="nf-mobile-ad"></div>
 
 {% include related.html %}

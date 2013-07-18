@@ -1,15 +1,18 @@
 
-  <script src="js/vendor/jquery.js"></script>
+  <script src="/js/vendor/jquery.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script src="js/vendor/custom.modernizr.js"></script>
-  <script src="js/vendor/holder.js"></script>
-  <script src="js/vendor/classie.js"></script>
-  <script src="js/vendor/uisearch.js"></script>
+  <script src="/js/foundation.min.js"></script>
+  <script src="/js/vendor/custom.modernizr.js"></script>
+  <script src="/js/vendor/holder.js"></script>
+  <script src="/js/vendor/classie.js"></script>
 
-  <script src="js/nf-dropdownmenu.js"></script>
-  <script src="js/nf-searchbox.js"></script>
-  <script src="js/nf-solr-search.js"></script>
+  <script src="/js/vendor/enquire.min.js"></script>
+  <script src="/js/vendor/waypoints.min.js"></script>
+
+  <script src="/js/nf-dropdownmenu.js"></script>
+  <script src="/js/nf-loader.js"></script>
+  <script src="/js/nf-searchbox.js"></script>
+  <script src="/js/nf-solr-search.js"></script>
 
   <script>
     $(document).ready(function(){
@@ -21,7 +24,41 @@
       $('#nf-menu-main').menuToggle();
       $('#nf-menu-main-blue').menuToggle();
 
+      // Solr search setup
       nfSolr.setup();
+
+      // Load aware for ads
+      $('div.nf-mobile-ad').nfLoadAware([{
+        query: 'screen and (max-width: 480px)',
+        target: '/ads/ad-mobile.html'
+      }]);
+      $('div.nf-desktop-ad').nfLoadAware([{
+        query: 'screen and (min-width: 980px)',
+        target: '/ads/ad-desktop-1.html'
+      },{
+        query: 'screen and (min-width: 480px) and (max-width: 768px)',
+        target: '/ads/ad-desktop-2.html'
+      }]);
+      $('div.nf-desktop-ad-sidebar').nfLoadAware([{
+        query: 'screen and (min-width: 1280px)',
+        target: '/ads/ad-desktop-sidebar.html'
+      }]);
+
+      // Load aware for images
+      $('img#nf-index-main').nfImageAware([{
+        query: 'screen and (min-width: 769px)',
+        target: 'http://gfx.dagbladet.no/labrador/268/268661/26866122/jpg/active/646x270.jpg'
+      }, {
+        query: 'screen and (max-width: 768px)',
+        target: 'http://gfx.dagbladet.no/labrador/282/282526/28252628/jpg/active/646x270.jpg'
+      }]);
+      $('img#nf-meninger-main').nfImageAware([{
+        query: 'screen and (min-width: 769px)',
+        target: 'http://www.plattphotography.com/data/photos/279_10017_platt_photography_george_w_bush_event_photography.jpg'
+      }, {
+        query: 'screen and (max-width: 768px)',
+        target: 'http://s.wsj.net/public/resources/images/OB-SY935_bush_G_20120515142259.jpg'
+      }]);
     });
   </script>
 
