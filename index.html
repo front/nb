@@ -30,20 +30,22 @@ title: Front page
   </div>
 </section>
 
-<section class="most-popular front-section article-grid grid-style-1">
-  <header class="center">
-    <h2 class="section-heading">Grid 1</h2>
-    <!-- <span>Det du vil ha</span> -->
+<section class="l-container front-section most-popular article-grid grid-style--minimal">
+  <header class="section--header center">
+    <h2 class="title">Grid 1</h2>
   </header>
-  {% include article-grid.html %}
+  <div class="l-row">
+    {% include article-grid.html %}
+  </div>
 </section>
 
-<section class="front-section article-grid grid-style-2">
-  <header class="center">
-    <h2 class="section-heading">Grid 2</h2>
-    <!-- <span>Det du vil ha</span> -->
+<section class="l-container front-section article-grid grid-style--bordered">
+  <header class="section--header center">
+    <h2 class="title">Grid 2</h2>
   </header>
-  {% include article-grid.html %}
+  <div class="l-row">
+    {% include article-grid.html %}
+  </div>
 </section>
 
 <section class="article--list-small l-container front-section">

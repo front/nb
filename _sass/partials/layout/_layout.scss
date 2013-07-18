@@ -31,8 +31,11 @@
       @include float-span($i);
 
       @if $i > 1 {
-        &:nth-child(#{$grids/$i}n) {
-          @include float-span($i, 'omega');
+        $nth: $grids/$i;
+        @if round($nth) == $nth {
+          &:nth-child(#{$nth}n) {
+            @include float-span($i, 'omega');
+          }
         }
       }
     }

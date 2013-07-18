@@ -1,0 +1,95 @@
+// All grids
+.article-grid {
+  margin: 30px 0;
+  article {
+    min-height: 320px;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 5px 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #999;
+  }
+  .btn-simple {
+    margin-bottom: 0;
+    left: 36%;
+  }
+}
+
+
+// grid style 1
+.grid-style--minimal {
+  border-top: 1px dotted $grid-style-border-color;
+  border-bottom: 1px dotted $grid-style-border-color;
+  padding: 1.25em 0;
+
+  article {
+    min-height: 270px;
+  }
+  img {
+    @include box-shadow(0 0 5px rgba(0,0,0,0.5));
+  }
+  .btn-simple {
+    display: none;
+  }
+}
+
+// Grid style: bordered
+.grid-style--bordered {
+
+  // Style grid element.
+  $grid-style-padding: gutter-span() / 2;
+  .grid-item {
+    padding: $grid-style-padding;
+
+    border-right: 1px solid $grid-style-border-color;
+    border-top: 1px solid $grid-style-border-color;
+  }
+
+  // Rebuild grid without gutter.
+  // TODO: move this to a generic class name?
+  @include breakpoint(max-width $breakpoint-narrow) {
+    @for $i from 2 through 6 {
+      .grid-#{$i} {
+        @include float-span(1, $grid: 2, $gutter: 0.0);
+      }
+    }
+    .grid-item:nth-child(2n+1) {
+      border-left: 1px solid $grid-style-border-color;
+    }
+  }
+  @include breakpoint($breakpoint-narrow) {
+    @for $i from 2 through 6 {
+      .grid-#{$i} {
+        @include float-span($i, $gutter: 0.0);
+      }
+
+      // Add border to the beginning of each grid row.
+      $nth: $grids/$i;
+      @if round($nth) == $nth {
+        .grid-#{$i}:nth-child(#{$nth}n+1) {
+          border-left: 1px solid $grid-style-border-color;
+        }
+      }
+    }
+  }
+
+  .l-row {
+    border-bottom: 1px solid $grid-style-border-color;
+  }
+  article {
+    min-height: 310px;
+  }
+  h1, a {
+    color: #222;
+  }
+}
+
+// details
+.most-popular {
+  background: #ffffe5;
+}
