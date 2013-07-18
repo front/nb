@@ -14,6 +14,21 @@
       });
     }
   };
+  /* Loads an image based on a media-query */
+  $.fn.nfImageAware = function(options) {
+    var self = this;
+    for (var i = 0; i < options.length; i++) {
+      enquire.register(options[i].query, {
+        target: options[i].target,
+        match: function() {
+          self.attr('src', this.target);
+        },
+        unmatch: function() {
+          self.attr('');
+        }
+      });
+    }
+  };
   /* Lazily loads a chunk of html */
   $.fn.nfLazyLoad = function(options) {
     var self = this;
@@ -49,6 +64,9 @@
             target: options[i].target,
             match: function() {
               self.load(this.target);
+            },
+            unmatch: function() {
+              self.html('');
             }
           });
         }

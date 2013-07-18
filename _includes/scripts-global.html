@@ -29,8 +29,8 @@
 
       // Load aware for ads
       $('div.nf-mobile-ad').nfLoadAware([{
-          query: 'screen and (max-width: 480px)',
-          target: '/ads/ad-mobile.html'
+        query: 'screen and (max-width: 480px)',
+        target: '/ads/ad-mobile.html'
       }]);
       $('div.nf-desktop-ad').nfLoadAware([{
         query: 'screen and (min-width: 980px)',
@@ -45,7 +45,20 @@
       }]);
 
       // Load aware for images
-
+      $('img#nf-index-main').nfImageAware([{
+        query: 'screen and (min-width: 769px)',
+        target: 'http://gfx.dagbladet.no/labrador/268/268661/26866122/jpg/active/646x270.jpg'
+      }, {
+        query: 'screen and (max-width: 768px)',
+        target: 'http://gfx.dagbladet.no/labrador/282/282526/28252628/jpg/active/646x270.jpg'
+      }]);
+      $('img#nf-meninger-main').nfImageAware([{
+        query: 'screen and (min-width: 769px)',
+        target: 'http://www.plattphotography.com/data/photos/279_10017_platt_photography_george_w_bush_event_photography.jpg'
+      }, {
+        query: 'screen and (max-width: 768px)',
+        target: 'http://s.wsj.net/public/resources/images/OB-SY935_bush_G_20120515142259.jpg'
+      }]);
     });
   </script>
 
