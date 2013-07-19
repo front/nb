@@ -5421,25 +5421,27 @@ header + .ads {
   }
 }
 
-.article-grid {
-  margin: 30px 0;
-}
-.article-grid article {
+.grid-style article {
   min-height: 320px;
 }
-.article-grid h1 {
+.grid-style h1 {
   font-size: 22px;
   line-height: 24px;
   margin: 5px 0;
 }
-.article-grid p {
+.grid-style p {
+  color: #999;
   font-size: 14px;
   line-height: 16px;
-  color: #999;
 }
-.article-grid .btn-simple {
+.grid-style footer {
+  text-align: center;
+}
+.grid-style .btn-simple {
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
   margin-bottom: 0;
-  left: 36%;
 }
 
 .grid-style--minimal {
@@ -5563,10 +5565,6 @@ header + .ads {
   color: #222;
 }
 
-.most-popular {
-  background: #ffffe5;
-}
-
 .hero {
   min-height: 300px;
   overflow: hidden;
@@ -5678,6 +5676,10 @@ header + .ads {
   .series--promo footer {
     margin-bottom: 1.25em;
   }
+}
+
+.is-popular {
+  background: #FFFFE5;
 }
 
 .image-replace {
