@@ -5303,6 +5303,24 @@ header + .ads {
   line-height: 16px;
 }
 
+.article-featured h1.title {
+  font-size: 38px;
+  line-height: 40px;
+}
+.article-featured p {
+  color: #999;
+  font-size: 18px;
+  line-height: 20px;
+}
+.article-featured a {
+  color: inherit;
+}
+.article-featured img {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 .footer {
   padding-top: 20px;
   background-color: #ed232a;
@@ -5694,21 +5712,6 @@ header + .ads {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-decoration: none !important;
   word-wrap: break-word;
-}
-
-.main-story h1 {
-  font-size: 38px;
-  line-height: 40px;
-}
-.main-story .lead {
-  font-size: 18px;
-  line-height: 20px;
-}
-.main-story img {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.main-story p {
-  color: #999;
 }
 
 .icon-search {
