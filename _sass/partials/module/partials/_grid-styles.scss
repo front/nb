@@ -60,6 +60,7 @@
       }
     }
     .grid-item:nth-child(2n+1) {
+      clear: both;
       border-left: 1px solid $grid-style-border-color;
     }
   }
@@ -73,6 +74,7 @@
       $nth: $grids/$i;
       @if round($nth) == $nth {
         .grid-#{$i}:nth-child(#{$nth}n+1) {
+          clear: both;
           border-left: 1px solid $grid-style-border-color;
         }
       }
@@ -81,9 +83,6 @@
 
   .l-row {
     border-bottom: 1px solid $grid-style-border-color;
-  }
-  article {
-    min-height: 310px;
   }
   h1, a {
     color: #222;

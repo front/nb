@@ -6669,6 +6669,7 @@ header + .ads {
     margin-right: 0%;
   }
   .grid-style--bordered .grid-item:nth-child(2n+1) {
+    clear: both;
     border-left: 1px solid #d6d6d6;
   }
 }
@@ -6681,6 +6682,7 @@ header + .ads {
     margin-right: 0%;
   }
   .grid-style--bordered .grid-2:nth-child(6n+1) {
+    clear: both;
     border-left: 1px solid #d6d6d6;
   }
   .grid-style--bordered .grid-3 {
@@ -6691,6 +6693,7 @@ header + .ads {
     margin-right: 0%;
   }
   .grid-style--bordered .grid-3:nth-child(4n+1) {
+    clear: both;
     border-left: 1px solid #d6d6d6;
   }
   .grid-style--bordered .grid-4 {
@@ -6701,6 +6704,7 @@ header + .ads {
     margin-right: 0%;
   }
   .grid-style--bordered .grid-4:nth-child(3n+1) {
+    clear: both;
     border-left: 1px solid #d6d6d6;
   }
   .grid-style--bordered .grid-5 {
@@ -6718,14 +6722,12 @@ header + .ads {
     margin-right: 0%;
   }
   .grid-style--bordered .grid-6:nth-child(2n+1) {
+    clear: both;
     border-left: 1px solid #d6d6d6;
   }
 }
 .grid-style--bordered .l-row {
   border-bottom: 1px solid #d6d6d6;
-}
-.grid-style--bordered article {
-  min-height: 310px;
 }
 .grid-style--bordered h1, .grid-style--bordered a {
   color: #222;
