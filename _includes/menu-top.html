@@ -1,35 +1,53 @@
-<nav id="nf-menu-top" class="nf-mainbar nf-white nf-small">
+
+<div>
+  <form class="nf-searchbar" action="/s/" method="get">
+    <div class="row">
+      <input type="text" name="q" placeholder="Søk Newsfront...">
+      <input type="submit" value="">
+      <span class="nf-search-cancel"></span>
+    </div>
+  </form>
+</div>
+
+<nav id="nf-menu-top" class="nf-menu nf-white nf-small">
   <section class="nf-brand"><a href="/">Newsfront</a></section>
-  <section class="nf-toggle-sub" data-toggle=".nf-mainbar-sub"><a href="#">Meny</a></section>
-  <section class="nf-mainbar-keep">
+  <section class="nf-toggle-sub" data-toggle=".nf-section-sub"><a href="#">Meny</a></section>
+  <section class="nf-section-keep">
     <ul>
-      <li class=""><a href="/s/" class=""><img style="padding: 2px 0 0 4px;" src="/img/icon-search.png"></a></li>
+      <li>
+        <a href="/s/" class="nf-show-searchbox">
+          <img style="padding: 4px 0 0 4px" src="/img/icon-search.png">
+        </a>
+      </li>
       <li class="divider"></li>
     </ul>
   </section>
-  <section class="nf-mainbar-section">
+  <section class="nf-section-main">
     <ul>
       <li><a href="/meninger/">Meninger</a></li>
       <li class="divider"></li>
       <li><a href="/kultur/">Kultur</a></li>
       <li class="divider"></li>
-      <li class=""><a href="/abonner/" class="">Abonnér</a></li>
+      <li><a href="/abonner/">Abonnér</a></li>
       <li class="divider"></li>
     </ul>
   </section>
-  <section class="nf-mainbar-sub">
+  <section class="nf-section-sub">
     <ul>
       <li><a href="#">Forside</a></li>
       <li><a href="#">Meninger</a></li>
       <li><a href="#">Kultur</a></li>
+      <li class="divider"></li>
       <li><a href="#">Abonnér</a></li>
       <li><a href="#">Nyheter</a></li>
       <li><a href="#">TV guide</a></li>
       <li><a href="#">Spill</a></li>
+      <li class="divider"></li>
       <li><a href="#">Eiendom</a></li>
       <li><a href="#">Jobbmarked</a></li>
       <li><a href="#">Bildeserier</a></li>
       <li><a href="#">Reise</a></li>
+      <li class="divider"></li>
       <li><a href="#">Om oss</a></li>
       <li><a href="#">A-Å</a></li>
     </ul>

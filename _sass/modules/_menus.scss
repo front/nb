@@ -1,7 +1,8 @@
-
+/*
+ * Layout
+ */
 $nfTopbarHeight: 42px;
-
-@mixin main-wide {
+@mixin nf-menu-wide {
   float: right;
   ul {
     position: relative;
@@ -22,8 +23,44 @@ $nfTopbarHeight: 42px;
     }
   }
 }
-
-@mixin main-compact {
+@mixin nf-menu-medium {
+  display: none;
+  position: relative;
+  float: none;
+  clear: both;
+  height: auto;
+  ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    li {
+      display: inline-block;
+      width: 31%;
+      height: auto;
+      &.divider {
+        display: none;
+      }
+      a {
+        display: block;
+        padding: 6px 0 6px 16px;
+        font-size: 15px;
+        font-weight: 400;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      @media (max-width:480px) {
+        width: 32%;
+      }
+      @media (min-width:769px) {
+        width: 24%;
+      }
+    }
+  }
+}
+@mixin nf-menu-compact {
   position: relative;
   display: none;
   float: none;
@@ -47,37 +84,11 @@ $nfTopbarHeight: 42px;
     }
   }
 }
-
-@mixin main-medium {
-  display: none;
-  position: relative;
-  float: none;
-  clear: both;
-  height: auto;
-  ul {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-    li {
-      display: inline-block;
-      width: 31%;
-      height: auto;
-      a {
-        display: block;
-        padding: 6px 0 6px 16px;
-        font-size: 15px;
-        font-weight: 400;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
-@mixin topbar-theme-white-wide {
+/*
+ * Theming
+ */
+/************** MENU: WHITE **************/
+@mixin topbar-global-white {
   background-color: #fff;
   a {
     color: #777;
@@ -90,20 +101,32 @@ $nfTopbarHeight: 42px;
     font-size: 17px;
     font-weight: 900;
   }
-  .nf-toggle a {
+  .nf-toggle-main a {
     background: #ddd;
     color: #111;
     font-weight: bold;
   }
-  .nf-mainbar-keep, .nf-mainbar-section {
-    @include main-wide;
+  .nf-section-keep {
+    @include nf-menu-wide;
     ul li {
       &.divider {
         border-left: 1px solid #ccc;
       }
     }
   }
-  .nf-mainbar-sub {
+}
+@mixin topbar-theme-white-wide {
+  @include topbar-global-white;
+  .nf-section-main {
+    @include nf-menu-wide;
+    ul li {
+      &.divider {
+        border-left: 1px solid #ccc;
+      }
+    }
+  }
+  .nf-section-sub {
+    @include nf-menu-medium;
     ul {
       background-color: #fff;
       border-top: 1px solid #ccc;
@@ -116,44 +139,15 @@ $nfTopbarHeight: 42px;
     }
   }
 }
-
-@mixin topbar-theme-white-compact {
-  @include topbar-theme-white-wide;
-  .nf-mainbar-section {
-    @include main-compact;
-    ul {
-      background-color: #fff;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      li {
-        &.divider {
-          border-top: 6px solid #dcdcdc
-        }
-        a {
-          line-height: 1.25;
-          letter-spacing: 0;
-          font-weight: 700;
-          padding: 12px 8px;
-          font-size: 16px;
-          color: #1e1e1e;
-          border-bottom: 1px solid #dcdcdc;
-          background: #fff url('../img/icons-sprite.png') no-repeat right -197px;
-        }
-      }
-    }
-  }
-}
-
 @mixin topbar-theme-white-medium {
-  .nf-toggle {
+  @include topbar-global-white;
+  .nf-toggle-main {
     display: block;
   }
-  @include topbar-theme-white-wide;
-  .nf-mainbar-section {
-    @include main-medium;
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-medium;
     ul {
       background-color: #f5f5f5;
-      border: none;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
       li {
@@ -169,8 +163,36 @@ $nfTopbarHeight: 42px;
     }
   }
 }
-
-@mixin topbar-theme-red-wide {
+@mixin topbar-theme-white-compact {
+  @include topbar-global-white;
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-compact;
+    ul {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 0;
+      li {
+        &.divider {
+          display: block;
+          border-top: 6px solid #dcdcdc
+        }
+        a {
+          line-height: 1.25;
+          letter-spacing: 0;
+          font-weight: 700;
+          padding: 12px 8px;
+          font-size: 16px;
+          color: #1e1e1e;
+          border-bottom: 1px solid #dcdcdc;
+          background: #fff url('../img/icons-sprite.png') no-repeat right -197px;
+        }
+      }
+    }
+  }
+}
+/************** MENU: RED **************/
+@mixin topbar-global-red {
   background-color: #c00;
   a {
     color: #fff;
@@ -183,20 +205,42 @@ $nfTopbarHeight: 42px;
     font-size: 17px;
     font-weight: bold;
   }
-  .nf-toggle a {
+  .nf-toggle-main a {
     background: #900;
     color: #fff;
     font-weight: bold;
   }
-  .nf-mainbar-keep, .nf-mainbar-section {
-    @include main-wide;
+  .nf-toggle-sub {
+    a {
+      background: url('../img/icons-sprite.png') no-repeat right -396px;
+      padding-right: 30px;
+      font-weight: bold;
+    }
+    &.nf-open a {
+      background: url('../img/icons-sprite.png') no-repeat right -297px;
+    }
+  }
+  .nf-section-keep {
+    @include nf-menu-wide;
     ul li {
       &.divider {
         border-left: 1px solid #900;
       }
     }
   }
-  .nf-mainbar-sub {
+}
+@mixin topbar-theme-red-wide {
+  @include topbar-global-red;
+  .nf-section-main {
+    @include nf-menu-wide;
+    ul li {
+      &.divider {
+        border-left: 1px solid #900;
+      }
+    }
+  }
+  .nf-section-sub {
+    @include nf-menu-medium;
     ul {
       background-color: #fff;
       border-top: 1px solid #ccc;
@@ -204,17 +248,42 @@ $nfTopbarHeight: 42px;
       li {
         a {
           border-left: 1px solid #a00;
+          background: none;
           color: #333;
         }
       }
     }
   }
 }
-
+@mixin topbar-theme-red-medium {
+  @include topbar-global-red;
+  .nf-toggle-main {
+    display: block;
+  }
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-medium;
+    ul {
+      background-color: #fff;
+      border: none;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      li {
+        &.divider {
+          display: none;
+        }
+        a {
+          border-left: 1px solid #a00;
+          background: none;
+          color: #333;
+        }
+      }
+    }
+  }
+}
 @mixin topbar-theme-red-compact {
-  @include topbar-theme-red-wide;
-  .nf-mainbar-section {
-    @include main-compact;
+  @include topbar-global-red;
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-compact;
     ul {
       background-color: #fff;
       li {
@@ -235,34 +304,8 @@ $nfTopbarHeight: 42px;
     }
   }
 }
-
-@mixin topbar-theme-red-medium {
-  .nf-toggle {
-    display: block;
-  }
-  @include topbar-theme-red-wide;
-  .nf-mainbar-section {
-    @include main-medium;
-    ul {
-      background-color: #f5f5f5;
-      border: none;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      li {
-        &.divider {
-          display: none;
-        }
-        a {
-          border-left: 1px solid #ccc;
-          background: none;
-          color: #333;
-        }
-      }
-    }
-  }
-}
-
-@mixin topbar-theme-blue-wide {
+/************** MENU: BLUE **************/
+@mixin topbar-global-blue {
   background-color: #1191d2;
   a {
     color: #fff;
@@ -275,36 +318,71 @@ $nfTopbarHeight: 42px;
     font-size: 17px;
     font-weight: bold;
   }
-  .nf-toggle a {
+  .nf-toggle-main a {
     background: #f5f5f5;
     color: #1191d2;
     font-weight: bold;
   }
-  .nf-mainbar-keep, .nf-mainbar-section {
-    @include main-wide;
+  .nf-section-keep {
+    @include nf-menu-wide;
     ul li {
       &.divider {
         border-left: 1px solid #ccc;
       }
     }
   }
-  .nf-mainbar-sub {
+}
+@mixin topbar-theme-blue-wide {
+  @include topbar-global-blue;
+  .nf-section-main {
+    @include nf-menu-wide;
+    ul li {
+      &.divider {
+        border-left: 1px solid #ccc;
+      }
+    }
+  }
+  .nf-section-sub {
+    @include nf-menu-medium;
     ul {
       background-color: #fff;
-      border-top: 1px solid #ccc;
+      border: none;
       border-bottom: 1px solid #ccc;
       li a {
-        border-left: 1px solid #aaa;
+        border-left: 1px solid #1191d2;
         color: #333;
       }
     }
   }
 }
-
+@mixin topbar-theme-blue-medium {
+  @include topbar-global-blue;
+  .nf-toggle-main {
+    display: block;
+  }
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-medium;
+    ul {
+      background-color: #fff;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      li {
+        &.divider {
+          display: none;
+        }
+        a {
+          border-left: 1px solid #1191d2;
+          background: none;
+          color: #333;
+        }
+      }
+    }
+  }
+}
 @mixin topbar-theme-blue-compact {
-  @include topbar-theme-blue-wide;
-  .nf-mainbar-section {
-    @include main-compact;
+  @include topbar-global-blue;
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-compact;
     ul {
       li {
         &.divider {
@@ -327,34 +405,10 @@ $nfTopbarHeight: 42px;
     }
   }
 }
-
-@mixin topbar-theme-blue-medium {
-  .nf-toggle {
-    display: block;
-  }
-  @include topbar-theme-blue-wide;
-  .nf-mainbar-section {
-    @include main-medium;
-    ul {
-      background-color: #f5f5f5;
-      border: none;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      li {
-        &.divider {
-          display: none;
-        }
-        a {
-          border-left: 1px solid #ccc;
-          background: none;
-          color: #333;
-        }
-      }
-    }
-  }
-}
-
-.nf-mainbar {
+/*
+ * NF-MAINBAR Global Style
+ */
+.nf-menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -368,7 +422,35 @@ $nfTopbarHeight: 42px;
     margin: 0;
     padding: 0;
   }
-
+  .nf-brand {
+    float: left;
+    padding: 15px;
+    height: $nfTopbarHeight;
+  }
+  .nf-toggle-main {
+    float: right;
+    display: inline-block;
+    a {
+      display: block;
+      padding: 15px;
+      height: $nfTopbarHeight;
+    }
+    @media (max-width:480px) {
+      display: block;
+    }
+    @media (min-width:481px) {
+      display: none;
+    }
+  }
+  .nf-toggle-sub {
+    float: right;
+    display: inline-block;
+    a {
+      height: $nfTopbarHeight;
+      display: block;
+      padding: 15px;
+    }
+  }
   &.nf-small {
     &.nf-white {
       @media (max-width:480px) {
@@ -395,7 +477,6 @@ $nfTopbarHeight: 42px;
       }
     }
   }
-
   &.nf-medium {
     &.nf-white {
       @media (max-width:480px) {
@@ -431,7 +512,6 @@ $nfTopbarHeight: 42px;
       }
     }
   }
-
   &.nf-large {
     &.nf-white {
       @media (max-width:480px) {
@@ -464,67 +544,6 @@ $nfTopbarHeight: 42px;
       }
       @media (min-width:961px) {
         @include topbar-theme-blue-wide;
-      }
-    }
-  }
-
-  .nf-brand {
-    float: left;
-    padding: 15px;
-    height: $nfTopbarHeight;
-  }
-  .nf-toggle {
-    float: right;
-    display: inline-block;
-    a {
-      display: block;
-      padding: 15px;
-      height: $nfTopbarHeight;
-    }
-    @media (max-width:480px) {
-      display: block;
-    }
-    @media (min-width:481px) {
-      display: none;
-    }
-  }
-  .nf-toggle-sub {
-    float: right;
-    display: inline-block;
-    a {
-      height: $nfTopbarHeight;
-      display: block;
-      padding: 15px;
-    }
-  }
-  .nf-mainbar-sub {
-    display: none;
-    position: relative;
-    clear: both;
-    height: auto;
-    ul {
-      display: block;
-      width: 100%;
-      padding: 10px 0;
-      li {
-        display: inline-block;
-        width: 24%;
-        a {
-          display: block;
-          padding: 10px 0;
-          padding-left: 16px;
-          font-size: 17px;
-          font-weight: 400;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-        @media (max-width:480px) {
-           width: 32%;
-        }
-        @media (min-width:960px) {
-           width: 18%;
-        }
       }
     }
   }
