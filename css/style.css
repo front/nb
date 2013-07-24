@@ -6328,6 +6328,22 @@ a.th {
   white-space: nowrap;
 }
 
+.section-header {
+  background: #cc0000;
+  margin-bottom: 0.9375em;
+}
+.section-header .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 1.0625em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-header a {
+  color: white;
+}
+
 .nf-adholder {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6912,22 +6928,6 @@ li .published {
 
 .top-bar {
   margin-bottom: 0;
-}
-
-.section-header {
-  background: #C80000;
-  margin-bottom: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.section-header h1 {
-  font-size: 18px;
-  font-weight: 300;
-  margin: 0;
-  text-transform: uppercase;
-}
-.section-header a {
-  color: white;
 }
 
 .tl-page {

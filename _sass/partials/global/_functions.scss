@@ -1,5 +1,11 @@
-////////////////////////
 // Functions Partials
 //
 // All of your functions should go in this file.
-////////////////////////
+
+// A Compass function to convert pixel font-sizes to em's.
+@function em($target, $context: $base-font-size) {
+  @if $target == 0 {
+    @return 0;
+  }
+  @return $target / $context + 0em;
+}

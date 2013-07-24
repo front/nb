@@ -46,8 +46,26 @@
   margin-right: 0;
 }
 
-
 // Lists
 .inline-block-list {
   @include inline-block-list;
+}
+
+// Structure
+.section-header {
+  background: $color-header-bg;
+  margin-bottom: em(15px);
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $color-header-color;
+    font-size: em(17px);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  a {
+    color: $color-header-color;
+  }
 }
