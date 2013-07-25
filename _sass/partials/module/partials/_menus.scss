@@ -1,0 +1,342 @@
+// Layout
+$nf-menu-font-size:  15px !default;
+$nf-menu-height:     42px !default;
+$nf-menu-link-pad-v: 11px !default;
+$nf-menu-link-pad-h: 12px !default;
+
+$nf-menu-breakpoint-mobile:  480px !default;
+$nf-menu-breakpoint-tablet:  768px !default;
+$nf-menu-breakpoint-desktop: 960px !default;
+
+$nf-menu-line-height: $nf-menu-height - ($nf-menu-link-pad-v * 2) !default;
+
+// Horizontal menu.
+@mixin nf-menu-wide {
+  @include horizontal-list(0);
+  float: right;
+
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    height: $nf-menu-height;
+
+    &.divider {
+      width: 1px;
+      background: none;
+    }
+  }
+  a {
+    display: inline-block;
+    height: $nf-menu-height;
+    padding: $nf-menu-link-pad-v $nf-menu-link-pad-h;
+    line-height: $nf-menu-line-height;
+  }
+}
+// Stacked menu with columns.
+@mixin nf-menu-medium {
+  position: relative;
+  clear: both;
+  float: none;
+  display: none;
+  height: auto;
+
+  ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding: $nf-menu-link-pad-v 0;
+  }
+  li {
+    display: inline-block;
+    width: 32%;
+    height: auto;
+
+    &.divider {
+      display: none;
+    }
+    @media (min-width: $nf-menu-breakpoint-tablet) {
+      width: 24%;
+    }
+  }
+  a {
+    display: block;
+    padding: 6px 0 6px 16px;
+    font-size: 15px;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// Stacked menu.
+@mixin nf-menu-compact {
+  position: relative;
+  clear: both;
+  float: none;
+  display: none;
+  height: auto;
+
+  ul {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  li {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &.divider {
+      width: 100%;
+      height: 1px;
+    }
+  }
+  a {
+    display: block;
+  }
+}
+
+// THEMING
+////// MENU: BASE
+@mixin topbar-base(
+  $bg: #FFF,
+  $color: #777,
+  $fw: 600,
+  $tbg: #DDD,
+  $tcolor: #111,
+  $divider-width: 1px,
+  $divider-style: solid,
+  $divider-color: #CCC,
+  $sub-bg-color: #FFF,
+  $sub-border-top-color: #CCC,
+  $sub-border-bottom-color: #CCC,
+  $sub-color: #666) {
+
+  background-color: $bg;
+
+  a {
+    color: $color;
+    font-weight: $fw;
+    cursor: pointer;
+  }
+  .nf-brand a {
+    color: $color;
+    font-size: $nf-menu-font-size + 2px;
+    font-weight: 900;
+  }
+  .nf-toggle-main a {
+    background: $tbg;
+    color: $tcolor;
+    font-weight: bold;
+  }
+  .nf-section-keep {
+    @include nf-menu-wide;
+  }
+  .nf-toggle-sub a {
+    font-weight: bold;
+  }
+  .nf-toggle-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 30px;
+    margin-right: -#{round($nf-menu-link-pad-h/1.5)};
+    background: image-url('icons-sprite.png') no-repeat center -409px;
+
+    .nf-open & {
+      background-position: center -311px;
+    }
+  }
+  .nf-section-main, .nf-section-keep {
+    li.divider {
+      border-left: $divider-width $divider-style $divider-color;
+    }
+  }
+  .nf-section-sub {
+    ul {
+      background-color: $sub-bg-color;
+      border-top: 1px solid $sub-border-top-color;
+      border-bottom: 1px solid $sub-border-bottom-color;
+    }
+    a {
+      border-left: 1px solid $sub-border-top-color;
+      color: $sub-color;
+      font-weight: 700;
+    }
+  }
+}
+@mixin topbar-base-wide() {
+  .nf-section-main {
+    @include nf-menu-wide;
+  }
+  .nf-section-sub {
+    @include nf-menu-medium;
+  }
+}
+@mixin topbar-base-medium($bg: #FFF, $bc: #CCC, $color: #333) {
+  .nf-toggle-main {
+    display: block;
+  }
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-medium;
+
+    ul {
+      background-color: $bg;
+      border-top: 1px solid $bc;
+      border-bottom: 1px solid $bc;
+    }
+    a {
+      border-left: 1px solid $bc;
+      background: none;
+      color: $color;
+    }
+  }
+}
+@mixin topbar-base-compact($bg: #FFF, $bc: #CCC, $dbc: #DCDCDC, $color: #1E1E1E) {
+  .nf-section-main, .nf-section-sub {
+    @include nf-menu-compact;
+
+    ul {
+      background-color: $bg;
+      border-top: 1px solid $bc;
+      border-bottom: 1px solid $bc;
+      padding: 0;
+    }
+    li.divider {
+      display: block;
+      border-top: 6px solid $dbc;
+      border-left: none !important;
+    }
+    li a {
+      padding: 12px 8px;
+      border-bottom: 1px solid $dbc;
+      border-left: none !important;
+
+      background: $bg image-url('icons-sprite.png') no-repeat right -197px;
+      color: $color;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.25;
+    }
+  }
+}
+
+////// MENU: RED
+@mixin topbar-theme-red {
+  @include topbar-base(
+    $bg: #C00,
+    $color: #FFF,
+    $fw: 400,
+    $tbg: #900,
+    $tcolor: #FFF,
+    $divider-width: 1px,
+    $divider-style: solid,
+    $divider-color: #900,
+    $sub-bg-color: #FFF,
+    $sub-border-top-color: #A00,
+    $sub-border-bottom-color: #CCC,
+    $sub-color: #333
+  );
+}
+
+////// MENU: BLUE
+@mixin topbar-theme-blue {
+  @include topbar-base(
+    $bg: #1191D2,
+    $color: #FFF,
+    $fw: 400,
+    $tbg: darken(#1191D2, 5%),
+    $tcolor: #FFF,
+    $divider-width: 1px,
+    $divider-style: solid,
+    $divider-color: darken(#1191D2, 5%),
+    $sub-bg-color: #FFF,
+    $sub-border-top-color: #1191D2,
+    $sub-border-bottom-color: #CCC,
+    $sub-color: #333
+  );
+}
+
+////// NF-MAINBAR Global Style
+.nf-menu {
+  @include box-sizing(border-box);
+  -webkit-font-smoothing: antialiased;
+
+  position: relative;
+  clear: both;
+  font-size: $nf-menu-font-size;
+  min-height: $nf-menu-height;
+
+  .nf-brand {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: $nf-menu-height;
+    padding: $nf-menu-link-pad-v $nf-menu-link-pad-h;
+
+    font-size: 1em;
+    line-height: $nf-menu-line-height;
+  }
+  .nf-toggle-main, .nf-toggle-sub {
+    float: right;
+
+    a {
+      display: block;
+      height: $nf-menu-height;
+      padding: $nf-menu-link-pad-v $nf-menu-link-pad-h;
+      line-height: $nf-menu-line-height;
+    }
+  }
+  .nf-toggle-main {
+    @media (max-width: $nf-menu-breakpoint-mobile) {
+      display: block;
+    }
+    @media (min-width: $nf-menu-breakpoint-mobile + 1px) {
+      display: none;
+    }
+  }
+}
+
+// NF Menu sizes
+@media (max-width: $nf-menu-breakpoint-mobile) {
+  @include topbar-base-compact;
+}
+
+.nf-menu--small {
+  @media (min-width: $nf-menu-breakpoint-mobile + 1px) {
+    @include topbar-base-wide;
+  }
+}
+.nf-menu--medium {
+  @media (min-width: $nf-menu-breakpoint-mobile + 1px) and (max-width: $nf-menu-breakpoint-tablet) {
+    @include topbar-base-medium;
+  }
+  @media (min-width: $nf-menu-breakpoint-tablet + 1px) {
+    @include topbar-base-wide;
+  }
+}
+.nf-menu--large {
+  @media (min-width: $nf-menu-breakpoint-mobile + 1px) and (max-width: $nf-menu-breakpoint-desktop) {
+    @include topbar-base-medium;
+  }
+  @media (min-width: $nf-menu-breakpoint-desktop + 1px) {
+    @include topbar-base-wide;
+  }
+}
+
+// NF Menu colors
+.nf-menu--white {
+  @include topbar-base;
+}
+.nf-menu--red {
+  @include topbar-theme-red;
+}
+.nf-menu--blue {
+  @include topbar-theme-blue;
+}
