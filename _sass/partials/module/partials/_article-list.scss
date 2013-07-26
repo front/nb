@@ -1,0 +1,59 @@
+// Article title list
+.article--list {
+  border-top: 1px solid $article-list-border-color;
+
+  li {
+    @include box-sizing('border-box');
+    @include no-bullet;
+
+    border-bottom: 1px solid $article-list-border-color;
+
+    font-family: $font-family-bold;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  a {
+    color: $article-list-link-color;
+    display: block;
+    padding: 13px 0 11px;
+
+    &:hover {
+      color: darken($article-list-link-color, 19%);
+    }
+  }
+}
+
+.article--list-icon {
+  li {
+    background: transparent image-url('icon-arrow-right.png') right 49% no-repeat;
+    padding-right: image-width('icon-arrow-right.png');
+  }
+  a {
+    color: darken($article-list-link-color, 19%);
+  }
+}
+
+.article--list-small {
+  .article--teaser-small {
+    border-bottom: 1px solid $article-list-border-color;
+  }
+}
+
+.article--teaser-small {
+  @extend %clearfix;
+  margin-bottom: 1.25em;
+
+  img {
+    margin-bottom: 1.25em;
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 22px;
+    margin: -3px 0 5px 0;
+  }
+  p {
+    color: #999;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

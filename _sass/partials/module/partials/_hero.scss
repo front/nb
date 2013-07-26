@@ -15,6 +15,7 @@
 
 .hero--top {
   margin-top: em(-15px);
+  margin-bottom: 2em;
 }
 
 .hero--box {
@@ -27,13 +28,26 @@
   }
 }
 
-.hero--box.overlay {
+.overlay {
   color: white;
 
   a,
   .title,
   .hero--label {
     color: white;
+  }
+}
+
+.overlay-invert {
+  color: black;
+
+  a,
+  .title,
+  .hero--label {
+    color: black;
+  }
+  .title {
+    padding: 15px;
   }
 }
 

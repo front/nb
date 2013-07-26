@@ -6416,6 +6416,10 @@ header + .ads {
   padding-right: 0;
 }
 
+.body-content p {
+  font-family: "Times New Roman", serif;
+}
+
 .article--list {
   border-top: 1px solid #e5e5e5;
 }
@@ -6772,6 +6776,7 @@ header + .ads {
 
 .hero--top {
   margin-top: -0.9375em;
+  margin-bottom: 2em;
 }
 
 .hero--box {
@@ -6797,13 +6802,25 @@ header + .ads {
   }
 }
 
-.hero--box.overlay {
+.overlay {
   color: white;
 }
-.hero--box.overlay a,
-.hero--box.overlay .title,
-.hero--box.overlay .hero--label {
+.overlay a,
+.overlay .title,
+.overlay .hero--label {
   color: white;
+}
+
+.overlay-invert {
+  color: black;
+}
+.overlay-invert a,
+.overlay-invert .title,
+.overlay-invert .hero--label {
+  color: black;
+}
+.overlay-invert .title {
+  padding: 15px;
 }
 
 .hero--label {
@@ -7898,10 +7915,6 @@ figure.inline-media {
   font-weight: 600;
   margin: 0 0 0.6em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.body-content p {
-  font-family: "Times New Roman", serif;
 }
 
 .meta {
