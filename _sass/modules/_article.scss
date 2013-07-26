@@ -36,7 +36,7 @@ figcaption p {
   line-height: 1.42857;
   margin: 10px 0;
   padding: 0 15px 0 15px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-family-sans;
 }
 
 img {
@@ -62,7 +62,7 @@ figure.inline-media {
 }
 
 .inline-media p {
-  font-family: "Times New Roman",Times,serif;
+  font-family: $font-family-serif;
   font-size: 16px;
   font-style: italic;
   line-height: 20px;
@@ -96,17 +96,6 @@ figure.inline-media {
   line-height: 36px;
 }
 
-.lead p {
-  color: #3F3F3F;
-  font-size: 1.2em;
-  line-height: 1.3em;
-  font-weight: 600;
-  margin: 0 0 0.6em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-
-
 .meta {
   border: 1px solid #E9E9E9;
   font-size: 14px;
@@ -118,13 +107,13 @@ figure.inline-media {
 
 .meta div {
   padding: 2px 30px 4px 30px;
-  background: url(../img/icon-time.png) 0 0 no-repeat;
+  background: image-url('icon-time.png') 0 0 no-repeat;
   float: left;
   margin-bottom: 5px;
 }
 
 .meta .share {
-  background: url(../img/icon-jump.png) 0 0 no-repeat;
+  background: image-url('icon-jump.png') 0 0 no-repeat;
   padding-top: 5px;
 }
 

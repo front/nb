@@ -1,6 +1,21 @@
-.body-content {
+.article {
+  .grid-10 {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.body-content p {
-  font-family: "Times New Roman", serif;
+.article--body {
+  font-family: $font-family-serif;
+}
+
+.lead {
+  margin: 0 0 0.6em;
+
+  color: #3F3F3F;
+  font-family: $font-family-sans;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.3em;
 }
