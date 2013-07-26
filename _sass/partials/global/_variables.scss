@@ -9,7 +9,6 @@ $font-family-bold: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 // Colors
 $color-top-border: #DDD;
 
-
 // Header
 $color-header-bg: #C00;
 $color-header-color: white;
@@ -32,3 +31,10 @@ $footer-border-color: #B5000C;
 $footer-font-family:  $font-family-sans;
 $footer-font-size:    12px;
 $footer-text-color:   white;
+
+
+// Menu settings
+$nf-menu-height:      42px;
+$nf-menu-link-pad-v:  11px;
+$nf-menu-link-pad-h:  12px;
+$nf-menu-line-height: $nf-menu-height - ($nf-menu-link-pad-v * 2);

@@ -59,10 +59,12 @@
   .title {
     margin-top: 0;
     margin-bottom: 0;
+    padding: $nf-menu-link-pad-v $nf-menu-link-pad-h;
 
     color: $color-header-color;
     font-size: em(17px);
-    font-weight: 600;
+    font-weight: 900;
+    line-height: $nf-menu-line-height;
     text-transform: uppercase;
   }
   a {
