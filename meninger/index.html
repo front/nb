@@ -7,38 +7,38 @@ title: Front page
   <h1 class="title">Meninger</h1>
 </header>
 
-<section class="frontpage-section main-story">
-    <div class="row ">
-        <div class="large-12 columns">
-            <article class="">
-                <a href="leder-n.html">
-                    <img id="nf-meninger-main" alt="" src="">
-                    <header>
-                        <h1 class="title">En president vender tilbake</h1>
-                        <p class="lead">Etter to lange perioder vurderer Jr å gi politikken en ny sjanse. Her er 10 grunner til at han vil lykkes.</p>
-                    </header>
-                </a>
-
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="row frontpage-section">
-    <div class="small-12 columns">
-        <header class="center divider">
-            <h2 class="section-heading">Meninger</h2>
-            <span>Fra redaksjonen</span>
+<section class="l-container article-featured front-section">
+  <h2 hidden>Featured article</h2>
+  <div class="l-row">
+    <article>
+      <a href="/meninger/leder/">
+        <header>
+          <img id="nf-meninger-main" alt="" src="">
+          <h1 class="title">En president vender tilbake</h1>
         </header>
-        {% include article-title-list-2.html %}
-    </div>
+
+        <p>Etter to lange perioder vurderer Jr å gi politikken en ny sjanse. Her er 10 grunner til at han vil lykkes.</p>
+      </a>
+    </article>
+  </div>
 </section>
 
-<section class="front-section article-grid grid-style-2">
-    <!-- <header class="center">
-        <h2 class="section-heading">Grid 2</h2>
-    </header> -->
+<section class="l-container front-section">
+  <header class="section--header center">
+    <h2 class="title">Meninger</h2>
+    <span>Fra redaksjonen</span>
+  </header>
+
+  <div class="l-row">
+    {% include article-title-list-2.html %}
+  </div>
+</section>
+
+<section class="l-container front-section grid-style grid-style--bordered">
+  <header class="section--header center">
+    <h2 class="title">Grid 2</h2>
+  </header>
+  <div class="l-row">
     {% include article-grid.html %}
+  </div>
 </section>
-
-

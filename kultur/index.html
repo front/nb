@@ -9,47 +9,42 @@ title: Front page
 
 {% include hero-section-top.html %}
 
-<section class="frontpage-section main-story">
-<!-- <h2 class="center"><span>Mest populært på NewsFront</span></h2> -->
-    <div class="row ">
-        <div class="large-12 columns">
-            <article class="">
-                <a href="buy.html">
-                <img alt="" src="http://gfx.dagbladet.no/labrador/156/156392/15639289/jpg/active/978x.jpg">
-                <header>
-                    <h1 class="title">- Vil dere vite hvorfor jeg alltid kommer tilbake til Norge?</h1>
-                    <p class="lead">Country-fenomenet Taylor Swift trollbinder publikum med ord og toner. Og ikke så rent lite sjarm.</p>
-                </header>
-                </a>
+<section class="l-container article-featured front-section">
+  <h2 hidden>Featured article</h2>
+  <div class="l-row">
+    <article>
+      <a href="/">
+        <header>
+          <img alt="" src="http://gfx.dagbladet.no/labrador/156/156392/15639289/jpg/active/978x.jpg">
+          <h1 class="title">Vil dere vite hvorfor jeg alltid kommer tilbake til Norge?</h1>
+        </header>
 
-            </article>
-        </div>
-    </div>
+        <p>Country-fenomenet Taylor Swift trollbinder publikum med ord og toner. Og ikke så rent lite sjarm.</p>
+      </a>
+    </article>
+  </div>
 </section>
 
-<!-- <section class="most-popular front-section article-grid grid-style-1">
-    <header class="center">
-        <h2 class="section-heading">Grid 1</h2>
-    </header>
+<section class="l-container front-section grid-style grid-style--bordered">
+  <header class="section--header center">
+    <h2 class="title">Grid 2</h2>
+  </header>
+  <div class="l-row">
     {% include article-grid.html %}
-</section> -->
-
-<section class="front-section article-grid grid-style-2">
-    <!-- <header class="center">
-        <h2 class="section-heading">Grid 2</h2>
-    </header> -->
-    {% include article-grid.html %}
+  </div>
 </section>
 
 {% include series-section.html %}
 
 
-<section class="row frontpage-section">
-    <div class="small-12 columns">
-        <header class="center divider">
-            <h2 class="section-heading">Siste inn</h2>
-            <span>Newsfront gir deg det siste</span>
-        </header>
-        {% include article-title-list-2.html %}
-    </div>
+
+<section class="l-container front-section">
+  <header class="section--header center">
+    <h2 class="title">Siste inn</h2>
+    <span>Newsfront gir deg det siste</span>
+  </header>
+
+  <div class="l-row">
+    {% include article-title-list-2.html %}
+  </div>
 </section>

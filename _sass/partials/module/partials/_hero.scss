@@ -13,6 +13,10 @@
   }
 }
 
+.hero--top {
+  margin-top: em(-15px);
+}
+
 .hero--box {
   @include grid-span(7, 2);
   @include block-center;

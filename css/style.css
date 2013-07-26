@@ -6770,6 +6770,10 @@ header + .ads {
   }
 }
 
+.hero--top {
+  margin-top: -0.9375em;
+}
+
 .hero--box {
   width: 57.05606%;
   float: left;
