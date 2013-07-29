@@ -6164,26 +6164,6 @@ img {
   height: auto;
 }
 
-figcaption {
-  color: #888888;
-  display: block;
-  font-size: 14px;
-  line-height: 1.4em;
-  overflow: auto;
-  border-bottom: 1px solid #E9E9E9;
-  margin-bottom: 10px;
-}
-
-figcaption p {
-  font-weight: 300;
-  font-size: 1em;
-  letter-spacing: 0;
-  line-height: 1.42857;
-  margin: 10px 0;
-  padding: 0 15px 0 15px;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-}
-
 .title {
   color: black;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -6482,7 +6462,7 @@ header + .ads {
 }
 
 .article--body {
-  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-family: Cambria, Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
 
 .article--lead {
@@ -6616,7 +6596,6 @@ header + .ads {
 
 .related {
   margin-top: 30px;
-  margin-bottom: -20px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
@@ -7912,6 +7891,120 @@ header + .ads {
   }
 }
 
+header img {
+  width: 100%;
+}
+
+figcaption {
+  display: block;
+  margin-bottom: 0.71429em;
+  overflow: auto;
+  border-bottom: 1px solid #E9E9E9;
+  color: #888;
+  font-size: 0.875em;
+  font-weight: 300;
+  line-height: 1.42857em;
+}
+figcaption p {
+  margin: 0.71429em 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: inherit;
+}
+
+.inline-media {
+  display: block;
+  float: none;
+  margin: 0 auto 1em;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.inline-media figcaption {
+  margin-bottom: 1.25em;
+  padding: 1em 1em 1.5em;
+  background: #F5F5F5;
+  font-size: 1em;
+}
+
+.inline-media p {
+  margin: 0;
+  color: #666;
+  font-family: Cambria, Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-style: italic;
+  line-height: 1.25em;
+}
+
+.inline-media .credit {
+  margin: 0 auto 0.23077em;
+  color: #999;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.8125em;
+  font-style: normal;
+  line-height: 1.53846em;
+}
+
+.fixed-width {
+  width: auto;
+  display: inline-block;
+  clear: both;
+}
+
+.image {
+  margin: 0 -0.75em 0 -0.75em;
+}
+
+.btn-simple {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 1.25em;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.75em;
+  padding-right: 1.5em;
+  padding-bottom: 0.8125em;
+  padding-left: 1.5em;
+  font-size: 1em;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  border-color: #000;
+  color: #000;
+}
+.btn-simple:hover {
+  border-color: #2ba6cb;
+}
+
+.btn-simple.soft {
+  color: #999;
+  border-color: #bbb;
+}
+.btn-simple.soft:hover {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-simple.light {
+  color: white;
+  border-color: white;
+}
+.btn-simple.light:hover {
+  border-color: #2ba6cb;
+  color: #2ba6cb;
+}
+
+.btn-simple.small {
+  font-size: 0.75em;
+}
+
 .is-popular {
   background: #FFFFE5;
 }
@@ -7941,7 +8034,7 @@ header + .ads {
 .section--header span {
   margin: -10px 0 20px 0;
   color: #444;
-  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-family: Cambria, Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   font-style: italic;
   font-size: 24px;
   line-height: 24px;
@@ -8080,109 +8173,6 @@ li .published {
 
 .the-end {
   font-size: 12px;
-}
-
-/*blockquote {
-  text-align: center;
-  color: #ed232a;
-  border-left: none;
-  font-family: "Arial Narrow",Arial,sans-serif;
-  font-size: 35px;
-  letter-spacing: 2px;
-  line-height: 38px;
-}
-
-.quotewrap {
-  max-width: 75%;
-  padding: 55px 0 50px;
-  margin: 0 auto;
-}*/
-figure.inline-media {
-  display: block;
-  float: none;
-  margin: 0 auto 20px;
-  max-width: 100%;
-  min-width: 100%;
-}
-
-.inline-media figcaption {
-  padding: 20px;
-  background: #f5f5f5;
-  margin-bottom: 25px;
-  padding: 15px 25px 20px 15px;
-  padding: 20px 20px 30px;
-}
-
-.inline-media p {
-  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
-  font-size: 16px;
-  font-style: italic;
-  line-height: 20px;
-  margin: 0;
-  color: #666;
-  margin-top: 4px;
-}
-
-.inline-media .credit {
-  color: #999;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  line-height: 20px;
-  margin-bottom: 3px;
-  margin-top: 0;
-}
-
-.fixed-width {
-  width: auto;
-  display: inline-block;
-  clear: both;
-}
-
-.image {
-  margin: 0 -15px 0 -15px;
-}
-
-/* Author bio */
-.author-bio {
-  background-color: #ccc;
-  background-image: url("http://www.thedailybeast.com/etc/clientlibs/nwglobal/img/article/stripe-pattern-dk.png");
-  background-repeat: repeat;
-  background-position: 0 0;
-  max-width: 390px;
-  padding: 15px;
-  margin: 60px 0;
-  position: relative;
-  text-align: left;
-  display: table;
-}
-
-.author-bio img {
-  float: left;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  width: 62px;
-  height: 62px;
-}
-
-.author-bio h6 {
-  text-transform: uppercase;
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1;
-  margin: 0;
-  padding: 5px 0;
-}
-
-.author-bio p {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  margin-bottom: 0;
-  text-align: left;
-  padding: 0;
 }
 
 .object-header {
@@ -8349,57 +8339,6 @@ abbr.published:before {
     padding: 20px 20px 30px;
   }
 }
-.btn-simple {
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0 0 1.25em;
-  position: relative;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  padding-top: 0.75em;
-  padding-right: 1.5em;
-  padding-bottom: 0.8125em;
-  padding-left: 1.5em;
-  font-size: 1em;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  border-color: #000;
-  color: #000;
-}
-.btn-simple:hover {
-  border-color: #2ba6cb;
-}
-
-.btn-simple.soft {
-  color: #999;
-  border-color: #bbb;
-}
-.btn-simple.soft:hover {
-  color: #000;
-  border-color: #000;
-}
-
-.btn-simple.light {
-  color: white;
-  border-color: white;
-}
-.btn-simple.light:hover {
-  border-color: #2ba6cb;
-  color: #2ba6cb;
-}
-
-.btn-simple.small {
-  font-size: 12px;
-}
-
 .nf-sbform {
   position: relative;
   height: 60px;

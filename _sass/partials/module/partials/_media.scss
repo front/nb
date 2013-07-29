@@ -1,0 +1,69 @@
+// Base
+header img {
+  width: 100%;
+}
+
+figcaption {
+  display: block;
+  margin-bottom: em(10,14);
+  overflow: auto;
+  border-bottom: 1px solid #E9E9E9;
+
+  color: #888;
+  font-size: em(14);
+  font-weight: 300;
+  line-height: em(20,14);
+
+  p {
+    margin: em(10,14) 0;
+
+    font-family: $font-family-sans;
+    font-size: 1em;
+    line-height: inherit;
+  }
+}
+
+.inline-media {
+  display: block;
+  float: none;
+  margin: 0 auto 1em;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.inline-media figcaption {
+  margin-bottom: em(25,20);
+  padding: 1em 1em 1.5em;
+
+  background: #F5F5F5;
+  font-size: 1em;
+}
+
+.inline-media p {
+  margin: 0;
+
+  color: #666;
+  font-family: $font-family-serif;
+  font-style: italic;
+  line-height: em(20,16);
+}
+
+.inline-media .credit {
+  margin: 0 auto em(3,13);
+
+  color: #999;
+  font-family: $font-family-sans;
+  font-size: em(13,16);
+  font-style: normal;
+  line-height: em(20,13);
+}
+
+.fixed-width {
+  width: auto;
+  display: inline-block;
+  clear: both;
+}
+
+.image {
+  margin: 0 em(-15,20) 0 em(-15,20);
+}

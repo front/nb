@@ -3,8 +3,10 @@
   @include button-size;
   @include radius;
   @include single-transition;
+
   border-color: #000;
   color: #000;
+
   &:hover {
     border-color: $primary-color;
   }
@@ -13,6 +15,7 @@
 .btn-simple.soft {
   color: #999;
   border-color: #bbb;
+
   &:hover {
     color: #000;
     border-color: #000;
@@ -22,6 +25,7 @@
 .btn-simple.light {
   color: white;
   border-color: white;
+
   &:hover {
     border-color: $primary-color;
     color: $primary-color;
@@ -29,5 +33,5 @@
 }
 
 .btn-simple.small {
-  font-size: 12px;
+  font-size: em(12);
 }
