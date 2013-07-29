@@ -14,37 +14,6 @@
   margin: 0 auto;
 }*/
 
-p {
-  font-size: 1.25em;
-  line-height: 30px;
-}
-
-figcaption {
-  color: #888888;
-  display: block;
-  font-size: 14px;
-  line-height: 1.4em;
-  overflow: auto;
-  border-bottom: 1px solid #E9E9E9;
-  margin-bottom: 10px;
-}
-
-figcaption p {
-  font-weight: 300;
-  font-size: 1em;
-  letter-spacing: 0;
-  line-height: 1.42857;
-  margin: 10px 0;
-  padding: 0 15px 0 15px;
-  font-family: $font-family-sans;
-}
-
-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
 figure.inline-media {
   display: block;
   float: none;
@@ -73,7 +42,7 @@ figure.inline-media {
 
 .inline-media .credit {
   color: #999;
-  font-family: Arial,sans-serif;
+  font-family: $font-family-sans;
   font-size: 13px;
   font-style: normal;
   line-height: 20px;
@@ -89,36 +58,6 @@ figure.inline-media {
 
 .image {
   margin: 0 -15px 0 -15px;
-}
-
-.title-large {
-  font-size: 32px;
-  line-height: 36px;
-}
-
-.meta {
-  border: 1px solid #E9E9E9;
-  font-size: 14px;
-  padding: 12px;
-  margin-bottom: 15px;
-  overflow: auto;
-  // background: #ffffe5;
-}
-
-.meta div {
-  padding: 2px 30px 4px 30px;
-  background: image-url('icon-time.png') 0 0 no-repeat;
-  float: left;
-  margin-bottom: 5px;
-}
-
-.meta .share {
-  background: image-url('icon-jump.png') 0 0 no-repeat;
-  padding-top: 5px;
-}
-
-.meta .last {
-  margin-bottom: 0;
 }
 
 /* Author bio */
@@ -145,7 +84,7 @@ figure.inline-media {
 
 .author-bio h6 {
   text-transform: uppercase;
-  font-family: "Arial Black",Arial,sans-serif;
+  font-family: $font-family-bold;
   font-weight: bold;
   font-size: 12px;
   font-size: 1.2rem;
@@ -155,42 +94,10 @@ figure.inline-media {
 }
 
 .author-bio p {
-  font-family: arial,sans-serif;
+  font-family: $font-family-sans;
   font-size: 13px;
   line-height: 18px;
   margin-bottom: 0;
   text-align: left;
   padding: 0;
-}
-
-// Related stories
-.related-stories {
-  padding: 40px 0 30px;
-  margin: 30px 0 -20px;
-
-  &.dark {
-    background: #000;
-  }
-}
-
-.dark {
-  .related-title {
-    color: white;
-  }
-}
-
-.related-story {
-  min-height: 200px;
-}
-
-.section-label {
-  font-size: 0.75em;
-  text-transform: uppercase;
-  margin: 4px 0 0;
-  color: $primary-color;
-}
-
-.related-title {
-  margin-top: 0;
-  line-height: 17px;
 }

@@ -10,12 +10,36 @@
   font-family: $font-family-serif;
 }
 
-.lead {
+.article--lead {
   margin: 0 0 0.6em;
 
   color: #3F3F3F;
   font-family: $font-family-sans;
-  font-size: 1.2em;
+  font-size: em(20);
   font-weight: 600;
-  line-height: 1.3em;
+  line-height: em(25,20);
+
+  p {
+    font-size: 1em;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+}
+
+.article--meta {
+  @include horizontal-list(2%);
+
+  margin-bottom: em(15,12);
+  padding: em(12,14);
+  overflow: auto;
+  border: 1px solid #E9E9E9;
+
+  font-size: em(14);
+
+  i {
+    margin-right: 0.5em;
+  }
+  .by {
+    font-weight: 600;
+  }
 }

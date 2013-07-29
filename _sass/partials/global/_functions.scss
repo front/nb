@@ -2,10 +2,18 @@
 //
 // All of your functions should go in this file.
 
-// A Compass function to convert pixel font-sizes to em's.
-@function em($target, $context: $base-font-size) {
-  @if $target == 0 {
-    @return 0;
+// Function to convert pixel font-sizes to em's.
+@function em($pxval, $base: $base-font-size) {
+  @if not unitless($pxval) {
+      $pxval: strip-units($pxval);
   }
-  @return $target / $context + 0em;
+  @if not unitless($base) {
+      $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+// Strips the units from a value. e.g. 12px -> 12
+@function strip-units($val) {
+  @return ($val / ($val * 0 + 1));
 }

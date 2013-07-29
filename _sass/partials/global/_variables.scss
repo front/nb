@@ -38,3 +38,9 @@ $nf-menu-height:      42px;
 $nf-menu-link-pad-v:  11px;
 $nf-menu-link-pad-h:  12px;
 $nf-menu-line-height: $nf-menu-height - ($nf-menu-link-pad-v * 2);
+
+
+// Breakpoint
+$breakpoint-to-ems: true;
+
+$breakpoint-tablet-portrait: 768px;

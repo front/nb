@@ -5,14 +5,6 @@
   overflow: hidden;
 }
 
-.title {
-  color: #000;
-  display: block;
-  font-family: $font-family-sans;
-  text-decoration: none !important;
-  word-wrap: break-word;
-}
-
 // Dummy code for icon
 .icon-search {
   padding-top: 12px;
@@ -33,15 +25,11 @@
 .section--header span {
   margin: -10px 0 20px 0;
   color: #444;
-  font-family: "Times New Roman", serif;
+  font-family: $font-family-serif;
   font-style: italic;
   font-size: 24px;
   line-height: 24px;
   display: block;
-}
-
-.aside-heading {
-  text-transform: uppercase;
 }
 
 li .published {

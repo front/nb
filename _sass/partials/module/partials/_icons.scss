@@ -1,0 +1,19 @@
+$icon: 'icon';
+@include sprite-map-generator($icon, 'retina');
+
+%icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.icon-time,
+.icon-pubdate {
+  @include replace-text-pe($icon, 'time', 'retina');
+  @extend %icon;
+}
+
+.icon-share {
+  @include replace-text-pe($icon, 'share', 'retina');
+  @extend %icon;
+}
