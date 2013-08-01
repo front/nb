@@ -17,13 +17,13 @@ img, video {
   text-align: left;
 }
 
-.l-row:after, .article--teaser-small:after {
+.l-row:after, .article--list li:after, .article--teaser-small:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.l-row:after, .article--teaser-small:after {
+.l-row:after, .article--list li:after, .article--teaser-small:after {
   content: "";
   display: table;
   clear: both;
@@ -35,7 +35,7 @@ img, video {
   box-sizing: border-box;
 }
 
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -7953,7 +7953,34 @@ figcaption p {
 .image {
   margin: 0 -0.75em 0 -0.75em;
 }
+@media (min-width: 48em) {
+  .image {
+    margin: 0;
+  }
+}
 
+@media only screen and (min-width: 48em) {
+  .meta div {
+    margin-bottom: 0;
+  }
+
+  figure.inline-media {
+    max-width: 40%;
+    min-width: 40%;
+    margin-left: 25px;
+    float: right;
+  }
+
+  figure.offset {
+    max-width: 80%;
+    min-width: 80%;
+    margin-right: -52.5%;
+  }
+
+  .inline-media figcaption {
+    padding: 20px 20px 30px;
+  }
+}
 .btn-simple {
   border-style: solid;
   border-width: 1px;
@@ -8374,7 +8401,7 @@ abbr.published:before {
   cursor: pointer;
   border: none;
   outline: none;
-  background: url("../../img/mag.png") no-repeat center center #2ba6cb;
+  background: url('../img/mag.png?1374080939') no-repeat center center #2ba6cb;
 }
 
 .nf-searchbar {
@@ -8419,9 +8446,9 @@ abbr.published:before {
   cursor: pointer;
   border: none;
   outline: none;
-  background: url("../../img/mag-grey.png") no-repeat center center;
+  background: url('../img/mag-grey.png?1374592244') no-repeat center center;
 }
 .nf-searchbar span.nf-search-cancel {
   right: 55px;
-  background: url("../../img/cross-grey.png") no-repeat center center;
+  background: url('../img/cross-grey.png?1374592244') no-repeat center center;
 }

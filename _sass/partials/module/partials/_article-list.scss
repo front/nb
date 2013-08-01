@@ -5,6 +5,7 @@
   li {
     @include box-sizing('border-box');
     @include no-bullet;
+    @extend %clearfix;
 
     border-bottom: 1px solid $article-list-border-color;
 

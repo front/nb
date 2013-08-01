@@ -66,4 +66,30 @@ figcaption {
 
 .image {
   margin: 0 em(-15,20) 0 em(-15,20);
+
+  @include breakpoint($breakpoint-tablet-portrait) {
+    margin: 0;
+  }
+}
+
+
+@media only screen and (min-width: 48em) {
+  .meta div {
+    margin-bottom: 0;
+  }
+
+  figure.inline-media {
+    max-width: 40%;
+    min-width: 40%;
+    margin-left: 25px;
+    float: right;
+  }
+  figure.offset {
+    max-width: 80%;
+    min-width: 80%;
+    margin-right: -52.5%;
+  }
+  .inline-media figcaption {
+    padding: 20px 20px 30px;
+  }
 }

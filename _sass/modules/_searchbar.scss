@@ -39,10 +39,10 @@
     cursor: pointer;
     border: none;
     outline: none;
-    background: url('../../img/mag-grey.png') no-repeat center center;
+    background: image-url('mag-grey.png') no-repeat center center;
   }
   span.nf-search-cancel {
     right: 55px;
-    background: url('../../img/cross-grey.png') no-repeat center center;
+    background: image-url('cross-grey.png') no-repeat center center;
   }
 }
