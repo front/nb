@@ -2,7 +2,7 @@
 .series {}
 
 .series--promo {
-  @include breakpoint($breakpoint-medium) {
+  @include breakpoint($breakpoint-narrow) {
     @include float-span(4);
     padding-bottom: 1.25em;
 
@@ -13,10 +13,12 @@
 }
 
 .series--promo {
-  .title {
-    font-size: 28px;
-    line-height: 30px;
+  header {
     text-align: center;
+  }
+  .title {
+    font-size: em(28);
+    line-height: em(30,28);
   }
   p {
     font-size: 14px;
@@ -24,9 +26,11 @@
     text-align: justify;
 
     &.muted {
+      display: block;
+      margin-bottom: 1.25em;
+
       font-size: 1.25em;
       text-align: center;
-      margin-bottom: 1.25em;
     }
   }
   .title, p {
@@ -34,22 +38,22 @@
     padding-right: 15px;
   }
   footer {
-    margin-top: 1.25em;
+    margin: 1.25em 0;
     padding-top: 1.25em;
 
     border-top: 4px solid black;
   }
 
   @include breakpoint(max-width $breakpoint-medium) {
+    .title {
+      font-size: em(25);
+    }
+    p {
+      font-size: em(13);
+    }
     .image-round {
       @include block-center;
       max-width: 200px;
-    }
-    .muted {
-      display: inline-block;
-    }
-    footer {
-      margin-bottom: 1.25em;
     }
   }
 }

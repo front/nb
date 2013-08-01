@@ -1,9 +1,12 @@
 // Settings
 
 // Breakpoint
+$breakpoint-to-ems: true;
+
+$breakpoint-small:  561px;
 $breakpoint-narrow: 768px;
 $breakpoint-medium: 830px;
-$breakpoint-wide: 1010px;
+$breakpoint-wide:   1010px;
 
 // Grids
 $grid-max-width: 980px;

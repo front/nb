@@ -1,11 +1,12 @@
 // Grid style: base
 .grid-style {
   article {
-    min-height: 320px;
+    padding-bottom: 1.25em;
   }
   h1 {
     font-size: 22px;
-    line-height: 24px;
+    font-size: em(19);
+    line-height: em(24,22);
     margin: 5px 0;
   }
   p {
@@ -20,6 +21,14 @@
     @include block-center;
     margin-bottom: 0;
   }
+
+  // Breakpoints.
+  @include breakpoint($breakpoint-small) {
+    article {
+      min-height: 320px;
+      padding-bottom: 0;
+    }
+  }
 }
 
 // Grid style: bordered
@@ -29,7 +38,7 @@
   padding: 1.25em 0;
 
   article {
-    min-height: 270px;
+    min-height: auto;
   }
   img {
     @include box-shadow(0 0 5px rgba(0,0,0,0.5));
@@ -37,39 +46,66 @@
   .btn-simple {
     display: none;
   }
+
+  // Breakpoints.
+  @include breakpoint($breakpoint-small) {
+    article {
+      min-height: 270px;
+      padding: 1.25em 0;
+    }
+  }
 }
 
 // Grid style: bordered
 .grid-style--bordered {
 
   // Style grid element.
-  $grid-style-padding: gutter-span() / 2;
   .grid-item {
-    padding: $grid-style-padding;
-
-    border-right: 1px solid $grid-style-border-color;
-    border-top: 1px solid $grid-style-border-color;
+    padding: 10px;
+    border: 1px solid $grid-style-border-color;
+    border-bottom: none;
   }
 
   // Rebuild grid without gutter.
   // TODO: move this to a generic class name?
-  @include breakpoint(max-width $breakpoint-narrow) {
+  @include breakpoint($breakpoint-small) {
+    .grid-item {
+      padding: gutter-span() / 2;
+
+      border: none;
+      border-right: 1px solid $grid-style-border-color;
+      border-top: 1px solid $grid-style-border-color;
+    }
+
     @for $i from 2 through 6 {
       .grid-#{$i} {
         @include float-span(1, $grid: 2, $gutter: 0.0);
       }
     }
+
     .grid-item:nth-child(2n+1) {
       clear: both;
       border-left: 1px solid $grid-style-border-color;
     }
   }
+
   @include breakpoint($breakpoint-narrow) {
     @for $i from 2 through 6 {
+      // Reset
+      .grid-item {
+        clear: none;
+      }
+      .grid-item:nth-child(2n+1) {
+        clear: none;
+        border-left: none;
+      }
+      .grid-item:first-child {
+        border-left: 1px solid $grid-style-border-color;
+      }
+
       .grid-#{$i} {
         @include float-span($i, $gutter: 0.0);
       }
-
       // Add border to the beginning of each grid row.
       $nth: $grids/$i;
       @if round($nth) == $nth {

@@ -32,7 +32,11 @@
       $('#nf-menu-main-blue').menuToggle();
 
       // Equalheight
-      $('.grid-style--bordered .grid-item').equalHeight('style-bordered');
+      var breakpointSmall = 561;
+
+      if ($('body').width() <= breakpointSmall) {
+        //$('.grid-style--bordered .grid-item').equalHeight('style-bordered');
+      };
 
       // Solr search setup
       nfSolr.setup();

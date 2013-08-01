@@ -67,7 +67,7 @@ figcaption {
 .image {
   margin: 0 em(-15,20) 0 em(-15,20);
 
-  @include breakpoint($breakpoint-tablet-portrait) {
+  @include breakpoint($breakpoint-narrow) {
     margin: 0;
   }
 }

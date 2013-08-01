@@ -19,7 +19,7 @@ img {
   font-size: em(32);
   line-height: em(36,32);
 
-  @include breakpoint($breakpoint-tablet-portrait) {
+  @include breakpoint($breakpoint-narrow) {
     font-size: em(52);
     line-height: em(56,52);
   }

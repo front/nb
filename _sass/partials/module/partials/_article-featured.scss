@@ -1,17 +1,24 @@
 .article-featured {
   h1.title {
-    font-size: 38px;
-    line-height: 40px;
+    font-size: em(20);
+    line-height: em(40,30);
   }
   p {
     color: #999;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: em(18);
+    line-height: em(20,18);
   }
   a {
     color: inherit;
   }
   img {
-    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    @include box-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+  }
+
+  // Breakpooints.
+  @include breakpoint($breakpoint-small) {
+    h1.title {
+      font-size: em(38);
+    }
   }
 }
