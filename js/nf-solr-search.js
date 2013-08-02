@@ -30,7 +30,13 @@ var nfSolr = {
     }
     var res = data.response;
     $('span.result-number').html(res.numFound + ' treff');
-    $('span.result-query').html(' - \'' + this.q + '\'');
+
+    if (this.q.length > 0 && this.q !== '*') {
+      $('span.result-query').html(this.q).addClass('active');
+    }
+    else {
+      $('span.result-query').removeClass('active');
+    }
 
     var list = $('#article-list');
     var template = $('#article-list article').first();

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8136,6 +8135,111 @@ figcaption p {
   font-size: 0.75em;
 }
 
+.result-number {
+  color: #797979;
+  font-size: 0.8125em;
+  font-weight: 700;
+  line-height: 1.25em;
+}
+
+.result-query {
+  color: #aaa;
+  font-size: 0.8125em;
+  font-weight: normal;
+  line-height: 1.25em;
+}
+.result-query.active:before {
+  content: ' - " ';
+  display: inline-block;
+}
+.result-query.active:after {
+  content: ' "';
+  display: inline-block;
+}
+
+.search--result {
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  position: relative;
+}
+
+.search--result-thumb {
+  width: 31.2897%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0%;
+  clear: none;
+}
+.search--result-thumb img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 35.0625em) {
+  .search--result-thumb {
+    width: 22.70091%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+}
+
+.search--result-text {
+  width: 65.64485%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+.search--result-text .story-title {
+  font-size: 1.1875em;
+  line-height: 1.13636em;
+  margin-top: 0;
+  margin-bottom: 1px;
+  vertical-align: top;
+}
+.search--result-text .story-title a {
+  color: #000;
+}
+.search--result-text .story-date {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-size: 0.75em;
+  font-weight: normal;
+}
+.search--result-text .story-description {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 0.8125em;
+  line-height: 1.25em;
+}
+.search--result-text .story-description img {
+  display: none;
+}
+.search--result-text .story-description mark {
+  font-weight: 700;
+}
+@media (min-width: 35.0625em) {
+  .search--result-text {
+    width: 74.23364%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .search--result-text .story-title {
+    font-size: 1.375em;
+  }
+  .search--result-text .story-description {
+    font-size: 1.25em;
+  }
+}
+
 .is-popular {
   background: #FFFFE5;
 }
@@ -8304,196 +8408,6 @@ li .published {
 
 .the-end {
   font-size: 12px;
-}
-
-.object-header {
-  min-height: 27px;
-  padding-bottom: 21px;
-}
-
-.search-page-form {
-  margin: 0 0 3px;
-}
-
-.object-header .search-form-input {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABV0RVh0Q3JlYXRpb24gVGltZQAyLzI4LzEzsZYoFwAAAB50RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNS4xqx9I6wAAAQZJREFUOI2lk8FxwjAQRZ89KSAlQAUw8xsgFUAqCB3gUkgHoQPcAQVoD3SQTszBm0RaZM9A/owO3v1+0u5KDZkkbYAO2FKqB45mdglxhmEAoMkgR+AQjUGfZtbVQO0M5Oor18G9d2q9nBzSA0szW5vZGlh6LIdtIuiFsSe/EDPb5QYz+wZ2ks789a4DLsWJKBtb1B+U5+Iwxh65rr57VZ6LPauC/qUctJK0mDJ6bjUHyidSHW0l18dkGwxbSef8ZJIWYWLVDRs3T11IqJdzMrM9PP9E7mDFEwHwN/RGpX6PvVOO/0PS189HE/+Yk6RXxhudl3tKKe0fAs3BHgZNwZ4CRVhKqbkBRkZiP2uGGPsAAAAASUVORK5CYII=") no-repeat scroll 11px 16px #fdfdfd;
-  border-color: #DEDEDE #E3E3E3 #EBEBEB;
-  border-style: solid;
-  border-width: 1px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.02) inset;
-  display: inline-block;
-  font-size: 1.5em;
-  font-weight: 500;
-  margin: 0 0 5px;
-  outline: 0 none;
-  padding: 10px 0 8px 37px;
-}
-
-.search-story-list .object-header-meta {
-  clear: left;
-  display: block;
-  top: 0;
-}
-
-.result-number, .result-query {
-  color: #797979;
-  font-size: 0.8125em;
-  font-weight: 700;
-  line-height: 1.25em;
-}
-
-.result-query {
-  color: #aaa;
-  font-weight: normal;
-}
-
-.object-header-link {
-  color: #C0C0C0;
-  font-size: 0.75em;
-  text-decoration: none;
-}
-
-.story-kicker {
-  color: #606060;
-  font-size: 0.688em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 12px;
-  margin-bottom: 4px;
-}
-
-mark {
-  font-weight: bold;
-}
-
-.story-meta {
-  float: left;
-  margin-bottom: 5px;
-}
-
-.story-meta-item:first-child:before {
-  content: none;
-  margin: 0;
-}
-
-.story-meta-item:before {
-  color: #666666;
-  content: "·";
-  margin: 2px 0 0 -3px;
-  position: absolute;
-}
-
-.story-meta-item {
-  margin-right: 1px;
-  position: relative;
-}
-
-.story-meta-item, .story-meta-item-link {
-  color: #606060;
-  display: inline-block;
-  font-size: 0.75em;
-}
-
-abbr.published:before {
-  color: #666666;
-  content: "·";
-  font-size: 12px;
-  margin: 0 0 0 -7px;
-  position: absolute;
-}
-
-.search--result {
-  border-bottom: 1px solid #EBEBEB;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
-  position: relative;
-}
-.search--result .grid-9 {
-  width: 65.64485%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-.search--result header h2 {
-  margin-top: 0;
-}
-.search--result .story-date {
-  clear: both;
-  margin: 0;
-  padding: 0;
-  color: #999;
-  font-size: 0.75em;
-  font-weight: normal;
-}
-
-.search--result-thumb {
-  width: 31.2897%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0%;
-  clear: none;
-}
-.search--result-thumb img {
-  width: 100%;
-  height: auto;
-}
-@media (min-width: 35.0625em) {
-  .search--result-thumb {
-    width: 22.70091%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-  }
-}
-
-.search--result-text {
-  width: 65.64485%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-.search--result-text .story-title {
-  font-size: 1.1875em;
-  line-height: 1.13636em;
-  margin-bottom: 1px;
-  vertical-align: top;
-}
-.search--result-text .story-title a {
-  color: #000;
-}
-.search--result-text .story-description {
-  clear: both;
-  margin: 0;
-  padding: 0;
-  color: #666;
-  font-size: 0.8125em;
-  line-height: 1.25em;
-}
-.search--result-text .story-description img {
-  display: none;
-}
-@media (min-width: 35.0625em) {
-  .search--result-text {
-    width: 74.23364%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-  .search--result-text .story-title {
-    font-size: 1.375em;
-  }
-  .search--result-text .story-description {
-    font-size: 1.25em;
-  }
 }
 
 @media only screen and (min-width: 48em) {
