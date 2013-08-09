@@ -1016,7 +1016,7 @@ dl {
 }
 
 ul, ol {
-  margin-left: 1.25em;
+  margin-left: 0;
 }
 
 /* Unordered Lists */
@@ -1406,18 +1406,22 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 button, .button {
   padding-top: 0.8125em;
   padding-bottom: 0.75em;
+  -webkit-appearance: none;
 }
 button.tiny, .button.tiny {
   padding-top: 0.5em;
   padding-bottom: 0.4375em;
+  -webkit-appearance: none;
 }
 button.small, .button.small {
   padding-top: 0.625em;
   padding-bottom: 0.5625em;
+  -webkit-appearance: none;
 }
 button.large, .button.large {
   padding-top: 1.03125em;
   padding-bottom: 1.03125em;
+  -webkit-appearance: none;
 }
 
 @media only screen {
@@ -1481,6 +1485,7 @@ label {
   display: block;
   font-weight: 500;
   margin-bottom: 0.1875em;
+  /* Styles for required inputs */
 }
 label.right {
   float: none;
@@ -1489,6 +1494,10 @@ label.right {
 label.inline {
   margin: 0 0 1em 0;
   padding: 0.625em 0;
+}
+label small {
+  text-transform: capitalize;
+  color: #666666;
 }
 
 /* Attach elements to the beginning or end of an input */
@@ -1572,14 +1581,14 @@ label.inline {
   border-bottom-right-radius: 1000px;
 }
 
-/* Separate prefix and postfix styles when on span so buttons keep their own */
-span.prefix {
+/* Separate prefix and postfix styles when on span or label so buttons keep their own */
+span.prefix, label.prefix {
   background: #f2f2f2;
   border-color: #d9d9d9;
   border-right: none;
   color: #333333;
 }
-span.prefix.radius {
+span.prefix.radius, label.prefix.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 3px;
@@ -1590,13 +1599,13 @@ span.prefix.radius {
   border-top-left-radius: 3px;
 }
 
-span.postfix {
+span.postfix, label.postfix {
   background: #f2f2f2;
   border-color: #cccccc;
   border-left: none;
   color: #333333;
 }
-span.postfix.radius {
+span.postfix.radius, label.postfix.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 3px;
@@ -1757,28 +1766,7 @@ fieldset legend {
 }
 
 /* Error Handling */
-.error input,
-input.error,
-.error textarea,
-textarea.error {
-  border-color: #c60f13;
-  background-color: rgba(198, 15, 19, 0.1);
-}
-.error input:focus,
-input.error:focus,
-.error textarea:focus,
-textarea.error:focus {
-  background: #fafafa;
-  border-color: #999999;
-}
-
-.error label,
-label.error {
-  color: #c60f13;
-}
-
-.error small,
-small.error {
+[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
   display: block;
   padding: 0.375em 0.25em;
   margin-top: -1.3125em;
@@ -1787,6 +1775,76 @@ small.error {
   font-weight: bold;
   background: #c60f13;
   color: white;
+  margin-top: 0;
+}
+[data-abide] span.error, [data-abide] small.error {
+  display: none;
+}
+
+span.error, small.error {
+  display: block;
+  padding: 0.375em 0.25em;
+  margin-top: -1.3125em;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: #c60f13;
+  color: white;
+}
+
+.error input,
+.error textarea,
+.error select {
+  border-color: #c60f13;
+  background-color: rgba(198, 15, 19, 0.1);
+  margin-bottom: 0;
+}
+.error input:focus,
+.error textarea:focus,
+.error select:focus {
+  background: #fafafa;
+  border-color: #999999;
+}
+.error label,
+.error label.error {
+  color: #c60f13;
+}
+.error small.error {
+  display: block;
+  padding: 0.375em 0.25em;
+  margin-top: -1.3125em;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: #c60f13;
+  color: white;
+}
+.error span.error-message {
+  display: block;
+}
+
+input.error,
+textarea.error {
+  border-color: #c60f13;
+  background-color: rgba(198, 15, 19, 0.1);
+}
+input.error:focus,
+textarea.error:focus {
+  background: #fafafa;
+  border-color: #999999;
+}
+
+.error select {
+  border-color: #c60f13;
+  background-color: rgba(198, 15, 19, 0.1);
+}
+.error select:focus {
+  background: #fafafa;
+  border-color: #999999;
+}
+
+label.error {
+  color: #c60f13;
 }
 
 /* Flex Video */
