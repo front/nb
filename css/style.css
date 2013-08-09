@@ -3843,9 +3843,6 @@ figcaption p {
   clear: both;
 }
 
-.image {
-  margin: 0 -0.75em 0 -0.75em;
-}
 @media (min-width: 48em) {
   .image {
     margin: 0;
