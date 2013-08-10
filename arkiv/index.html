@@ -1,0 +1,39 @@
+---
+layout: mag
+title: Nyhetsarkiv
+---
+
+<header class="section-header">
+  {% include menu-main.html %}
+</header>
+
+<header class="l-row">
+    <form id="nf-search-form" class="nf-sbform nf-sbopen" action="/s/" method="get">
+      <input id="nf-search-q" type="text" name="q" placeholder="Søk nyhetsarkiv...">
+      <input type="submit" value="">
+    </form>
+
+    <div class="grid-3">
+        <span class="result-number">6 treff</span>
+        <span class="result-query active">obama</span>
+    </div>
+
+    <div class="grid-9 omega">
+      <dl class="sub-nav right">
+        <dt>År:</dt>
+        <dd class="active"><a href="#">2013</a></dd>
+        <dd><a href="#">2012</a></dd>
+        <dd><a href="#">2011</a></dd>
+        <dd><a href="#">2010</a></dd>
+        <dd><a href="#">2009</a></dd>
+        <dd><a href="#">2008</a></dd>
+        <dd><a href="#">2007</a></dd>
+      </dl>
+    </div>
+  </header>
+
+<section class="l-container front-section">
+  <div class="l-row">
+    {% include article-title-list-2.html %}
+  </div>
+</section>
