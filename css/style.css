@@ -3372,12 +3372,12 @@ header + .ads {
   background-color: white;
 }
 .nf-menu--white a {
-  color: #777777;
+  color: #585858;
   font-weight: 600;
   cursor: pointer;
 }
 .nf-menu--white .nf-brand a {
-  color: #777777;
+  color: #585858;
   font-size: 17px;
   font-weight: 900;
 }
@@ -3549,11 +3549,11 @@ header + .ads {
 }
 .nf-menu--red .nf-section-sub ul {
   background-color: white;
-  border-top: 1px solid #aa0000;
+  border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
 .nf-menu--red .nf-section-sub a {
-  border-left: 1px solid #aa0000;
+  border-left: 1px solid #cccccc;
   color: #333333;
   font-weight: 700;
 }

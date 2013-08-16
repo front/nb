@@ -105,7 +105,7 @@ $nf-menu-line-height: $nf-menu-height - ($nf-menu-link-pad-v * 2) !default;
 ////// MENU: BASE
 @mixin topbar-base(
   $bg: #FFF,
-  $color: #777,
+  $color: #585858,
   $fw: 600,
   $tbg: #DDD,
   $tcolor: #111,
@@ -239,7 +239,7 @@ $nf-menu-line-height: $nf-menu-height - ($nf-menu-link-pad-v * 2) !default;
     $divider-style: solid,
     $divider-color: #900,
     $sub-bg-color: #FFF,
-    $sub-border-top-color: #A00,
+    $sub-border-top-color: #CCC,
     $sub-border-bottom-color: #CCC,
     $sub-color: #333
   );
