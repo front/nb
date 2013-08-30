@@ -36,10 +36,10 @@ $nf-menu-line-height: $nf-menu-height - ($nf-menu-link-pad-v * 2) !default;
 // Stacked menu with columns.
 @mixin nf-menu-medium {
   position: relative;
+  overflow: hidden;
   clear: both;
   float: none;
   display: none;
-  height: auto;
 
   ul {
     display: block;
@@ -75,10 +75,10 @@ $nf-menu-line-height: $nf-menu-height - ($nf-menu-link-pad-v * 2) !default;
 // Stacked menu.
 @mixin nf-menu-compact {
   position: relative;
+  overflow: hidden;
   clear: both;
   float: none;
   display: none;
-  height: auto;
 
   ul {
     position: relative;

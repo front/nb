@@ -16,13 +16,19 @@ img, video {
   text-align: left;
 }
 
+.l-row:after:after, .article--list li:after, .article--teaser-small:after, .search--result:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .l-row:after, .article--list li:after, .article--teaser-small:after, .search--result:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1204,8 +1210,6 @@ blockquote p {
     max-width: 100% !important;
   }
 
-  @page {
-    margin: 0.5cm;
 }
 
   p,
@@ -1485,7 +1489,6 @@ label {
   display: block;
   font-weight: 500;
   margin-bottom: 0.1875em;
-  /* Styles for required inputs */
 }
 label.right {
   float: none;
@@ -1494,10 +1497,6 @@ label.right {
 label.inline {
   margin: 0 0 1em 0;
   padding: 0.625em 0;
-}
-label small {
-  text-transform: capitalize;
-  color: #666666;
 }
 
 /* Attach elements to the beginning or end of an input */
@@ -1581,14 +1580,14 @@ label small {
   border-bottom-right-radius: 1000px;
 }
 
-/* Separate prefix and postfix styles when on span or label so buttons keep their own */
-span.prefix, label.prefix {
+/* Separate prefix and postfix styles when on span so buttons keep their own */
+span.prefix {
   background: #f2f2f2;
   border-color: #d9d9d9;
   border-right: none;
   color: #333333;
 }
-span.prefix.radius, label.prefix.radius {
+span.prefix.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 3px;
@@ -1599,13 +1598,13 @@ span.prefix.radius, label.prefix.radius {
   border-top-left-radius: 3px;
 }
 
-span.postfix, label.postfix {
+span.postfix {
   background: #f2f2f2;
   border-color: #cccccc;
   border-left: none;
   color: #333333;
 }
-span.postfix.radius, label.postfix.radius {
+span.postfix.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 3px;
@@ -1766,85 +1765,36 @@ fieldset legend {
 }
 
 /* Error Handling */
-[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
-  display: block;
-  padding: 0.375em 0.25em;
-  margin-top: -1.3125em;
-  margin-bottom: 1em;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: #c60f13;
-  color: white;
-  margin-top: 0;
-}
-[data-abide] span.error, [data-abide] small.error {
-  display: none;
-}
-
-span.error, small.error {
-  display: block;
-  padding: 0.375em 0.25em;
-  margin-top: -1.3125em;
-  margin-bottom: 1em;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: #c60f13;
-  color: white;
-}
-
 .error input,
-.error textarea,
-.error select {
-  border-color: #c60f13;
-  background-color: rgba(198, 15, 19, 0.1);
-  margin-bottom: 0;
-}
-.error input:focus,
-.error textarea:focus,
-.error select:focus {
-  background: #fafafa;
-  border-color: #999999;
-}
-.error label,
-.error label.error {
-  color: #c60f13;
-}
-.error small.error {
-  display: block;
-  padding: 0.375em 0.25em;
-  margin-top: -1.3125em;
-  margin-bottom: 1em;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: #c60f13;
-  color: white;
-}
-.error span.error-message {
-  display: block;
-}
-
 input.error,
+.error textarea,
 textarea.error {
   border-color: #c60f13;
   background-color: rgba(198, 15, 19, 0.1);
 }
+.error input:focus,
 input.error:focus,
+.error textarea:focus,
 textarea.error:focus {
   background: #fafafa;
   border-color: #999999;
 }
 
-.error select {
-  border-color: #c60f13;
-  background-color: rgba(198, 15, 19, 0.1);
-}
-.error select:focus {
-  background: #fafafa;
-  border-color: #999999;
-}
-
+.error label,
 label.error {
   color: #c60f13;
+}
+
+.error small,
+small.error {
+  display: block;
+  padding: 0.375em 0.25em;
+  margin-top: -1.3125em;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: #c60f13;
+  color: white;
 }
 
 /* Flex Video */
@@ -2085,7 +2035,7 @@ img {
     width: 5.52334%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
 
@@ -2093,49 +2043,49 @@ img {
     width: 14.11212%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
   .grid-2:nth-child(6n) {
     width: 14.11212%;
     clear: right;
     float: right;
-    margin-right: 0;
+    margin-right: 0%;
   }
 
   .grid-3 {
     width: 22.70091%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
   .grid-3:nth-child(4n) {
     width: 22.70091%;
     clear: right;
     float: right;
-    margin-right: 0;
+    margin-right: 0%;
   }
 
   .grid-4 {
     width: 31.2897%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
   .grid-4:nth-child(3n) {
     width: 31.2897%;
     clear: right;
     float: right;
-    margin-right: 0;
+    margin-right: 0%;
   }
 
   .grid-5 {
     width: 39.87849%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
 
@@ -2143,21 +2093,21 @@ img {
     width: 48.46727%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
   .grid-6:nth-child(2n) {
     width: 48.46727%;
     clear: right;
     float: right;
-    margin-right: 0;
+    margin-right: 0%;
   }
 
   .grid-7 {
     width: 57.05606%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
 
@@ -2165,7 +2115,7 @@ img {
     width: 65.64485%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
 
@@ -2173,7 +2123,7 @@ img {
     width: 74.23364%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
 
@@ -2181,7 +2131,7 @@ img {
     width: 82.82242%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
 
@@ -2189,7 +2139,7 @@ img {
     width: 91.41121%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
   }
 
@@ -2197,13 +2147,13 @@ img {
     width: 100%;
     clear: right;
     float: right;
-    margin-right: 0;
+    margin-right: 0%;
   }
   .grid-12:nth-child(1n) {
     width: 100%;
     clear: right;
     float: right;
-    margin-right: 0;
+    margin-right: 0%;
   }
 }
 .omega {
@@ -2414,7 +2364,7 @@ header + .ads {
 }
 
 .article--list-icon li {
-  background: transparent url('../img/icon-arrow-right.png?1371558793') right 49% no-repeat;
+  background: transparent url('../img/icon-arrow-right.png?1373972657') right 49% no-repeat;
   padding-right: 19px;
 }
 .article--list-icon a {
@@ -2547,7 +2497,7 @@ header + .ads {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/nf-logo-light.png?1369987785');
+  background-image: url('../img/nf-logo-light.png?1373972657');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 194px;
@@ -2681,35 +2631,35 @@ header + .ads {
     width: 50%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-3 {
     width: 50%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-4 {
     width: 50%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-5 {
     width: 50%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-6 {
     width: 50%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-item:nth-child(2n+1) {
@@ -2732,7 +2682,7 @@ header + .ads {
     width: 16.66667%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-2:nth-child(6n+1) {
@@ -2753,7 +2703,7 @@ header + .ads {
     width: 25%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-3:nth-child(4n+1) {
@@ -2774,7 +2724,7 @@ header + .ads {
     width: 33.33333%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-4:nth-child(3n+1) {
@@ -2795,7 +2745,7 @@ header + .ads {
     width: 41.66667%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-item {
@@ -2812,7 +2762,7 @@ header + .ads {
     width: 50%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 0%;
   }
   .grid-style--bordered .grid-6:nth-child(2n+1) {
@@ -2951,10 +2901,10 @@ header + .ads {
 @media (max-width: 480px) {
   .nf-section-main, .nf-section-sub {
     position: relative;
+    overflow: hidden;
     clear: both;
     float: none;
     display: none;
-    height: auto;
   }
   .nf-section-main ul, .nf-section-sub ul {
     position: relative;
@@ -2989,7 +2939,7 @@ header + .ads {
     padding: 12px 8px;
     border-bottom: 1px solid gainsboro;
     border-left: none !important;
-    background: white url('../img/icons-sprite.png?1360327271') no-repeat right -197px;
+    background: white url('../img/icons-sprite.png?1373972657') no-repeat right -197px;
     color: #1e1e1e;
     font-size: 16px;
     font-weight: 700;
@@ -3049,10 +2999,10 @@ header + .ads {
   }
   .nf-menu--small .nf-section-sub {
     position: relative;
+    overflow: hidden;
     clear: both;
     float: none;
     display: none;
-    height: auto;
   }
   .nf-menu--small .nf-section-sub ul {
     display: block;
@@ -3092,10 +3042,10 @@ header + .ads {
   }
   .nf-menu--medium .nf-section-main, .nf-menu--medium .nf-section-sub {
     position: relative;
+    overflow: hidden;
     clear: both;
     float: none;
     display: none;
-    height: auto;
   }
   .nf-menu--medium .nf-section-main ul, .nf-menu--medium .nf-section-sub ul {
     display: block;
@@ -3190,10 +3140,10 @@ header + .ads {
   }
   .nf-menu--medium .nf-section-sub {
     position: relative;
+    overflow: hidden;
     clear: both;
     float: none;
     display: none;
-    height: auto;
   }
   .nf-menu--medium .nf-section-sub ul {
     display: block;
@@ -3233,10 +3183,10 @@ header + .ads {
   }
   .nf-menu--large .nf-section-main, .nf-menu--large .nf-section-sub {
     position: relative;
+    overflow: hidden;
     clear: both;
     float: none;
     display: none;
-    height: auto;
   }
   .nf-menu--large .nf-section-main ul, .nf-menu--large .nf-section-sub ul {
     display: block;
@@ -3331,10 +3281,10 @@ header + .ads {
   }
   .nf-menu--large .nf-section-sub {
     position: relative;
+    overflow: hidden;
     clear: both;
     float: none;
     display: none;
-    height: auto;
   }
   .nf-menu--large .nf-section-sub ul {
     display: block;
@@ -3444,7 +3394,7 @@ header + .ads {
   height: 100%;
   width: 30px;
   margin-right: -8px;
-  background: url('../img/icons-sprite.png?1360327271') no-repeat center -409px;
+  background: url('../img/icons-sprite.png?1373972657') no-repeat center -409px;
 }
 .nf-open .nf-menu--white .nf-toggle-icon {
   background-position: center -311px;
@@ -3539,7 +3489,7 @@ header + .ads {
   height: 100%;
   width: 30px;
   margin-right: -8px;
-  background: url('../img/icons-sprite.png?1360327271') no-repeat center -409px;
+  background: url('../img/icons-sprite.png?1373972657') no-repeat center -409px;
 }
 .nf-open .nf-menu--red .nf-toggle-icon {
   background-position: center -311px;
@@ -3634,7 +3584,7 @@ header + .ads {
   height: 100%;
   width: 30px;
   margin-right: -8px;
-  background: url('../img/icons-sprite.png?1360327271') no-repeat center -409px;
+  background: url('../img/icons-sprite.png?1373972657') no-repeat center -409px;
 }
 .nf-open .nf-menu--blue .nf-toggle-icon {
   background-position: center -311px;
@@ -3658,7 +3608,7 @@ header + .ads {
     width: 31.2897%;
     clear: right;
     float: left;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 3.06545%;
     padding-bottom: 1.25em;
   }
@@ -3666,7 +3616,7 @@ header + .ads {
     width: 31.2897%;
     clear: right;
     float: right;
-    margin-right: 0;
+    margin-right: 0%;
   }
 }
 
@@ -4331,19 +4281,20 @@ li .published {
   cursor: pointer;
   border: none;
   outline: none;
-  background: url('../img/mag.png?1374157394') no-repeat center center #2ba6cb;
+  background: url('../img/mag.png?1374079615') no-repeat center center #2ba6cb;
 }
 
 .nf-searchbar {
   position: relative;
+  overflow: hidden;
   display: none;
-  width: 100%;
-  margin: 0;
-  padding: 10px;
   background: #373737;
 }
-.nf-searchbar div {
+.nf-searchbar form {
   position: relative;
+  display: block;
+  margin: 0;
+  padding: 10px;
 }
 .nf-searchbar input[type="text"] {
   display: block;
@@ -4365,7 +4316,7 @@ li .published {
 .nf-searchbar input[type="submit"], .nf-searchbar span.nf-search-button, .nf-searchbar span.nf-search-cancel {
   position: absolute;
   z-index: 20;
-  top: 0;
+  top: 10px;
   right: 10px;
   display: block;
   width: 50px;
@@ -4376,9 +4327,9 @@ li .published {
   cursor: pointer;
   border: none;
   outline: none;
-  background: url('../img/mag-grey.png?1376078658') no-repeat center center;
+  background: url('../img/mag-grey.png?1374328427') no-repeat center center;
 }
 .nf-searchbar span.nf-search-cancel {
   right: 55px;
-  background: url('../img/cross-grey.png?1376078658') no-repeat center center;
+  background: url('../img/cross-grey.png?1374341083') no-repeat center center;
 }
